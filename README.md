@@ -1,13 +1,19 @@
-# 🎨 VirtueTech AI: Technical Skill & Virtue Coloring Book Generator
+# 🎨 VirtueTech AI: Technical Skill, Virtue & STEM Project Coloring Book Generator
 
-> **An AI prompt engineering framework and web application that generates 10-12 page children's coloring books teaching technical skills, instilling Christian virtues, enforcing copyright archetype protection, and embedding interactive seek-and-find directives.**
+> **An AI prompt engineering framework and web application that generates 12-page children's coloring books (ages 4-9) teaching technical skills, instilling Christian virtues, enforcing copyright archetype protection, embedding seek-and-find mazes, and building towards a cumulative 12-issue annual master project.**
 
 ---
 
 ## 🌟 Key Features & Core Rules
 
-### 1. 🛡️ Copyright Archetype Sanitization
-Instructs the backend LLM to automatically intercept protected intellectual properties and translate them into copyright-safe generic archetypes:
+### 1. 🧩 Page 11: Interactive Line-Art Vector Mazes & Puzzles
+Every issue includes an interactive line-art maze or logic pathfinder (e.g. *Circuit Pathfinder Maze*, *Gear Alignment Pathfinder*, *Code Block Logic*) with bold black outlines suitable for ages 4-9.
+
+### 2. 🔨 Page 12: Household STEM Projects & 12-Issue Master Arc
+Page 12 of every issue features a safe hands-on STEM project using everyday household materials (paper, craft sticks, foil, tape, plastic bottles) and awards **1 mystery blueprint component**. Across 12 monthly issues, these components accumulate into a grand master project (*The Solar Smart Eco-Citadel*), hinting at how all parts assemble without spoiling the final build early!
+
+### 3. 🛡️ Copyright Archetype Sanitization
+Intercepts protected intellectual properties and translates them into copyright-safe generic archetypes:
 * **"Paw Patrol"** &rarr; `Mighty Rescue Pigs` / `Heroic Patrol Pups`
 * **"My Little Pony"** &rarr; `Magical Forest Elves` / `Enchanted Meadow Ponies`
 * **"Transformers"** &rarr; `Shape-Shifting Helper Bots`
@@ -15,36 +21,31 @@ Instructs the backend LLM to automatically intercept protected intellectual prop
 * **"Iron Man / Superhero"** &rarr; `Armored Tech Knight` / `Guardian Champion`
 * **"Pokemon"** &rarr; `Pocket Elemental Companions`
 
-### 2. ✝️ Christian Virtue Integration Matrix
-Assigns one of the 10 core Christian Virtues (*Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control, Forgiveness*) to every page, weaving the value directly into the mechanical action (e.g. demonstrating *Patience* while measuring, showing *Kindness* when sharing tools).
+### 4. ✝️ Christian Virtue Integration Matrix
+Assigns one of the 10 core Christian Virtues (*Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control, Forgiveness*) to every page scene description.
 
-### 3. 🔍 Seek-and-Find Directive Engine
-Appends strict hidden shape directives into every black-and-white line art prompt:
-> *"Embed 3 distinct 'Cross-my-heart' shapes hidden within the background elements like clouds, leaves, gears, or circuits."*
-
-### 4. 🤖 10–12 Step Technical Skill Breakdown
-Parses any "how-to" request (e.g., *How to Build a Robot*, *How Solar Power Works*, *How 3D Printers Work*) and sequences it into 10–12 visual steps for children, prioritizing safety, curiosity, and hands-on learning.
+### 5. 🔍 Seek-and-Find Directive Engine
+Embeds hidden shape instructions into every line art prompt:
+> *"Embed 3 distinct 'Cross-my-heart' shapes hidden within background elements like clouds, leaves, gears, or circuits."*
 
 ---
 
-## 📸 Example Image Prompt Matrix
+## 🏆 12-Issue Cumulative Master Arc: The Solar Smart Eco-Citadel
 
-| Theme Goal | Backend Image Generation Prompt String Example |
-| :--- | :--- |
-| **Copyright-Safe Parody** | `Bold outlines, simple black and white line art, a team of heroic 'Mighty Pigs' wearing superhero capes riding in a fire engine, clean lines, plain white background, children's coloring book style.` |
-| **Bible Stories / Virtues** | `Bold outlines, simple black and white line art, a 'Little Elf' sharing her lunch with a squirrel, demonstrating kindness and love, 3 hidden hearts disguised as leaves in the trees, no shading, plain white background.` |
-| **Seek-and-Find Activity** | `Bold outlines, simple black and white line art, two friends hugging and showing forgiveness after dropping a toy, 5 hidden hearts integrated into the clouds and grass, high contrast, low detail, children's coloring book style.` |
-
----
-
-## 📖 Sequential Narrative Example: "How to Build a Robot"
-
-* **Page 1 (Planning):** A child drawing a blueprint at a workbench, demonstrating *Patience*. (Prompt includes 3 hidden Cross-my-heart shapes in the blueprint clouds).
-* **Page 2 (The Brain):** An oversized, simplified ESP32 microcontroller with a happy face, explaining that robots need a brain to think.
-* **Page 3 (The Senses):** Wiring up a simple DHT11 temperature sensor or a motion sensor, teaching the virtue of *Gentleness* and curiosity about how things work.
-* **Page 4 (The Voice):** Connecting a small audio amplifier (like a PAM8403) and a speaker, showing the robot learning to speak kind words, demonstrating *Joy*.
-* **Page 5 (Teamwork & Safety):** The child and a parent or friend soldering wires together safely with goggles, demonstrating *Love* and *Sharing* knowledge.
-* **Pages 6–12:** Motors, Battery Energy, Code Blocks, Debugging with *Peace*, Serving Others with *Kindness*, Rebuilding with *Forgiveness*, and Celebration.
+| Issue # | Collected Blueprint Component | Hands-On Household STEM Build | Story & Virtue Focus |
+| :---: | :--- | :--- | :--- |
+| **#1** | Base Foundation & Power Grid Traces | Cardboard Baseplate & Foil Traces | Planning & Patience |
+| **#2** | Solar Canopy Array | Papercraft Solar Panel Reflector | Clean Energy & Joy |
+| **#3** | Rainwater Harvest & Filtration Tower | Sand & Charcoal Bottle Water Filter | Purification & Goodness |
+| **#4** | Micro-Brain Command Center | Cardboard Console with Switch | Logic & Self-Control |
+| **#5** | Wind Turbine Energy Mast | Pinwheel Paper Turbine | Wind Energy & Peace |
+| **#6** | Robotic Helper Docking Bay | Craft Stick Elevator & Ramp | Robotics & Gentleness |
+| **#7** | Hydroponic Greenhouse Roof | Sprout Tray & Foil Cover | Gardening & Kindness |
+| **#8** | Audio Broadcast Beacon | Cup & String Amplifier | Communication & Joy |
+| **#9** | Safety Barrier & Emergency Gate | Popsicle Stick Hydraulic Gate | Protection & Self-Control |
+| **#10** | Automated Waste Sorting Chute | Gravity Marble & Magnet Sorter | Stewardship & Faithfulness |
+| **#11** | Communication Satellite Dish | Foil Parabolic Sound Dish | Outreach & Love |
+| **#12** | **Grand Master Citadel Assembly** | **Connecting All 11 Modules Together!** | **Grand Completion & Celebration** |
 
 ---
 
@@ -73,25 +74,25 @@ npm run build
 
 ```
 virtue-tech-coloring-books/
-├── index.html                  # Main application UI layout
+├── index.html                  # Main application UI layout & Master Arc tab
 ├── package.json                # Dependencies and npm scripts
 ├── README.md                   # Project documentation
 ├── LICENSE                     # MIT Open Source License
 ├── .gitignore                  # Git ignore rules
 └── src/
-    ├── style.css               # Modern design system & print styles
-    ├── app.js                  # Frontend controller & tab manager
+    ├── style.css               # Design system, blueprint styles & print layout
+    ├── app.js                  # Issue selector, master arc tracker & arcade
     └── engine/
-        ├── systemPrompts.js    # Layered system instructions & IP mappings
-        ├── coloringBookGenerator.js # 10-12 page sequence generator
-        └── lineArtRenderer.js  # Vector SVG line art & hidden object game engine
+        ├── systemPrompts.js    # Layered system instructions & 12-issue master arc
+        ├── coloringBookGenerator.js # 12-page sequence generator
+        └── lineArtRenderer.js  # Vector SVG line art, mazes & blueprint renderer
 ```
 
 ---
 
 ## 🖨️ PDF & Print Export
 
-The application includes print styling (`@media print`). Clicking **🖨️ Print Book / PDF** automatically formats all 10-12 pages into full-page printable black & white coloring sheets suitable for physical binding or classroom distribution.
+The application includes `@media print` styling. Clicking **🖨️ Print Issue / PDF** formats all 12 pages into full-page printable black & white coloring and activity sheets suitable for physical binding or classroom distribution.
 
 ---
 
