@@ -1,6 +1,21 @@
 # 🎨 VirtueTech AI: Technical Skill, Virtue & STEM Project Coloring Book Generator
 
-> **An AI prompt engineering framework and web application that generates 12-page children's coloring books (ages 4-9) teaching technical skills, instilling Christian virtues, enforcing copyright archetype protection, embedding seek-and-find mazes, and building towards a cumulative 12-issue annual master project.**
+> **An AI prompt engineering framework, web application, and autonomous agent loop runner that generates 12-page children's coloring books (ages 4-9) teaching technical skills, instilling Christian virtues, enforcing copyright archetype protection, embedding seek-and-find mazes, and building towards a cumulative 12-issue annual master project.**
+
+---
+
+## 🤖 Autonomous Agent Loop Runner (`agentLoop.js`)
+
+Run continuous, autonomous generation loops that observe topic queues, run copyright sanitization, sequence 12-issue annual series, and export printable HTML/PDF packages automatically.
+
+### Running via CLI
+```bash
+# Run the autonomous agent loop from terminal
+npm run agent
+```
+
+### Running via Web UI Controller
+Navigate to the **🤖 Agent Loop** tab in the web interface to configure topic task queues, start/step/pause execution, and view real-time console log feeds.
 
 ---
 
@@ -64,6 +79,9 @@ npm install
 # Start local development server
 npm run dev
 
+# Run autonomous agent loop
+npm run agent
+
 # Build for production distribution
 npm run build
 ```
@@ -74,25 +92,23 @@ npm run build
 
 ```
 virtue-tech-coloring-books/
-├── index.html                  # Main application UI layout & Master Arc tab
+├── index.html                  # Main application UI & Agent Controller
 ├── package.json                # Dependencies and npm scripts
 ├── README.md                   # Project documentation
 ├── LICENSE                     # MIT Open Source License
 ├── .gitignore                  # Git ignore rules
+├── output/books/               # Agent loop exported JSON & HTML packages
 └── src/
-    ├── style.css               # Design system, blueprint styles & print layout
-    ├── app.js                  # Issue selector, master arc tracker & arcade
+    ├── style.css               # Design system & console styling
+    ├── app.js                  # Issue selector, master arc & agent UI
+    ├── agent/
+        ├── agentCore.js        # Browser & Node agent execution loop
+        └── agentLoop.js        # CLI runner & file exporter
     └── engine/
         ├── systemPrompts.js    # Layered system instructions & 12-issue master arc
         ├── coloringBookGenerator.js # 12-page sequence generator
         └── lineArtRenderer.js  # Vector SVG line art, mazes & blueprint renderer
 ```
-
----
-
-## 🖨️ PDF & Print Export
-
-The application includes `@media print` styling. Clicking **🖨️ Print Issue / PDF** formats all 12 pages into full-page printable black & white coloring and activity sheets suitable for physical binding or classroom distribution.
 
 ---
 
