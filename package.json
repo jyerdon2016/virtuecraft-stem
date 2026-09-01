@@ -1,0 +1,28 @@
+{
+  "name": "virtue-tech-coloring-books",
+  "private": false,
+  "version": "1.0.0",
+  "description": "AI engine and web application that generates technical skill coloring books instilling Christian virtues, copyright sanitization, and seek-and-find directives.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "coloring-book",
+    "ai",
+    "llm-prompts",
+    "stem",
+    "virtues",
+    "seek-and-find",
+    "copyright-sanitization",
+    "christian-values",
+    "kids-education"
+  ],
+  "author": "Antigravity Open Source Initiative",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtueTech AI - Technical Skill & Virtue Coloring Book Generator</title>
+  <meta name="description" content="Generate 10-12 page children's coloring books that teach STEM skills, instill Christian virtues, enforce copyright protection via archetypes, and embed hidden seek-and-find shapes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="theme-light">
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-icon">🎨</div>
+        <div class="brand-text">
+          <h1>VirtueTech AI</h1>
+          <span class="tagline">Technical Skills • Christian Virtues • Seek & Find Line Art</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <button class="nav-btn active" data-tab="studio">🎨 Book Studio</button>
+        <button class="nav-btn" data-tab="prompt-matrix">⚡ Prompt Matrix</button>
+        <button class="nav-btn" data-tab="sanitizer">🛡️ Copyright Sanitizer</button>
+        <button class="nav-btn" data-tab="arcade">🔍 Seek-and-Find Game</button>
+      </nav>
+
+      <div class="header-actions">
+        <button id="print-book-btn" class="btn btn-secondary">🖨️ Print Book / PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="app-main">
+
+    <!-- TAB 1: BOOK STUDIO -->
+    <section id="tab-studio" class="tab-content active">
+      <div class="hero-section">
+        <h2>Generate a 10-12 Page Technical & Virtue Coloring Book</h2>
+        <p>Enter any technical skill or topic below. The AI prompt engine will sequence 10-12 child-friendly visual steps, assign core Christian virtues, enforce copyright archetype protection, and weave hidden seek-and-find shapes into black & white line art.</p>
+      </div>
+
+      <!-- Book Generator Form -->
+      <div class="generator-card glass-panel">
+        <div class="form-row">
+          <div class="form-group flex-2">
+            <label for="book-topic">Technical Skill or Topic:</label>
+            <input type="text" id="book-topic" placeholder="e.g., How to Build a Robot, How Solar Power Works, How 3D Printing Works" value="How to Build a Robot">
+          </div>
+
+          <div class="form-group flex-1">
+            <label for="book-age">Target Age Group:</label>
+            <select id="book-age">
+              <option value="4-7 years">Ages 4-7 (Simple Lines)</option>
+              <option value="6-12 years" selected>Ages 6-12 (Detailed STEM)</option>
+              <option value="10+ years">Ages 10+ (Advanced Electronics)</option>
+            </select>
+          </div>
+
+          <div class="form-group flex-1">
+            <label for="book-virtue">Primary Virtue Focus:</label>
+            <select id="book-virtue">
+              <option value="">Auto-Assign Virtues (All 10)</option>
+              <option value="Patience">Patience</option>
+              <option value="Love">Love</option>
+              <option value="Joy">Joy</option>
+              <option value="Peace">Peace</option>
+              <option value="Kindness">Kindness</option>
+              <option value="Goodness">Goodness</option>
+              <option value="Faithfulness">Faithfulness</option>
+              <option value="Gentleness">Gentleness</option>
+              <option value="Self-Control">Self-Control</option>
+              <option value="Forgiveness">Forgiveness</option>
+            </select>
+          </div>
+
+          <div class="form-group flex-0">
+            <label>&nbsp;</label>
+            <button id="generate-book-btn" class="btn btn-primary btn-large">🚀 Generate Full Book</button>
+          </div>
+        </div>
+
+        <!-- Quick Presets -->
+        <div class="preset-pills">
+          <span class="preset-label">Quick Presets:</span>
+          <button class="pill-btn" data-preset="robotics">🤖 How to Build a Robot</button>
+          <button class="pill-btn" data-preset="solar">☀️ How Solar Panels Work</button>
+          <button class="pill-btn" data-preset="coding">💻 How Computer Coding Works</button>
+          <button class="pill-btn" data-preset="water">💧 How Water Filtration Works</button>
+        </div>
+      </div>
+
+      <!-- Generated Book Overview Header -->
+      <div id="book-summary-banner" class="summary-banner glass-panel">
+        <div class="summary-info">
+          <h3 id="book-title-display">How to Build a Robot</h3>
+          <p id="book-subtitle-display">A Kid's Guide to Circuits, Sensors, and Kindness</p>
+          <div class="summary-meta">
+            <span class="badge badge-blue">12 Visual Steps</span>
+            <span class="badge badge-green">10 Virtues Integrated</span>
+            <span class="badge badge-purple">Copyright Sanitized</span>
+            <span class="badge badge-gold">Seek & Find Active</span>
+          </div>
+        </div>
+
+        <div class="summary-actions">
+          <button id="view-matrix-btn" class="btn btn-outline">📋 View Prompt Matrix</button>
+        </div>
+      </div>
+
+      <!-- 10-12 Page Sequential Narrative Grid -->
+      <div id="pages-container" class="pages-grid">
+        <!-- Page Cards dynamically injected here -->
+      </div>
+    </section>
+
+    <!-- TAB 2: PROMPT MATRIX -->
+    <section id="tab-prompt-matrix" class="tab-content">
+      <div class="hero-section">
+        <h2>Backend LLM System Instructions & Image Prompt Matrix</h2>
+        <p>Inspect the layered system prompt rules, copyright translation guidelines, virtue taxonomy, and exact image generation prompt strings produced for backend LLMs (Gemini, Midjourney, DALL-E 3, Stable Diffusion).</p>
+      </div>
+
+      <div class="prompt-matrix-grid">
+        <div class="card glass-panel">
+          <h3>📜 System Rules & Directive Layer</h3>
+          <div class="code-block">
+            <pre id="system-rules-text"></pre>
+          </div>
+        </div>
+
+        <div class="card glass-panel">
+          <h3>🖼️ Live Generated Prompt Matrix</h3>
+          <div id="matrix-table-container" class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Page</th>
+                  <th>Skill Step</th>
+                  <th>Virtue</th>
+                  <th>Seek & Find Directive</th>
+                  <th>Backend Image Generator Prompt String</th>
+                </tr>
+              </thead>
+              <tbody id="matrix-table-body">
+                <!-- Rows injected dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: COPYRIGHT SANITIZER -->
+    <section id="tab-sanitizer" class="tab-content">
+      <div class="hero-section">
+        <h2>Copyright Archetype Protection Engine</h2>
+        <p>Test the real-time copyright translation engine that automatically intercepts protected intellectual property names (e.g., Paw Patrol, My Little Pony, Transformers) and transforms them into copyright-safe generic archetypes.</p>
+      </div>
+
+      <div class="sanitizer-grid">
+        <div class="card glass-panel">
+          <h3>Input Raw Scene Description:</h3>
+          <textarea id="sanitizer-input" rows="4" placeholder="Enter scene text with character names, e.g. 'A scene showing Paw Patrol and My Little Pony fixing a Lego robot together.'">A team of heroic Paw Patrol pups and My Little Pony characters building an Iron Man armor made of Lego bricks.</textarea>
+          <button id="run-sanitizer-btn" class="btn btn-primary mt-3">🛡️ Sanitize Prompt</button>
+
+          <div class="sanitizer-result mt-4">
+            <h4>Sanitized Output (Copyright-Safe):</h4>
+            <div id="sanitizer-output" class="output-box"></div>
+          </div>
+        </div>
+
+        <div class="card glass-panel">
+          <h3>Built-in IP Translation Mapping Table</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Protected IP</th>
+                <th>Copyright-Safe Archetype</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody id="ip-mapping-body">
+              <!-- Mappings injected dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: SEEK AND FIND GAME ARCADE -->
+    <section id="tab-arcade" class="tab-content">
+      <div class="hero-section">
+        <h2>Interactive Seek-and-Find Coloring Canvas</h2>
+        <p>Test the interactive line art canvas! Find and click the hidden Christian virtue shapes embedded in the background elements of each page.</p>
+      </div>
+
+      <div class="arcade-container">
+        <div class="arcade-sidebar glass-panel">
+          <h3>Select Page:</h3>
+          <div id="arcade-page-list" class="page-select-list">
+            <!-- Page Selector Buttons -->
+          </div>
+
+          <div class="score-card mt-4">
+            <h4>Shapes Found:</h4>
+            <div class="score-display"><span id="found-count">0</span> / <span id="total-count">3</span></div>
+            <p id="game-status" class="status-text">Click the hidden shapes in the line art to find them!</p>
+          </div>
+        </div>
+
+        <div class="arcade-stage glass-panel">
+          <div id="svg-canvas-wrapper" class="canvas-wrapper">
+            <!-- Interactive SVG page rendered here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>VirtueTech AI Open Source Project • Dedicated to teaching technical skills & instilling Christian virtues.</p>
+  </footer>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
