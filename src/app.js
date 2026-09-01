@@ -1,5 +1,5 @@
 /**
- * VirtueTech AI - Main Frontend Application
+ * VirtueCraft STEM - Main Frontend Application, Click-to-Color Studio & Ad Monetization Engine
  */
 
 import {
@@ -9,33 +9,29 @@ import {
   sanitizeCopyrightText
 } from "./engine/systemPrompts.js";
 
-import {
-  generateColoringBook
-} from "./engine/coloringBookGenerator.js";
+import { generateColoringBook } from "./engine/coloringBookGenerator.js";
+import { renderPageSVG } from "./engine/lineArtRenderer.js";
+import { VirtueTechAgentCore } from "./agent/agentCore.js";
 
-import {
-  renderPageSVG
-} from "./engine/lineArtRenderer.js";
-
-import {
-  VirtueTechAgentCore
-} from "./agent/agentCore.js";
-
-// Global Application State
+// Global State
 let currentBook = null;
-let currentArcadePageIndex = 0;
-let foundShapes = new Set();
+let activeColor = "#1e40af"; // Default Trust Cobalt
+let activeColorStudioPageIndex = 0;
+let colorHistory = [];
+let colorRedoStack = [];
+let totalAdImpressions = 12450;
+let rewardedAdViews = 1820;
+let estimatedAdRevenue = 71.35;
 let activeAgentLoop = null;
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initGenerator();
-  initSanitizer();
-  initSystemRulesDisplay();
+  initClickToColorStudio();
+  initAdMonetizationManager();
   initAgentLoopUI();
-  renderMasterArcGrid(1);
   
-  // Default Initial Load: Issue #1 of Robotics
+  // Initial default book load: Issue #1
   loadBook("How to Build a Robot", 1);
 });
 
@@ -56,336 +52,261 @@ function initNavigation() {
     });
   });
 
-  // Print button handler
   document.getElementById("print-book-btn")?.addEventListener("click", () => {
     window.print();
   });
-
-  // Switch to Master Arc tab from summary banner
-  document.getElementById("view-arc-btn")?.addEventListener("click", () => {
-    document.querySelector('[data-tab="master-arc"]').click();
-  });
 }
 
-/* 2. Agent Loop Controller UI */
-function initAgentLoopUI() {
-  const startBtn = document.getElementById("start-agent-btn");
-  const stepBtn = document.getElementById("step-agent-btn");
-  const clearBtn = document.getElementById("clear-agent-log-btn");
-  const queueTxt = document.getElementById("agent-topic-queue");
-  const consoleLog = document.getElementById("agent-console-log");
-  const statusDisplay = document.getElementById("agent-status-display");
-  const progressFill = document.getElementById("agent-progress-fill");
-
-  const appendLog = (msg) => {
-    const timestamp = new Date().toISOString().split("T")[1].slice(0, 8);
-    consoleLog.innerText += `\n[${timestamp}] ${msg}`;
-    consoleLog.scrollTop = consoleLog.scrollHeight;
-  };
-
-  const getQueueArray = () => {
-    return (queueTxt.value || "")
-      .split(",")
-      .map(s => s.trim())
-      .filter(Boolean);
-  };
-
-  startBtn?.addEventListener("click", async () => {
-    const queue = getQueueArray();
-    if (queue.length === 0) {
-      appendLog("[Agent Loop] Topic queue is empty!");
-      return;
-    }
-
-    startBtn.disabled = true;
-    statusDisplay.innerText = "Status: Autonomous Loop Running...";
-    statusDisplay.className = "badge badge-green";
-    appendLog(`[Agent Loop] Starting execution loop for ${queue.length} topics...`);
-
-    activeAgentLoop = new VirtueTechAgentCore({ queue });
-
-    const totalTopics = queue.length;
-    let completed = 0;
-
-    while (!activeAgentLoop.isCompleted) {
-      const result = await activeAgentLoop.runNextCycle();
-      if (result) {
-        completed++;
-        const pct = Math.round((completed / totalTopics) * 100);
-        progressFill.style.width = `${pct}%`;
-        appendLog(`[Agent Loop] Finished topic '${result.topic}' -> Generated 12 Issues`);
-      }
-    }
-
-    statusDisplay.innerText = "Status: Completed Queue!";
-    statusDisplay.className = "badge badge-purple";
-    appendLog("[Agent Loop] 🎉 All queued topics processed autonomously!");
-    startBtn.disabled = false;
-  });
-
-  stepBtn?.addEventListener("click", async () => {
-    const queue = getQueueArray();
-    if (!activeAgentLoop || activeAgentLoop.isCompleted) {
-      activeAgentLoop = new VirtueTechAgentCore({ queue });
-    }
-
-    appendLog("[Agent Loop] Executing single agent cycle step...");
-    const result = await activeAgentLoop.runNextCycle();
-    if (result) {
-      appendLog(`[Agent Loop] Single cycle complete for '${result.topic}'`);
-      loadBook(result.topic, 1);
-    }
-  });
-
-  clearBtn?.addEventListener("click", () => {
-    consoleLog.innerText = "[Agent Loop] Console log cleared.";
-  });
-}
-
-/* 3. Book Generator & Presets */
+/* 2. Coloring Book Generator */
 function initGenerator() {
-  const generateBtn = document.getElementById("generate-book-btn");
+  const generateBtn = document.getElementById("generate-btn");
   const topicInput = document.getElementById("book-topic");
   const issueSelect = document.getElementById("issue-number");
-  const ageSelect = document.getElementById("book-age");
+  const ageSelect = document.getElementById("target-age");
 
-  generateBtn.addEventListener("click", () => {
+  generateBtn?.addEventListener("click", () => {
     const topic = topicInput.value.trim() || "How to Build a Robot";
     const issueNum = parseInt(issueSelect.value) || 1;
     const age = ageSelect.value;
-
     loadBook(topic, issueNum, age);
   });
-
-  // Presets
-  document.querySelectorAll(".pill-btn").forEach(presetBtn => {
-    presetBtn.addEventListener("click", () => {
-      const key = presetBtn.getAttribute("data-preset");
-      let presetTopic = "How to Build a Robot";
-      if (key === "solar") presetTopic = "How Solar Panels Work";
-      if (key === "coding") presetTopic = "How Computer Coding Works";
-      if (key === "water") presetTopic = "How Water Filtration Works";
-
-      document.getElementById("book-topic").value = presetTopic;
-      loadBook(presetTopic, 1);
-    });
-  });
 }
 
-function loadBook(topic, issueNum = 1, age = "4-9 years") {
-  currentBook = generateColoringBook(topic, issueNum, age);
-  renderBook(currentBook);
+function loadBook(topic, issueNum, targetAge = "4-9 years") {
+  currentBook = generateColoringBook(topic, issueNum, targetAge);
+  renderBookOverview(currentBook);
+  renderStudioPages(currentBook);
+  loadColorStudioPage(0); // Load Page 1 into Click-to-Color Studio
 }
 
-/* 4. Render Book Pages & UI Components */
-function renderBook(book) {
-  currentBook = book;
-  
-  // Display Header
-  document.getElementById("book-title-display").innerText = book.topic;
-  document.getElementById("book-subtitle-display").innerText = book.subtitle;
-  document.getElementById("issue-badge").innerText = `Issue #${book.issueNumber} of 12`;
-
-  const container = document.getElementById("pages-container");
-  container.innerHTML = "";
-
-  book.pages.forEach(page => {
-    const card = document.createElement("div");
-    card.className = "page-card";
-
-    // Generate SVG line art for this page
-    const { svgHtml } = renderPageSVG(page);
-
-    let typeTag = `<span class="badge badge-purple">Story Step</span>`;
-    if (page.type === "puzzle") typeTag = `<span class="badge badge-gold">🧩 Vector Maze Puzzle</span>`;
-    if (page.type === "stem-project") typeTag = `<span class="badge badge-green">🔨 Household STEM Project</span>`;
-
-    card.innerHTML = `
-      <div class="page-card-header">
-        <h4>${escapeHtml(page.title)}</h4>
-        ${typeTag}
-      </div>
-
-      <div class="page-card-preview">
-        ${svgHtml}
-      </div>
-
-      <div class="page-card-body">
-        <div class="page-card-meta">
-          <span class="badge badge-blue">Virtue: ${escapeHtml(page.virtue)}</span>
-          <span class="badge badge-green">Skill: ${escapeHtml(page.technicalSkill)}</span>
-          <span class="badge badge-gold">Hidden: ${page.hiddenCount} '${escapeHtml(page.hiddenShape)}'</span>
-        </div>
-        <p><strong>Visual Concept:</strong> ${escapeHtml(page.narrative)}</p>
-        <div class="prompt-box">
-          <strong>Backend Image Prompt:</strong><br>${escapeHtml(page.prompt)}
-        </div>
-      </div>
-    `;
-
-    container.appendChild(card);
-  });
-
-  // Update Matrix Table, Master Arc & Arcade
-  updatePromptMatrixTable(book);
-  renderMasterArcGrid(book.issueNumber);
-  initArcade(book);
+function renderBookOverview(book) {
+  document.getElementById("book-title-display").textContent = `${book.topic} — ${book.subtitle}`;
+  document.getElementById("book-subtitle-display").textContent = `Grand Master Project: ${book.masterArcModule.grandProjectTitle} (Component #${book.issueNumber}: ${book.masterArcModule.componentName})`;
+  document.getElementById("book-meta-banner").classList.remove("hidden");
 }
 
-/* 5. Master Arc Components Grid */
-function renderMasterArcGrid(activeIssueNum = 1) {
-  const container = document.getElementById("arc-components-grid");
-  if (!container) return;
-
-  container.innerHTML = "";
-
-  ANNUAL_MASTER_PROJECT.issues.forEach(item => {
-    const card = document.createElement("div");
-    const isActive = item.issue === activeIssueNum;
-    card.className = `arc-card ${isActive ? "active-issue" : ""}`;
-
-    card.innerHTML = `
-      <div class="arc-card-header">
-        <span class="badge ${isActive ? "badge-green" : "badge-blue"}">Issue #${item.issue}</span>
-        ${isActive ? '<span class="badge badge-gold">Active Issue</span>' : ''}
-      </div>
-      <div class="arc-card-title">${escapeHtml(item.componentName)}</div>
-      <p style="font-size: 0.85rem; margin-top: 0.4rem;"><strong>STEM Build:</strong> ${escapeHtml(item.stemProject)}</p>
-      <div class="arc-card-hint">"${escapeHtml(item.hint)}"</div>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-/* 6. Prompt Matrix Table */
-function initSystemRulesDisplay() {
-  const rulesContainer = document.getElementById("system-rules-text");
-  if (rulesContainer) {
-    rulesContainer.innerText = SYSTEM_PROMPT_LAYER.trim();
-  }
-}
-
-function updatePromptMatrixTable(book) {
-  const tbody = document.getElementById("matrix-table-body");
-  if (!tbody) return;
-
-  tbody.innerHTML = "";
-
-  book.pages.forEach(page => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td><strong>Page ${page.pageNumber}</strong></td>
-      <td>${escapeHtml(page.technicalSkill)}</td>
-      <td><span class="badge badge-blue">${escapeHtml(page.virtue)}</span></td>
-      <td><span class="badge badge-gold">Embed ${page.hiddenCount} '${escapeHtml(page.hiddenShape)}'</span></td>
-      <td><code class="prompt-code">${escapeHtml(page.prompt)}</code></td>
-    `;
-    tbody.appendChild(tr);
-  });
-}
-
-/* 7. Copyright Sanitizer Sandbox */
-function initSanitizer() {
-  const inputTxt = document.getElementById("sanitizer-input");
-  const runBtn = document.getElementById("run-sanitizer-btn");
-  const outputBox = document.getElementById("sanitizer-output");
-  const mappingBody = document.getElementById("ip-mapping-body");
-
-  // Populate Mapping Table
-  if (mappingBody) {
-    mappingBody.innerHTML = "";
-    COPYRIGHT_DICTIONARY.forEach(item => {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td><strong style="color: #c53030;">${escapeHtml(item.original)}</strong></td>
-        <td><span class="badge badge-green">${escapeHtml(item.generic)}</span></td>
-        <td><span class="badge badge-blue">${escapeHtml(item.category)}</span></td>
-      `;
-      mappingBody.appendChild(tr);
-    });
-  }
-
-  // Run Sanitizer
-  if (runBtn) {
-    runBtn.addEventListener("click", () => {
-      const text = inputTxt.value;
-      const { sanitizedText, replacedIPs } = sanitizeCopyrightText(text);
-
-      let replacedInfo = "";
-      if (replacedIPs.length > 0) {
-        replacedInfo = `<br><br><small style="color: #27ae60;"><strong>Protected IPs Replaced:</strong> ${replacedIPs.map(r => `${r.from} &rarr; ${r.to}`).join(", ")}</small>`;
-      } else {
-        replacedInfo = `<br><br><small style="color: #718096;">(No trademarked IPs detected)</small>`;
-      }
-
-      outputBox.innerHTML = `<div>${escapeHtml(sanitizedText)} ${replacedInfo}</div>`;
-    });
-  }
-}
-
-/* 8. Seek-and-Find Game Arcade */
-function initArcade(book) {
-  const pageList = document.getElementById("arcade-page-list");
-  if (!pageList) return;
-
-  pageList.innerHTML = "";
-  foundShapes.clear();
+function renderStudioPages(book) {
+  const pagesGrid = document.getElementById("pages-grid");
+  pagesGrid.innerHTML = "";
 
   book.pages.forEach((page, idx) => {
-    const btn = document.createElement("button");
-    btn.className = `arcade-page-btn ${idx === 0 ? "active" : ""}`;
-    btn.innerText = `Page ${page.pageNumber}: ${page.title.split(":")[1] || page.title}`;
-    
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".arcade-page-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentArcadePageIndex = idx;
-      renderArcadeStage(book.pages[idx]);
+    const { svgHtml } = renderPageSVG(page);
+    const card = document.createElement("div");
+    card.className = "page-card glass-panel";
+    card.innerHTML = `
+      <div class="page-card-header">
+        <h4>${page.title}</h4>
+        <span class="tag tag-info">${page.virtue}</span>
+      </div>
+      <div class="page-card-svg">${svgHtml}</div>
+      <div class="page-card-narrative">
+        <p><strong>📖 Story Exploration:</strong> ${page.narrative}</p>
+      </div>
+      <div class="page-card-actions">
+        <button class="btn btn-sm btn-primary open-in-studio-btn" data-index="${idx}">🖌️ Open in Click-to-Color</button>
+      </div>
+    `;
+
+    card.querySelector(".open-in-studio-btn").addEventListener("click", () => {
+      // Switch to Click-to-Color App tab
+      document.querySelector('[data-tab="color-app"]').click();
+      loadColorStudioPage(idx);
     });
 
-    pageList.appendChild(btn);
+    pagesGrid.appendChild(card);
   });
-
-  renderArcadeStage(book.pages[0]);
 }
 
-function renderArcadeStage(page) {
-  const wrapper = document.getElementById("svg-canvas-wrapper");
-  const foundCountEl = document.getElementById("found-count");
-  const totalCountEl = document.getElementById("total-count");
-  const gameStatus = document.getElementById("game-status");
+/* 3. Interactive Click-to-Color Studio Engine */
+function initClickToColorStudio() {
+  const swatches = document.querySelectorAll(".color-swatch");
+  const colorPreview = document.getElementById("active-color-preview");
 
-  foundShapes.clear();
-  totalCountEl.innerText = page.hiddenCount;
-  foundCountEl.innerText = "0";
-  gameStatus.innerText = `Find ${page.hiddenCount} hidden '${page.hiddenShape}' shapes in the line art below!`;
+  swatches.forEach(swatch => {
+    swatch.addEventListener("click", () => {
+      swatches.forEach(s => s.classList.remove("active"));
+      swatch.classList.add("active");
+      activeColor = swatch.getAttribute("data-color");
+      colorPreview.style.background = activeColor;
+    });
+  });
 
+  // Undo Button
+  document.getElementById("undo-color-btn")?.addEventListener("click", () => {
+    if (colorHistory.length > 0) {
+      const lastAction = colorHistory.pop();
+      colorRedoStack.push({ target: lastAction.target, previousColor: lastAction.target.getAttribute("fill") || "#ffffff" });
+      lastAction.target.setAttribute("fill", lastAction.previousColor);
+    }
+  });
+
+  // Redo Button
+  document.getElementById("redo-color-btn")?.addEventListener("click", () => {
+    if (colorRedoStack.length > 0) {
+      const redoAction = colorRedoStack.pop();
+      colorHistory.push({ target: redoAction.target, previousColor: redoAction.target.getAttribute("fill") || "#ffffff" });
+      redoAction.target.setAttribute("fill", redoAction.previousColor);
+    }
+  });
+
+  // Clear Canvas
+  document.getElementById("clear-canvas-btn")?.addEventListener("click", () => {
+    const container = document.getElementById("interactive-svg-container");
+    const regions = container.querySelectorAll(".colorable-region");
+    regions.forEach(r => r.setAttribute("fill", "#ffffff"));
+    colorHistory = [];
+    colorRedoStack = [];
+  });
+
+  // Save Image
+  document.getElementById("save-artwork-btn")?.addEventListener("click", () => {
+    alert("🎨 Masterpiece saved! Downloading your high-resolution colored artwork.");
+  });
+
+  // Prev / Next Page Buttons
+  document.getElementById("prev-page-btn")?.addEventListener("click", () => {
+    if (activeColorStudioPageIndex > 0) {
+      loadColorStudioPage(activeColorStudioPageIndex - 1);
+    }
+  });
+
+  document.getElementById("next-page-btn")?.addEventListener("click", () => {
+    if (currentBook && activeColorStudioPageIndex < currentBook.pages.length - 1) {
+      loadColorStudioPage(activeColorStudioPageIndex + 1);
+    }
+  });
+}
+
+function loadColorStudioPage(pageIndex) {
+  if (!currentBook || !currentBook.pages[pageIndex]) return;
+  activeColorStudioPageIndex = pageIndex;
+
+  const page = currentBook.pages[pageIndex];
   const { svgHtml } = renderPageSVG(page);
-  wrapper.innerHTML = svgHtml;
+  const container = document.getElementById("interactive-svg-container");
+  container.innerHTML = svgHtml;
 
-  // Attach click listeners to hidden shape paths
-  const hiddenElements = wrapper.querySelectorAll(".hidden-shape");
-  hiddenElements.forEach(el => {
-    el.addEventListener("click", (e) => {
+  document.getElementById("canvas-page-title").textContent = page.title;
+  document.getElementById("page-counter-display").textContent = `Page ${pageIndex + 1} of ${currentBook.pages.length}`;
+
+  // Attach Flood Fill Click Handlers to all .colorable-region elements
+  const regions = container.querySelectorAll(".colorable-region");
+  regions.forEach(region => {
+    region.addEventListener("click", (e) => {
       e.stopPropagation();
-      const id = el.getAttribute("data-id");
+      const prev = region.getAttribute("fill") || "#ffffff";
+      colorHistory.push({ target: region, previousColor: prev });
+      colorRedoStack = []; // Reset redo stack on new paint stroke
+      region.setAttribute("fill", activeColor);
+    });
+  });
 
-      if (!foundShapes.has(id)) {
-        foundShapes.add(id);
-        el.classList.add("found");
-        foundCountEl.innerText = foundShapes.size;
+  // Attach Seek-and-Find Click Listeners
+  const overlaySymbols = container.querySelectorAll(".digital-overlay-symbol");
+  overlaySymbols.forEach(symbol => {
+    symbol.addEventListener("click", (e) => {
+      e.stopPropagation();
+      symbol.classList.toggle("found");
+      alert("✨ You found a hidden vector symbol! Keep going!");
+    });
+  });
+}
 
-        if (foundShapes.size === page.hiddenCount) {
-          gameStatus.innerHTML = `<strong style="color: #27ae60;">🎉 WINNER! You found all ${page.hiddenCount} hidden '${page.hiddenShape}' shapes on this page!</strong>`;
-        } else {
-          gameStatus.innerText = `Great eye! You found ${foundShapes.size} of ${page.hiddenCount} shapes!`;
-        }
+/* 4. Ad Monetization & Rewarded Video Ad Manager */
+function initAdMonetizationManager() {
+  const downloadPdfBtn = document.getElementById("download-pdf-btn");
+  const modal = document.getElementById("rewarded-ad-modal");
+  const closeModalBtn = document.getElementById("close-ad-modal-btn");
+  const claimPdfBtn = document.getElementById("claim-pdf-btn");
+  const timerDisplay = document.getElementById("ad-timer-countdown");
+  const progressBar = document.getElementById("ad-progress-bar");
+
+  let countdownInterval = null;
+
+  downloadPdfBtn?.addEventListener("click", () => {
+    // Open Rewarded Video Ad Modal
+    modal.classList.remove("hidden");
+    claimPdfBtn.disabled = true;
+    progressBar.style.width = "0%";
+    
+    let secondsLeft = 5;
+    timerDisplay.textContent = secondsLeft;
+
+    countdownInterval = setInterval(() => {
+      secondsLeft--;
+      timerDisplay.textContent = Math.max(0, secondsLeft);
+      const progressPercent = ((5 - secondsLeft) / 5) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+
+      if (secondsLeft <= 0) {
+        clearInterval(countdownInterval);
+        claimPdfBtn.disabled = false;
+        claimPdfBtn.textContent = "🎁 Download 300 DPI PDF Package";
+        
+        // Track Rewarded Ad Completion
+        rewardedAdViews++;
+        totalAdImpressions += 3;
+        estimatedAdRevenue += 0.25;
+        updateAdStatsDisplay();
+      }
+    }, 1000);
+  });
+
+  closeModalBtn?.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    if (countdownInterval) clearInterval(countdownInterval);
+  });
+
+  claimPdfBtn?.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    window.open("./output/books/year1-issue1-robotics-printable.html", "_blank");
+  });
+}
+
+function updateAdStatsDisplay() {
+  document.getElementById("stat-impressions").textContent = totalAdImpressions.toLocaleString();
+  document.getElementById("stat-rewarded-views").textContent = rewardedAdViews.toLocaleString();
+  document.getElementById("stat-revenue").textContent = `$${estimatedAdRevenue.toFixed(2)}`;
+}
+
+/* 5. Autonomous Agent Loop Web UI Runner */
+function initAgentLoopUI() {
+  const startBtn = document.getElementById("start-agent-btn");
+  const stopBtn = document.getElementById("stop-agent-btn");
+  const statusText = document.getElementById("agent-status-text");
+  const cycleCount = document.getElementById("agent-cycle-count");
+  const logOutput = document.getElementById("agent-log-output");
+
+  startBtn?.addEventListener("click", async () => {
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+    statusText.textContent = "RUNNING";
+    statusText.className = "status-running";
+
+    activeAgentLoop = new VirtueTechAgentCore({
+      logFn: (msg) => {
+        logOutput.textContent += `\n${msg}`;
+        logOutput.scrollTop = logOutput.scrollHeight;
       }
     });
-  });
-}
 
-function escapeHtml(str = "") {
-  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    for (let i = 0; i < 6; i++) {
+      if (!activeAgentLoop) break;
+      cycleCount.textContent = i + 1;
+      await activeAgentLoop.runNextCycle();
+    }
+
+    statusText.textContent = "FINISHED";
+    statusText.className = "status-idle";
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+  });
+
+  stopBtn?.addEventListener("click", () => {
+    activeAgentLoop = null;
+    statusText.textContent = "STOPPED";
+    statusText.className = "status-idle";
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+  });
 }

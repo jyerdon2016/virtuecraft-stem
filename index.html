@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VirtueCraft STEM - Christian Virtues, Real STEM Skills & Seek-and-Find Mazes</title>
-  <meta name="description" content="VirtueCraft STEM generates 12-page children's coloring books (ages 4-9) that teach STEM skills, Christian virtues, copyright protection, seek-and-find mazes, and cumulative annual master build projects. Scale-engineered for 1,000,000 sales.">
-  <meta name="keywords" content="Christian STEM coloring book, VirtueCraft STEM, homeschool STEM curriculum, Christian activity books for kids, seek and find mazes, STEM robotics coloring book">
+  <title>VirtueCraft STEM - Click-to-Color Interactive Studio & Ad Monetization Platform</title>
+  <meta name="description" content="VirtueCraft STEM generates interactive click-to-color 12-page children's activity books (ages 4-9) that teach STEM skills, Christian virtues, copyright protection, seek-and-find mazes, and cumulative master projects. Monetized via AdSense & Rewarded Ads.">
+  <meta name="keywords" content="Click to color web app, Christian STEM coloring book, VirtueCraft STEM, homeschool activity web app, seek and find mazes, ad monetized kids app">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -19,28 +19,46 @@
         <div class="brand-icon">🎨</div>
         <div class="brand-text">
           <h1>VirtueCraft STEM</h1>
-          <span class="tagline">Christian Virtues • Real STEM Skills • Seek & Find Mazes (Ages 4-9)</span>
+          <span class="tagline">Interactive Click-to-Color • STEM Skills • Christian Virtues • Ad Monetized</span>
         </div>
       </div>
 
       <nav class="nav-links">
         <button class="nav-btn active" data-tab="studio">🎨 Book Studio</button>
+        <button class="nav-btn" data-tab="color-app">🖌️ Click-to-Color App</button>
+        <button class="nav-btn" data-tab="ad-monetization">💰 Ad Revenue Engine</button>
         <button class="nav-btn" data-tab="scale-strategy">📈 1M Scale Strategy</button>
         <button class="nav-btn" data-tab="agent-loop">🤖 Agent Loop</button>
         <button class="nav-btn" data-tab="master-arc">🏆 Master Build Arc</button>
         <button class="nav-btn" data-tab="prompt-matrix">⚡ Prompt Matrix</button>
-        <button class="nav-btn" data-tab="sanitizer">🛡️ Copyright Sanitizer</button>
-        <button class="nav-btn" data-tab="arcade">🔍 Seek & Find</button>
       </nav>
 
       <div class="header-actions">
-        <button id="print-book-btn" class="btn btn-secondary">🖨️ Print Issue / PDF</button>
+        <button id="download-pdf-btn" class="btn btn-primary">💎 Download PDF (Rewarded Ad)</button>
+        <button id="print-book-btn" class="btn btn-secondary">🖨️ Print Issue</button>
       </div>
     </div>
   </header>
 
   <!-- Main Content Container -->
   <main class="app-main">
+
+    <!-- TOP LEADERBOARD AD BANNER (728x90) -->
+    <div class="ad-leaderboard-bar">
+      <div class="ad-placeholder-container">
+        <span class="ad-badge">ADVERTISEMENT (Google AdSense 728x90 Leaderboard)</span>
+        <div class="ad-banner-mock">
+          <div class="ad-mock-content">
+            <span class="ad-sponsor-icon">🚀</span>
+            <div>
+              <strong>Build the Future with Christian STEM Academy!</strong>
+              <p>Get 50% Off Homeschool Engineering & Robotics Kits Today.</p>
+            </div>
+            <button class="btn btn-sm btn-gold">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- TAB 1: BOOK STUDIO -->
     <section id="tab-studio" class="tab-content active">
@@ -71,269 +89,255 @@
               <option value="9">Issue #9 (Component #9)</option>
               <option value="10">Issue #10 (Component #10)</option>
               <option value="11">Issue #11 (Component #11)</option>
-              <option value="12">Issue #12 (Grand Master Assembly!)</option>
+              <option value="12">Issue #12 (Grand Master Assembly)</option>
             </select>
           </div>
 
           <div class="form-group flex-1">
-            <label for="book-age">Target Age Group (4-9):</label>
-            <select id="book-age">
-              <option value="4-6 years">Ages 4-6 (Bold Lines & Crafts)</option>
-              <option value="4-9 years" selected>Ages 4-9 (Balanced STEM)</option>
-              <option value="7-9 years">Ages 7-9 (Advanced Mazes & Circuits)</option>
+            <label for="target-age">Age Audience:</label>
+            <select id="target-age">
+              <option value="4-9 years" selected>Ages 4-9 (Chunky Outlines)</option>
+              <option value="10-14 years">Ages 10-14 (Advanced Electronics)</option>
             </select>
           </div>
 
-          <div class="form-group flex-0">
-            <label>&nbsp;</label>
-            <button id="generate-book-btn" class="btn btn-primary btn-large">🚀 Generate Issue</button>
+          <div class="form-group button-group">
+            <button id="generate-btn" class="btn btn-primary btn-lg">✨ Generate Issue</button>
           </div>
-        </div>
-
-        <!-- Quick Presets -->
-        <div class="preset-pills">
-          <span class="preset-label">Quick Presets:</span>
-          <button class="pill-btn" data-preset="robotics">🤖 How to Build a Robot</button>
-          <button class="pill-btn" data-preset="solar">☀️ How Solar Panels Work</button>
-          <button class="pill-btn" data-preset="coding">💻 How Computer Coding Works</button>
-          <button class="pill-btn" data-preset="water">💧 How Water Filtration Works</button>
         </div>
       </div>
 
-      <!-- Generated Book Overview Header -->
-      <div id="book-summary-banner" class="summary-banner glass-panel">
-        <div class="summary-info">
-          <h3 id="book-title-display">How to Build a Robot</h3>
-          <p id="book-subtitle-display">Issue #1: A Children's Guide to Circuits & Kindness (Ages 4-9)</p>
-          <div class="summary-meta">
-            <span id="issue-badge" class="badge badge-purple">Issue #1 of 12</span>
-            <span class="badge badge-blue">10 Virtues Integrated</span>
-            <span class="badge badge-gold">Page 11: Vector Maze</span>
-            <span class="badge badge-teal">Page 12: Household STEM Project</span>
+      <!-- Generated Book Overview Banner -->
+      <div id="book-meta-banner" class="meta-card glass-panel hidden">
+        <div class="meta-header">
+          <h3 id="book-title-display">Issue #1: How to Build a Robot</h3>
+          <div class="meta-tags">
+            <span id="badge-sanitized" class="tag tag-success">Copyright Safe</span>
+            <span id="badge-virtues" class="tag tag-info">10 Virtues Integrated</span>
+            <span id="badge-master-arc" class="tag tag-warning">Master Clue #1 Included</span>
           </div>
         </div>
-
-        <div class="summary-actions">
-          <button id="view-arc-btn" class="btn btn-secondary">🏆 View Annual Master Arc</button>
-        </div>
+        <p id="book-subtitle-display" class="meta-subtitle"></p>
       </div>
 
-      <!-- 12 Page Sequential Narrative Grid -->
-      <div id="pages-container" class="pages-grid">
-        <!-- Page Cards dynamically injected here -->
+      <!-- 12-Page Grid Carousel -->
+      <div id="pages-grid" class="pages-grid">
+        <!-- Rendered by app.js -->
       </div>
     </section>
 
-    <!-- TAB 2: 1M SCALE STRATEGY -->
-    <section id="tab-scale-strategy" class="tab-content">
+    <!-- TAB 2: INTERACTIVE CLICK-TO-COLOR APP -->
+    <section id="tab-color-app" class="tab-content">
       <div class="hero-section">
-        <h2>📈 1,000,000 Sales Year 1 Scale Strategy & SEO Blueprint</h2>
-        <p>VirtueCraft STEM is engineered from brand identity to distribution funnels to achieve 1,000,000 sales in Year 1 across 4 diversified revenue channels.</p>
+        <h2>🖌️ Click-to-Color Digital Studio</h2>
+        <p>Pick a color from the vibrant palette below and click any closed shape on the canvas to fill it with color! Kids can paint digitally, find hidden shapes, undo mistakes, and save artwork.</p>
       </div>
 
-      <div class="scale-grid mb-4">
-        <div class="scale-card">
-          <div class="scale-card-title">Amazon KDP Print-on-Demand</div>
-          <div class="scale-metric">400,000</div>
-          <p>Paperback Books ($9.99/unit)</p>
-        </div>
-
-        <div class="scale-card">
-          <div class="scale-card-title">D2C Printable Subscriptions</div>
-          <div class="scale-metric">300,000</div>
-          <p>Digital Monthly Members ($4.99/mo)</p>
-        </div>
-
-        <div class="scale-card">
-          <div class="scale-card-title">Homeschool Co-Op Bundles</div>
-          <div class="scale-metric">200,000</div>
-          <p>Bulk Classroom Workbooks ($7.50/unit)</p>
-        </div>
-
-        <div class="scale-card">
-          <div class="scale-card-title">Church Sunday School Licensing</div>
-          <div class="scale-metric">100,000</div>
-          <p>Annual Site Licenses ($49.00/yr)</p>
-        </div>
-      </div>
-
-      <div class="card glass-panel">
-        <h3>🎨 CRO Marketing Color System Tokens</h3>
-        <p style="margin-bottom: 1rem;">Scientifically chosen colors for trust, STEM credibility, and high checkout conversion:</p>
-        <div class="summary-meta" style="font-size: 0.95rem;">
-          <span class="badge badge-blue" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Primary Trust Cobalt (#1E40AF)</span>
-          <span class="badge badge-teal" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Innovation Teal (#0D9488)</span>
-          <span class="badge badge-gold" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Conversion Gold (#D97706)</span>
-          <span class="badge" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #ffe4e6; color: #be123c;">Grace Crimson (#E11D48)</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 3: AGENT LOOP CONTROLLER -->
-    <section id="tab-agent-loop" class="tab-content">
-      <div class="hero-section">
-        <h2>🤖 Autonomous Agent Loop Controller</h2>
-        <p>Run continuous, automated loops that observe task queues, run copyright sanitization, synthesize 12-issue annual series, and export printable HTML/PDF packages autonomously.</p>
-      </div>
-
-      <div class="agent-grid">
-        <div class="card glass-panel">
-          <h3>⚡ Agent Loop Controls</h3>
-          <div class="form-group mt-3">
-            <label for="agent-topic-queue">Topic Task Queue (Comma Separated):</label>
-            <textarea id="agent-topic-queue" rows="3">How to Build a Robot, How Solar Panels Work, How Computer Coding Works, How Water Filtration Works</textarea>
+      <div class="color-studio-layout">
+        <!-- Left Side: Color Palette & Toolbar -->
+        <div class="color-studio-controls glass-panel">
+          <h3>🎨 Color Palette</h3>
+          <div class="palette-swatches" id="palette-swatches">
+            <div class="color-swatch active" data-color="#1e40af" style="background: #1e40af;" title="Trust Cobalt"></div>
+            <div class="color-swatch" data-color="#0d9488" style="background: #0d9488;" title="Innovation Teal"></div>
+            <div class="color-swatch" data-color="#e11d48" style="background: #e11d48;" title="Grace Crimson"></div>
+            <div class="color-swatch" data-color="#d97706" style="background: #d97706;" title="Solar Gold"></div>
+            <div class="color-swatch" data-color="#16a34a" style="background: #16a34a;" title="Spring Green"></div>
+            <div class="color-swatch" data-color="#9333ea" style="background: #9333ea;" title="Royal Purple"></div>
+            <div class="color-swatch" data-color="#ec4899" style="background: #ec4899;" title="Pastel Pink"></div>
+            <div class="color-swatch" data-color="#38bdf8" style="background: #38bdf8;" title="Sky Blue"></div>
+            <div class="color-swatch" data-color="#f97316" style="background: #f97316;" title="Bright Orange"></div>
+            <div class="color-swatch" data-color="#84cc16" style="background: #84cc16;" title="Lime Green"></div>
+            <div class="color-swatch" data-color="#ffffff" style="background: #ffffff; border: 2px solid #000;" title="Eraser (White)"></div>
           </div>
 
-          <div class="agent-action-bar mt-3">
-            <button id="start-agent-btn" class="btn btn-primary">▶️ Start Autonomous Agent Loop</button>
-            <button id="step-agent-btn" class="btn btn-outline">⏭️ Run 1 Agent Cycle</button>
-            <button id="clear-agent-log-btn" class="btn btn-outline">🧹 Clear Console Log</button>
+          <div class="active-color-indicator">
+            <span>Selected Color:</span>
+            <div id="active-color-preview" class="color-preview-box" style="background: #1e40af;"></div>
           </div>
 
-          <div class="agent-status-card mt-4">
-            <h4>Agent Execution Status:</h4>
-            <div id="agent-status-display" class="badge badge-purple mt-2" style="font-size: 1rem;">Status: Ready</div>
-            <div class="progress-bar mt-3">
-              <div id="agent-progress-fill" class="progress-fill" style="width: 0%;"></div>
+          <div class="studio-action-buttons">
+            <button id="undo-color-btn" class="btn btn-secondary">↩️ Undo</button>
+            <button id="redo-color-btn" class="btn btn-secondary">↪️ Redo</button>
+            <button id="clear-canvas-btn" class="btn btn-danger">🗑️ Clear Color</button>
+            <button id="save-artwork-btn" class="btn btn-success">💾 Save Image</button>
+          </div>
+
+          <!-- SIDEBAR AD RECTANGLE (300x250) -->
+          <div class="sidebar-ad-box">
+            <span class="ad-badge">SPONSORED AD (300x250)</span>
+            <div class="ad-rectangle-mock">
+              <h4>✝️ Bright Light Kids Bibles</h4>
+              <p>Illustrated STEM & Devotional Books for homeschool families!</p>
+              <button class="btn btn-sm btn-primary">Free Sample Chapter</button>
             </div>
           </div>
         </div>
 
-        <div class="card glass-panel">
-          <h3>🖥️ Real-Time Agent Execution Console</h3>
-          <div class="code-block mt-3">
-            <pre id="agent-console-log" style="height: 340px; overflow-y: auto;">[Agent Loop] System initialized and ready for autonomous batch processing...</pre>
+        <!-- Right Side: Interactive SVG Canvas -->
+        <div class="color-canvas-stage glass-panel">
+          <div class="canvas-header-bar">
+            <span id="canvas-page-title">Page 1: The Blueprint (Planning)</span>
+            <div class="canvas-page-nav">
+              <button id="prev-page-btn" class="btn btn-sm btn-secondary">◀ Prev</button>
+              <span id="page-counter-display">Page 1 of 12</span>
+              <button id="next-page-btn" class="btn btn-sm btn-secondary">Next ▶</button>
+            </div>
+          </div>
+
+          <div id="interactive-svg-container" class="svg-container-box">
+            <!-- Interactive SVG loaded by app.js -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TAB 4: ANNUAL MASTER BUILD ARC -->
+    <!-- TAB 3: AD MONETIZATION ENGINE -->
+    <section id="tab-ad-monetization" class="tab-content">
+      <div class="hero-section">
+        <h2>💰 Ad Monetization & Revenue Framework</h2>
+        <p>VirtueCraft STEM is built to generate steady recurring ad revenue through Google AdSense leaderboard banners, video rewarded ads for downloads, and affiliate partnerships.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">💵</div>
+          <div class="stat-value" id="stat-ecpm">$5.00</div>
+          <div class="stat-label">Estimated eCPM Rate</div>
+        </div>
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">👁️</div>
+          <div class="stat-value" id="stat-impressions">12,450</div>
+          <div class="stat-label">Total Ad Impressions</div>
+        </div>
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">🎬</div>
+          <div class="stat-value" id="stat-rewarded-views">1,820</div>
+          <div class="stat-label">Rewarded Video Views</div>
+        </div>
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">📈</div>
+          <div class="stat-value" id="stat-revenue">$71.35</div>
+          <div class="stat-label">Estimated Ad Earnings</div>
+        </div>
+      </div>
+
+      <div class="monetization-details-card glass-panel">
+        <h3>🚀 Ad Revenue Channels & Monetization Strategy</h3>
+        <ul class="monetization-list">
+          <li><strong>1. Header & Footer Leaderboard Banners (728x90):</strong> Displays family-friendly AdSense banners on top of the coloring app.</li>
+          <li><strong>2. Rewarded Video Ads for Downloads:</strong> When parents click "Download High-Res 300 DPI PDF" or "Unlock Year 1 Master Clue", a 15-second rewarded video ad plays, generating $15-$25 eCPM!</li>
+          <li><strong>3. In-App Sidebar Banners (300x250):</strong> Positioned beside the color palette for maximum click-through rate (CTR).</li>
+          <li><strong>4. Ad-Free Premium Subscription ($4.99/mo):</strong> Option for parents to remove all ads and get unlimited PDF downloads.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TAB 4: 1M SCALE STRATEGY -->
+    <section id="tab-scale-strategy" class="tab-content">
+      <div class="hero-section">
+        <h2>📈 1,000,000 Sales Year 1 Strategic Marketing & CRO Engine</h2>
+        <p>A comprehensive scale plan combining funnel architecture, conversion rate optimization, viral homeschool growth loops, and channel economics.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-value">1,000,000</div>
+          <div class="stat-label">Year 1 Unit Sales Goal</div>
+        </div>
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">💰</div>
+          <div class="stat-value">$19.99</div>
+          <div class="stat-label">Target AOV (Print + Digital)</div>
+        </div>
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-value">4.8%</div>
+          <div class="stat-label">Benchmark Landing Page CVR</div>
+        </div>
+        <div class="stat-card glass-panel">
+          <div class="stat-icon">🌟</div>
+          <div class="stat-value">$19,990,000</div>
+          <div class="stat-label">Target Gross Revenue</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: AGENT LOOP -->
+    <section id="tab-agent-loop" class="tab-content">
+      <div class="hero-section">
+        <h2>🤖 Autonomous Agent Loop Runner</h2>
+        <p>Execute continuous batch generation of 12-page coloring books across multiple STEM topics autonomously.</p>
+      </div>
+
+      <div class="agent-control-card glass-panel">
+        <div class="agent-status-bar">
+          <div>Status: <span id="agent-status-text" class="status-idle">IDLE</span></div>
+          <div>Cycle: <span id="agent-cycle-count">0</span> / 6</div>
+        </div>
+
+        <div class="agent-buttons">
+          <button id="start-agent-btn" class="btn btn-success btn-lg">▶️ Start Autonomous Loop</button>
+          <button id="stop-agent-btn" class="btn btn-danger btn-lg" disabled>⏹️ Stop Loop</button>
+        </div>
+
+        <div class="agent-log-box">
+          <h4>📋 Autonomous Agent Trajectory Log</h4>
+          <pre id="agent-log-output">Agent loop ready. Click 'Start Autonomous Loop' to process queue.</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: MASTER BUILD ARC -->
     <section id="tab-master-arc" class="tab-content">
       <div class="hero-section">
-        <h2>🏆 Cumulative Annual Master Project: The Solar Smart Eco-Citadel</h2>
-        <p>Every monthly issue (Issues 1 through 12) includes a hands-on household STEM project and a mystery blueprint piece. They all hint towards the grand master project, coming together in Issue #12!</p>
+        <h2>🏆 Annual Master Project: The Solar Smart Eco-Citadel</h2>
+        <p>Every monthly issue provides 1 component blueprint. Over 12 months, kids build the ultimate 12-part Eco-Citadel!</p>
       </div>
 
-      <div class="arc-summary-card glass-panel mb-4">
-        <h3>Master Blueprint Schematic: <span style="color: var(--trust-cobalt);">The Solar Smart Eco-Citadel</span></h3>
-        <p>Collect all 12 issue components to assemble the complete working model!</p>
-      </div>
-
-      <div id="arc-components-grid" class="arc-grid">
-        <!-- 12 Issue Blueprint Component Cards dynamically injected -->
+      <div id="master-arc-grid" class="master-arc-grid">
+        <!-- Rendered by app.js -->
       </div>
     </section>
 
-    <!-- TAB 5: PROMPT MATRIX -->
+    <!-- TAB 7: PROMPT MATRIX -->
     <section id="tab-prompt-matrix" class="tab-content">
       <div class="hero-section">
-        <h2>Backend LLM System Instructions & Image Prompt Matrix</h2>
-        <p>Inspect the layered system prompt rules, copyright translation guidelines, virtue taxonomy, and exact image generation prompt strings produced for backend LLMs (Gemini, Midjourney, DALL-E 3, Stable Diffusion).</p>
+        <h2>⚡ Diffusion Prompt Matrix</h2>
+        <p>Inspect the locked prompts generated for SDXL / Flux / Midjourney v6.</p>
       </div>
 
-      <div class="prompt-matrix-grid">
-        <div class="card glass-panel">
-          <h3>📜 System Rules & Directive Layer</h3>
-          <div class="code-block">
-            <pre id="system-rules-text"></pre>
-          </div>
-        </div>
-
-        <div class="card glass-panel">
-          <h3>🖼️ Live Generated Prompt Matrix</h3>
-          <div id="matrix-table-container" class="table-responsive">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Page</th>
-                  <th>Skill Step</th>
-                  <th>Virtue</th>
-                  <th>Seek & Find / Maze Directive</th>
-                  <th>Backend Image Generator Prompt String</th>
-                </tr>
-              </thead>
-              <tbody id="matrix-table-body">
-                <!-- Rows injected dynamically -->
-              </tbody>
-            </table>
-          </div>
-        </div>
+      <div id="prompts-list" class="prompts-list">
+        <!-- Rendered by app.js -->
       </div>
     </section>
-
-    <!-- TAB 6: COPYRIGHT SANITIZER -->
-    <section id="tab-sanitizer" class="tab-content">
-      <div class="hero-section">
-        <h2>Copyright Archetype Protection Engine</h2>
-        <p>Test the real-time copyright translation engine that automatically intercepts protected intellectual property names (e.g., Paw Patrol, My Little Pony, Transformers) and transforms them into copyright-safe generic archetypes.</p>
-      </div>
-
-      <div class="sanitizer-grid">
-        <div class="card glass-panel">
-          <h3>Input Raw Scene Description:</h3>
-          <textarea id="sanitizer-input" rows="4" placeholder="Enter scene text with character names...">A team of heroic Paw Patrol pups and My Little Pony characters building an Iron Man armor made of Lego bricks.</textarea>
-          <button id="run-sanitizer-btn" class="btn btn-primary mt-3">🛡️ Sanitize Prompt</button>
-
-          <div class="sanitizer-result mt-4">
-            <h4>Sanitized Output (Copyright-Safe):</h4>
-            <div id="sanitizer-output" class="output-box"></div>
-          </div>
-        </div>
-
-        <div class="card glass-panel">
-          <h3>Built-in IP Translation Mapping Table</h3>
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Protected IP</th>
-                <th>Copyright-Safe Archetype</th>
-                <th>Category</th>
-              </tr>
-            </thead>
-            <tbody id="ip-mapping-body">
-              <!-- Mappings injected dynamically -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 7: SEEK AND FIND GAME ARCADE -->
-    <section id="tab-arcade" class="tab-content">
-      <div class="hero-section">
-        <h2>Interactive Seek-and-Find & Maze Arcade</h2>
-        <p>Test the interactive line art canvas! Find and click the hidden Christian virtue shapes embedded in the background elements of each page or solve the Page 11 vector maze!</p>
-      </div>
-
-      <div class="arcade-container">
-        <div class="arcade-sidebar glass-panel">
-          <h3>Select Page:</h3>
-          <div id="arcade-page-list" class="page-select-list">
-            <!-- Page Selector Buttons -->
-          </div>
-
-          <div class="score-card mt-4">
-            <h4>Shapes Found:</h4>
-            <div class="score-display"><span id="found-count">0</span> / <span id="total-count">3</span></div>
-            <p id="game-status" class="status-text">Click the hidden shapes in the line art to find them!</p>
-          </div>
-        </div>
-
-        <div class="arcade-stage glass-panel">
-          <div id="svg-canvas-wrapper" class="canvas-wrapper">
-            <!-- Interactive SVG page rendered here -->
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer class="app-footer">
-    <p>VirtueCraft STEM Open Source Initiative • Dedicated to teaching technical skills, STEM projects, and Christian virtues for ages 4-9.</p>
-  </footer>
+  <!-- REWARDED VIDEO AD MODAL DIALOG -->
+  <div id="rewarded-ad-modal" class="modal-overlay hidden">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <h3>🎬 Watch Sponsored Video to Unlock 300 DPI PDF</h3>
+        <button id="close-ad-modal-btn" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="video-ad-player-mock">
+          <div class="video-ad-content">
+            <span class="video-ad-timer">Ad Ends in: <strong id="ad-timer-countdown">5</strong>s</span>
+            <h4>🚀 Sponsored Partner: Christian STEM Academy</h4>
+            <p>Unlocking High-Resolution 300 DPI Vector PDF Download Package...</p>
+            <div class="progress-bar-container">
+              <div id="ad-progress-bar" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="claim-pdf-btn" class="btn btn-success btn-lg" disabled>🎁 Download PDF Now</button>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="./src/app.js"></script>
 </body>
