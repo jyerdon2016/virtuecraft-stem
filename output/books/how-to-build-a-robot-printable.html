@@ -70,7 +70,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -99,24 +99,55 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 1: Planning &amp; Design</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | Skill: <tspan font-weight="bold">System Architecture</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | Technical Skill: <tspan font-weight="bold">System Architecture</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(140, 260)">
-        <rect x="40" y="100" width="240" height="150" rx="8" class="bold-outline" /> <!-- Desk -->
-        <circle cx="120" cy="50" r="32" class="bold-outline" /> <!-- Child Head -->
-        <path d="M 120,82 L 120,150 M 120,105 L 70,140 M 120,105 L 170,140" class="bold-outline" />
-        <rect x="180" y="120" width="80" height="60" rx="4" class="outline" /> <!-- Blueprint -->
-        <path d="M 190,135 L 250,135 M 190,150 L 230,150" stroke="#000" stroke-width="2" />
-        <circle cx="110" cy="45" r="4" fill="#000" /> <circle cx="130" cy="45" r="4" fill="#000" />
-        <path d="M 110,60 Q 120,68 130,60" stroke="#000" stroke-width="3" fill="none" />
+      <g transform="translate(60, 110)">
+        <!-- Sunlit Window with Sunbeams -->
+        <rect x="30" y="20" width="160" height="180" rx="8" class="bold-outline" />
+        <path d="M 110,20 L 110,200 M 30,110 L 190,110" class="outline" />
+        <path d="M 190,30 L 320,160 M 190,90 L 380,240 M 190,150 L 440,300" stroke="#fde047" stroke-width="3" stroke-dasharray="8,8" fill="none" />
+        
+        <!-- Shelf with Toy Helper Bot -->
+        <path d="M 330,80 L 450,80 M 330,95 L 450,95" class="bold-outline" />
+        <g transform="translate(360, 20)">
+          <rect x="10" y="10" width="40" height="35" rx="6" class="outline" /> <!-- Bot Head -->
+          <circle cx="22" cy="24" r="3" fill="#000" /> <circle cx="38" cy="24" r="3" fill="#000" />
+          <rect x="5" y="45" width="50" height="30" rx="4" class="outline" /> <!-- Bot Body -->
+        </g>
+
+        <!-- Workbench Table -->
+        <rect x="20" y="250" width="440" height="230" rx="8" class="bold-outline" />
+        <path d="M 40,480 L 40,530 M 440,480 L 440,530" class="bold-outline" />
+
+        <!-- 7-Year-Old Child Figure -->
+        <g transform="translate(80, 160)">
+          <circle cx="50" cy="35" r="28" class="bold-outline" /> <!-- Head -->
+          <circle cx="42" cy="30" r="3" fill="#000" /> <circle cx="58" cy="30" r="3" fill="#000" />
+          <path d="M 42,46 Q 50,54 58,46" stroke="#000" stroke-width="3" fill="none" /> <!-- Focused Smile -->
+          <path d="M 50,63 L 50,150 M 50,90 L 120,120 M 50,90 L 20,130" class="bold-outline" /> <!-- Arms -->
+          <!-- Pencil & Plastic Ruler -->
+          <rect x="110" y="115" width="40" height="8" rx="2" class="outline" /> <!-- Ruler -->
+          <path d="M 120,110 L 140,125" stroke="#000" stroke-width="4" stroke-linecap="round" /> <!-- Pencil -->
+        </g>
+
+        <!-- Blueprint Sheet with Robot Drawing -->
+        <rect x="210" y="275" width="210" height="150" rx="6" class="bold-outline" />
+        <text x="230" y="300" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#1e40af">ROBOT BLUEPRINT v1.0</text>
+        <rect x="280" y="315" width="70" height="80" rx="6" stroke="#0284c7" stroke-width="2.5" fill="none" stroke-dasharray="4,4" />
+        <circle cx="315" cy="340" r="12" stroke="#0284c7" stroke-width="2" fill="none" />
+
+        <!-- Crumpled Paper & Pencil Jar -->
+        <circle cx="410" cy="290" r="14" class="outline" />
+        <rect x="230" y="390" width="30" height="30" rx="4" class="outline" />
+        <path d="M 235,390 L 235,375 M 245,390 L 245,370 M 255,390 L 255,378" stroke="#000" stroke-width="3" />
       </g>
     
 
@@ -141,7 +172,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> shapes in the line art above! Color them when found.</text>
@@ -171,7 +202,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -200,23 +231,49 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 2: Safety &amp; Gear</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Self-Control</tspan> | Skill: <tspan font-weight="bold">Safety Engineering</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Self-Control</tspan> | Technical Skill: <tspan font-weight="bold">Safety Engineering</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(180, 270)">
-        <rect x="40" y="40" width="160" height="200" rx="16" class="bold-outline" />
-        <circle cx="90" cy="110" r="12" fill="#000" /> <circle cx="150" cy="110" r="12" fill="#000" />
-        <path d="M 80,150 Q 120,180 160,150" stroke="#000" stroke-width="4" fill="none" />
-        <text x="65" y="80" class="page-text" font-size="16" font-weight="700" fill="#1e40af">ESP32 BRAIN</text>
-        <path d="M 20,60 L 40,60 M 20,90 L 40,90 M 20,120 L 40,120 M 20,150 L 40,150 M 20,180 L 40,180" class="bold-outline" />
-        <path d="M 200,60 L 220,60 M 200,90 L 220,90 M 200,120 L 220,120 M 200,150 L 220,150 M 200,180 L 220,180" class="bold-outline" />
+      <g transform="translate(60, 110)">
+        <!-- Wall Art & Circuit Traces in Background -->
+        <path d="M 20,50 L 120,50 L 120,120 M 360,50 L 460,50 L 460,150" stroke="#0284c7" stroke-width="3" stroke-dasharray="6,4" fill="none" />
+        <circle cx="120" cy="120" r="10" stroke="#0284c7" stroke-width="2" fill="none" />
+
+        <!-- Oversized Friendly ESP32 Micro-Brain Character -->
+        <g transform="translate(110, 100)">
+          <rect x="40" y="40" width="180" height="260" rx="20" class="bold-outline" />
+          <text x="75" y="85" font-family="'Outfit', sans-serif" font-weight="800" font-size="18" fill="#1e40af">ESP32 BRAIN</text>
+          
+          <!-- Friendly Facial Features -->
+          <circle cx="90" cy="140" r="16" fill="#000" /> <circle cx="170" cy="140" r="16" fill="#000" />
+          <circle cx="94" cy="134" r="5" fill="#fff" /> <circle cx="174" cy="134" r="5" fill="#fff" />
+          <path d="M 85,190 Q 130,230 175,190" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round" />
+
+          <!-- Cheerful Metallic Pin Legs -->
+          <path d="M 15,70 L 40,70 M 15,110 L 40,110 M 15,150 L 40,150 M 15,190 L 40,190 M 15,230 L 40,230" class="bold-outline" />
+          <path d="M 220,70 L 245,70 M 220,110 L 245,110 M 220,150 L 245,150 M 220,190 L 245,190 M 220,230 L 245,230" class="bold-outline" />
+        </g>
+
+        <!-- Child Gazing in Awe -->
+        <g transform="translate(30, 320)">
+          <circle cx="40" cy="40" r="24" class="bold-outline" />
+          <circle cx="48" cy="36" r="3" fill="#000" />
+          <path d="M 42,52 Q 48,58 54,52" stroke="#000" stroke-width="3" fill="none" />
+          <path d="M 40,64 L 40,140 M 40,90 L 80,110" class="bold-outline" />
+        </g>
+
+        <!-- Floating Logic Thought Bubbles -->
+        <g transform="translate(340, 260)">
+          <circle cx="40" cy="40" r="35" fill="#f0f9ff" stroke="#0284c7" stroke-width="2" />
+          <text x="18" y="46" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#0369a1">010101</text>
+        </g>
       </g>
     
 
@@ -245,7 +302,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
@@ -275,7 +332,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -304,22 +361,39 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 3: Core Component Assembly</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Gentleness</tspan> | Skill: <tspan font-weight="bold">Hardware Integration</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Gentleness</tspan> | Technical Skill: <tspan font-weight="bold">Hardware Integration</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(150, 300)">
-        <rect x="20" y="80" width="260" height="110" rx="8" class="bold-outline" />
-        <path d="M 40,100 L 260,100 M 40,120 L 260,120 M 40,140 L 260,140" stroke="#000" stroke-width="2" stroke-dasharray="4,4" fill="none" />
-        <rect x="110" y="20" width="70" height="60" rx="4" class="outline" />
-        <text x="118" y="55" class="page-text" font-size="13" font-weight="700">DHT11</text>
-        <path d="M 125,80 C 100,120 90,130 70,110 M 165,80 C 190,120 200,130 220,110" class="bold-outline" fill="none" />
+      <g transform="translate(60, 110)">
+        <!-- Sunny Window with Foliage & Birds -->
+        <rect x="280" y="20" width="160" height="180" rx="8" class="bold-outline" />
+        <path d="M 360,20 L 360,200 M 280,110 L 440,110" class="outline" />
+        <path d="M 300,50 Q 320,30 340,50 M 380,60 Q 400,40 420,60" stroke="#000" stroke-width="2.5" fill="none" /> <!-- Birds -->
+
+        <!-- Workbench Desk -->
+        <rect x="20" y="270" width="440" height="210" rx="8" class="bold-outline" />
+
+        <!-- Breadboard Grid -->
+        <rect x="60" y="310" width="340" height="130" rx="10" class="bold-outline" />
+        <path d="M 80,340 L 380,340 M 80,370 L 380,370 M 80,400 L 380,400" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="6,6" fill="none" />
+
+        <!-- Blue DHT11 Sensor being gently plugged in -->
+        <rect x="190" y="230" width="80" height="80" rx="6" fill="#3b82f6" stroke="#1d4ed8" stroke-width="3" />
+        <text x="202" y="275" font-family="'Outfit', sans-serif" font-weight="800" font-size="15" fill="#ffffff">DHT11</text>
+
+        <!-- Child's Gentle Hands Holding Sensor -->
+        <path d="M 150,210 C 170,230 185,240 190,260 M 310,210 C 290,230 275,240 270,260" stroke="#000" stroke-width="5" stroke-linecap="round" fill="none" />
+
+        <!-- Flexible Jumper Wires -->
+        <path d="M 100,370 C 100,280 150,260 190,300" stroke="#ef4444" stroke-width="4" fill="none" />
+        <path d="M 360,370 C 360,280 310,260 270,300" stroke="#10b981" stroke-width="4" fill="none" />
       </g>
     
 
@@ -340,7 +414,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 3 hidden <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> shapes in the line art above! Color them when found.</text>
@@ -370,7 +444,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -399,21 +473,47 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 4: Power Supply Setup</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Faithfulness</tspan> | Skill: <tspan font-weight="bold">Energy Flow &amp; Circuits</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Faithfulness</tspan> | Technical Skill: <tspan font-weight="bold">Energy Flow &amp; Circuits</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(170, 280)">
-        <circle cx="130" cy="110" r="60" class="bold-outline" />
-        <circle cx="130" cy="110" r="30" class="outline" />
-        <path d="M 210,80 C 230,95 230,125 210,140 M 230,60 C 260,85 260,135 230,160" stroke="#1e40af" stroke-width="4" fill="none" stroke-linecap="round" />
-        <text x="95" y="195" class="page-text" font-size="15" font-weight="700" fill="#0d9488">PAM8403 SOUND</text>
+      <g transform="translate(60, 110)">
+        <!-- Circular Speaker -->
+        <g transform="translate(240, 200)">
+          <circle cx="0" cy="0" r="90" class="bold-outline" />
+          <circle cx="0" cy="0" r="50" class="outline" />
+          <circle cx="0" cy="0" r="20" fill="#000" />
+        </g>
+
+        <!-- PAM8403 Amplifier Board -->
+        <rect x="60" y="320" width="110" height="90" rx="8" class="bold-outline" />
+        <text x="72" y="370" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#1e40af">PAM8403</text>
+        <path d="M 170,360 L 210,360 C 220,360 230,300 240,290" stroke="#000" stroke-width="4" fill="none" />
+
+        <!-- Musical Soundwave Bubbles -->
+        <path d="M 350,150 C 390,130 410,170 450,150 M 360,210 C 410,190 420,240 460,210 M 350,270 C 390,250 410,290 450,270" stroke="#0d9488" stroke-width="5" stroke-linecap="round" fill="none" />
+
+        <g transform="translate(390, 100)">
+          <circle cx="20" cy="20" r="16" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
+          <text x="14" y="26" font-family="'Outfit', sans-serif" font-weight="800" font-size="16" fill="#16a34a">♪</text>
+        </g>
+        <g transform="translate(420, 230)">
+          <circle cx="20" cy="20" r="22" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
+          <text x="13" y="28" font-family="'Outfit', sans-serif" font-weight="800" font-size="18" fill="#16a34a">♫</text>
+        </g>
+
+        <!-- Child Clapping with Joy -->
+        <g transform="translate(60, 140)">
+          <circle cx="40" cy="40" r="26" class="bold-outline" />
+          <path d="M 32,36 Q 40,46 48,36" stroke="#000" stroke-width="3" fill="none" />
+          <path d="M 40,66 L 40,140 M 40,90 L 70,75 M 40,90 L 70,85" class="bold-outline" />
+        </g>
       </g>
     
 
@@ -438,7 +538,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> shapes in the line art above! Color them when found.</text>
@@ -468,7 +568,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -497,27 +597,45 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 5: Sensors &amp; Inputs</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Goodness</tspan> | Skill: <tspan font-weight="bold">Data Signal Sensing</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Goodness</tspan> | Technical Skill: <tspan font-weight="bold">Data Signal Sensing</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(150, 270)">
-        <circle cx="80" cy="50" r="28" class="bold-outline" />
-        <circle cx="200" cy="50" r="28" class="bold-outline" />
-        <!-- Safety Goggles -->
-        <rect x="65" y="42" width="30" height="14" rx="4" fill="#000" />
-        <rect x="185" y="42" width="30" height="14" rx="4" fill="#000" />
-        <path d="M 80,78 L 80,160 M 200,78 L 200,160 M 80,110 L 140,130 M 200,110 L 140,130" class="bold-outline" fill="none" />
-        <!-- Soldering Iron -->
-        <path d="M 140,130 L 110,180" stroke="#000" stroke-width="6" stroke-linecap="round" />
-        <!-- Smoke Wisps -->
-        <path d="M 140,120 C 135,100 145,90 140,70" stroke="#cbd5e1" stroke-width="3" fill="none" />
+      <g transform="translate(60, 110)">
+        <!-- Soldering Station Desk -->
+        <rect x="20" y="270" width="440" height="210" rx="8" class="bold-outline" />
+
+        <!-- Mentor (Left) & Child (Right) -->
+        <g transform="translate(60, 120)">
+          <circle cx="50" cy="40" r="32" class="bold-outline" /> <!-- Mentor Head -->
+          <rect x="35" y="32" width="30" height="14" rx="4" fill="#000" /> <!-- Goggles -->
+          <path d="M 50,72 L 50,170 M 50,110 L 140,140" class="bold-outline" fill="none" />
+        </g>
+
+        <g transform="translate(290, 140)">
+          <circle cx="50" cy="35" r="26" class="bold-outline" /> <!-- Child Head -->
+          <rect x="37" y="28" width="26" height="12" rx="4" fill="#000" /> <!-- Goggles -->
+          <path d="M 50,61 L 50,150 M 50,95 L -90,120" class="bold-outline" fill="none" />
+        </g>
+
+        <!-- Soldering Iron Joining Wires -->
+        <g transform="translate(190, 240)">
+          <path d="M 10,20 L 50,50" stroke="#000" stroke-width="8" stroke-linecap="round" />
+          <path d="M 50,50 L 70,65" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" />
+          <!-- Solder Smoke Wisps -->
+          <path d="M 70,65 C 65,40 85,30 75,10 M 80,65 C 75,45 95,35 85,15" stroke="#cbd5e1" stroke-width="3.5" fill="none" stroke-linecap="round" />
+        </g>
+
+        <!-- Tool Rack Frame -->
+        <path d="M 380,100 L 460,100 M 380,170 L 460,170" stroke="#000" stroke-width="4" />
+        <rect x="400" y="110" width="15" height="45" rx="3" class="outline" />
+        <rect x="430" y="110" width="15" height="45" rx="3" class="outline" />
       </g>
     
 
@@ -546,7 +664,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> shapes in the line art above! Color them when found.</text>
@@ -576,7 +694,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -605,22 +723,38 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 6: Logic &amp; Programming</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | Skill: <tspan font-weight="bold">Block Code Logic</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | Technical Skill: <tspan font-weight="bold">Block Code Logic</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(170, 280)">
-        <rect x="50" y="60" width="140" height="120" rx="8" class="bold-outline" />
-        <circle cx="120" cy="60" r="20" class="outline" />
-        <path d="M 120,40 L 180,20" class="bold-outline" />
-        <circle cx="180" cy="20" r="8" fill="#000" />
-        <text x="75" y="130" class="page-text" font-size="14" font-weight="700">SERVO ARM</text>
+      <g transform="translate(60, 110)">
+        <!-- Main Robot Shoulder Frame -->
+        <rect x="40" y="160" width="180" height="240" rx="14" class="bold-outline" />
+        <text x="65" y="200" font-family="'Outfit', sans-serif" font-weight="800" font-size="16" fill="#1e40af">ROBOT SHOULDER</text>
+
+        <!-- Servo Motor Module -->
+        <rect x="220" y="200" width="150" height="130" rx="10" fill="#3b82f6" stroke="#1d4ed8" stroke-width="3.5" />
+        <text x="245" y="270" font-family="'Outfit', sans-serif" font-weight="800" font-size="16" fill="#ffffff">SERVO MOTOR</text>
+
+        <!-- Servo Horn & Arm -->
+        <circle cx="295" cy="200" r="25" class="bold-outline" />
+        <path d="M 295,175 L 420,100" stroke="#000" stroke-width="9" stroke-linecap="round" />
+        <circle cx="420" cy="100" r="12" class="bold-outline" />
+
+        <!-- 0° to 180° Degree Angle Arch -->
+        <path d="M 220,100 A 130,130 0 0,1 420,200" stroke="#0d9488" stroke-width="3.5" stroke-dasharray="6,6" fill="none" />
+        <text x="210" y="85" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#0d9488">0°</text>
+        <text x="310" y="60" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#0d9488">90°</text>
+        <text x="435" y="210" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#0d9488">180°</text>
+
+        <!-- Precision Screwdriver in Child's Hand -->
+        <path d="M 180,300 L 230,240" stroke="#000" stroke-width="6" stroke-linecap="round" />
       </g>
     
 
@@ -641,7 +775,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 3 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
@@ -671,7 +805,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -700,22 +834,41 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 7: Teamwork &amp; Collaboration</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | Skill: <tspan font-weight="bold">Cooperative Engineering</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | Technical Skill: <tspan font-weight="bold">Cooperative Engineering</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(180, 270)">
-        <rect x="50" y="50" width="120" height="180" rx="10" class="bold-outline" />
-        <rect x="90" y="30" width="40" height="20" rx="4" fill="#000" />
-        <text x="80" y="100" class="page-text" font-size="32" font-weight="800" fill="#22c55e">+</text>
-        <text x="82" y="180" class="page-text" font-size="32" font-weight="800" fill="#ef4444">-</text>
-        <text x="65" y="215" class="page-text" font-size="13" font-weight="700">POWER CELL</text>
+      <g transform="translate(60, 110)">
+        <!-- Starry Night Sky Window View -->
+        <rect x="40" y="30" width="160" height="180" rx="8" class="bold-outline" />
+        <path d="M 120,30 L 120,210 M 40,120 L 200,120" class="outline" />
+        <polygon points="80,60 83,68 91,68 85,73 87,81 80,76 73,81 75,73 69,68 77,68" fill="#f59e0b" />
+        <polygon points="160,150 162,156 168,156 163,160 165,166 160,162 155,166 157,160 152,156 158,156" fill="#f59e0b" />
+
+        <!-- Rechargeable Battery Power Cell -->
+        <g transform="translate(240, 140)">
+          <rect x="0" y="0" width="150" height="260" rx="14" class="bold-outline" />
+          <rect x="45" y="-20" width="60" height="20" rx="5" fill="#000" />
+          
+          <text x="50" y="80" font-family="'Outfit', sans-serif" font-weight="800" font-size="42" fill="#22c55e">+</text>
+          <text x="54" y="200" font-family="'Outfit', sans-serif" font-weight="800" font-size="42" fill="#ef4444">-</text>
+          
+          <rect x="25" y="105" width="100" height="50" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
+          <text x="40" y="136" font-family="'Outfit', sans-serif" font-weight="800" font-size="16" fill="#16a34a">12V DC</text>
+        </g>
+
+        <!-- Insulated Red & Black Cables with Energy Sparkles -->
+        <path d="M 285,120 C 230,80 180,260 120,320" stroke="#ef4444" stroke-width="5" fill="none" />
+        <path d="M 345,120 C 390,80 440,260 400,340" stroke="#000" stroke-width="5" fill="none" />
+        
+        <!-- Energy Sparkles -->
+        <path d="M 180,180 L 190,170 M 180,170 L 190,180 M 350,260 L 360,250 M 350,250 L 360,260" stroke="#f59e0b" stroke-width="3.5" />
       </g>
     
 
@@ -740,7 +893,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> shapes in the line art above! Color them when found.</text>
@@ -770,7 +923,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -799,24 +952,39 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 8: Troubleshooting &amp; Tuning</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Peace</tspan> | Skill: <tspan font-weight="bold">Diagnostic Testing</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Peace</tspan> | Technical Skill: <tspan font-weight="bold">Diagnostic Testing</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(140, 260)">
-        <rect x="30" y="40" width="260" height="160" rx="10" class="bold-outline" />
-        <!-- Code Puzzle Blocks -->
-        <rect x="50" y="60" width="140" height="35" rx="6" fill="#eff6ff" stroke="#1e40af" stroke-width="2" />
-        <text x="65" y="83" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#1e40af">IF (SENSOR == HIGH)</text>
-        
-        <rect x="70" y="105" width="140" height="35" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
-        <text x="85" y="128" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#16a34a">MOVE_ARM(90°)</text>
+      <g transform="translate(60, 110)">
+        <!-- Ergonomic Desk & Laptop Screen -->
+        <rect x="60" y="100" width="360" height="250" rx="14" class="bold-outline" /> <!-- Screen -->
+        <rect x="20" y="350" width="440" height="25" rx="5" class="bold-outline" /> <!-- Keyboard Base -->
+
+        <!-- Block Code Puzzle Pieces on Screen -->
+        <g transform="translate(90, 130)">
+          <rect x="0" y="0" width="220" height="45" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2.5" />
+          <text x="20" y="28" font-family="'Outfit', sans-serif" font-weight="800" font-size="15" fill="#1e40af">WHEN (START_CLICKED)</text>
+
+          <rect x="25" y="55" width="220" height="45" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" />
+          <text x="45" y="83" font-family="'Outfit', sans-serif" font-weight="800" font-size="15" fill="#92400e">IF (DISTANCE &lt; 10cm)</text>
+
+          <rect x="50" y="110" width="220" height="45" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="2.5" />
+          <text x="70" y="138" font-family="'Outfit', sans-serif" font-weight="800" font-size="15" fill="#0f766e">SPEAK("Hello Friend!")</text>
+        </g>
+
+        <!-- Cute Miniature Helper Bot beside Laptop -->
+        <g transform="translate(390, 240)">
+          <rect x="0" y="0" width="40" height="35" rx="6" class="outline" />
+          <circle cx="12" cy="15" r="3" fill="#000" /> <circle cx="28" cy="15" r="3" fill="#000" />
+          <rect x="-5" y="35" width="50" height="40" rx="5" class="outline" />
+        </g>
       </g>
     
 
@@ -845,7 +1013,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> shapes in the line art above! Color them when found.</text>
@@ -875,7 +1043,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -904,23 +1072,37 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 9: Helping Others</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Kindness</tspan> | Skill: <tspan font-weight="bold">Community Impact</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Kindness</tspan> | Technical Skill: <tspan font-weight="bold">Community Impact</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(160, 270)">
-        <circle cx="120" cy="60" r="30" class="bold-outline" />
-        <path d="M 120,90 L 120,170 M 120,120 L 70,150" class="bold-outline" fill="none" />
-        <!-- Magnifying Glass -->
-        <circle cx="65" cy="155" r="22" stroke="#000" stroke-width="4" fill="none" />
-        <path d="M 50,170 L 30,195" stroke="#000" stroke-width="6" stroke-linecap="round" />
-        <text x="75" y="210" class="page-text" font-size="14" font-weight="700" fill="#0d9488">DEBUGGING</text>
+      <g transform="translate(60, 110)">
+        <!-- Workshop Window with Peaceful Soft Clouds -->
+        <rect x="40" y="30" width="180" height="160" rx="8" class="bold-outline" />
+        <path d="M 130,30 L 130,190 M 40,110 L 220,110" class="outline" />
+        <path d="M 60,80 C 80,60 120,60 140,80 C 160,80 180,100 160,120" stroke="#cbd5e1" stroke-width="3" fill="none" />
+
+        <!-- Multimeter & Magnifying Glass -->
+        <rect x="260" y="220" width="110" height="180" rx="10" class="bold-outline" />
+        <rect x="280" y="245" width="70" height="45" rx="4" fill="#f8fafc" stroke="#000" stroke-width="2" />
+        <text x="290" y="275" font-family="'Outfit', sans-serif" font-weight="800" font-size="16" fill="#16a34a">5.00V</text>
+        <circle cx="315" cy="330" r="20" class="outline" />
+
+        <!-- Child's Peaceful Hand Holding Magnifying Glass -->
+        <g transform="translate(130, 280)">
+          <circle cx="50" cy="50" r="45" stroke="#000" stroke-width="5" fill="none" />
+          <path d="M 20,80 L -20,120" stroke="#000" stroke-width="9" stroke-linecap="round" />
+          <path d="M 35,50 L 65,50" stroke="#ef4444" stroke-width="3" /> <!-- Magnified Wire Pin -->
+        </g>
+
+        <!-- Loose Jumper Wire Being Re-inserted -->
+        <path d="M 120,400 C 150,380 180,390 220,380" stroke="#3b82f6" stroke-width="4" stroke-dasharray="4,4" fill="none" />
       </g>
     
 
@@ -941,7 +1123,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 3 hidden <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> shapes in the line art above! Color them when found.</text>
@@ -971,7 +1153,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -1000,24 +1182,52 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 10: Celebration &amp; Gratitude</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | Skill: <tspan font-weight="bold">Project Completion</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | Technical Skill: <tspan font-weight="bold">Project Completion</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
-      <g transform="translate(150, 260)">
-        <!-- Friendly Helper Bot -->
-        <rect x="60" y="50" width="120" height="100" rx="14" class="bold-outline" />
-        <circle cx="90" cy="85" r="10" fill="#000" /> <circle cx="150" cy="85" r="10" fill="#000" />
-        <path d="M 95,115 Q 120,135 145,115" stroke="#000" stroke-width="3" fill="none" />
-        <!-- Serving Tray -->
-        <path d="M 30,160 L 210,160 M 40,160 L 40,180 M 200,160 L 200,180" class="bold-outline" />
-        <rect x="100" y="125" width="40" height="35" rx="4" class="outline" /> <!-- Glass of Water -->
+      <g transform="translate(60, 100)">
+        <!-- Blooming Neighborhood Garden Background -->
+        <path d="M 20,220 Q 120,180 240,220 T 460,220" stroke="#16a34a" stroke-width="4" fill="none" />
+        <!-- Flowers -->
+        <g transform="translate(40, 160)">
+          <circle cx="0" cy="0" r="14" fill="#fef08a" stroke="#ca8a04" stroke-width="2" />
+          <path d="M 0,14 L 0,60" stroke="#16a34a" stroke-width="4" />
+        </g>
+
+        <!-- Rolling Helper Bot -->
+        <g transform="translate(140, 200)">
+          <rect x="40" y="30" width="120" height="110" rx="16" class="bold-outline" />
+          <circle cx="70" cy="70" r="10" fill="#000" /> <circle cx="130" cy="70" r="10" fill="#000" />
+          <path d="M 75,100 Q 100,120 125,100" stroke="#000" stroke-width="3.5" fill="none" />
+          
+          <!-- Wheels -->
+          <circle cx="60" cy="150" r="20" class="bold-outline" />
+          <circle cx="140" cy="150" r="20" class="bold-outline" />
+
+          <!-- Serving Tray holding Water & Flower -->
+          <path d="M -10,120 L 210,120 M 0,120 L 0,140 M 200,120 L 200,140" class="bold-outline" />
+          
+          <!-- Water Glass -->
+          <rect x="20" y="80" width="30" height="40" rx="4" class="outline" />
+          <path d="M 22,95 L 48,95" stroke="#0284c7" stroke-width="2" />
+          
+          <!-- Bright Yellow Flower -->
+          <circle cx="160" cy="80" r="12" fill="#fde047" stroke="#ca8a04" stroke-width="2" />
+        </g>
+
+        <!-- Elderly Neighbor Smiling Warmly -->
+        <g transform="translate(340, 180)">
+          <circle cx="40" cy="35" r="26" class="bold-outline" />
+          <path d="M 32,32 Q 40,42 48,32" stroke="#000" stroke-width="3" fill="none" />
+          <path d="M 40,61 L 40,160 M 40,90 L 0,120" class="bold-outline" />
+        </g>
       </g>
     
 
@@ -1042,7 +1252,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
@@ -1072,7 +1282,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -1101,15 +1311,15 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 11: Circuit Pathfinder Maze</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | Skill: <tspan font-weight="bold">Logic Pathfinder &amp; Algorithm Navigation</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | Technical Skill: <tspan font-weight="bold">Logic Pathfinder &amp; Algorithm Navigation</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
     <g id="maze-container" transform="translate(60, 130)">
       <rect x="0" y="0" width="480" height="500" rx="12" class="bold-outline" />
@@ -1158,7 +1368,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> shapes in the line art above! Color them when found.</text>
@@ -1188,7 +1398,7 @@
         <style>
           .outline { stroke: #1a1a1a; stroke-width: 3.5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
           .bold-outline { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; }
+          .detail-line { stroke: #2c3e50; stroke-width: 2; fill: none; stroke-linecap: round; }
           .maze-wall { stroke: #1a1a1a; stroke-width: 6; fill: none; stroke-linecap: round; }
           .hidden-shape { stroke: #1a1a1a; stroke-width: 2.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
           .hidden-shape:hover { stroke: #e11d48; stroke-width: 4; fill: #fff1f2; }
@@ -1217,15 +1427,15 @@
         </g>
       </defs>
 
-      <!-- Page Canvas Border -->
+      <!-- Outer Page Canvas Border -->
       <rect x="10" y="10" width="580" height="730" rx="16" class="bold-outline" />
 
-      <!-- Header Section -->
+      <!-- Page Header Callout -->
       <rect x="30" y="30" width="540" height="70" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
       <text x="50" y="60" class="page-text" font-size="19" font-weight="700" fill="#1e40af">Page 12: STEM Project &amp; Master Blueprint Clue #1</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | Skill: <tspan font-weight="bold">Hands-On Build: Cardboard Baseplate &amp; Foil Circuit Traces</tspan></text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#64748b">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | Technical Skill: <tspan font-weight="bold">Hands-On Build: Cardboard Baseplate &amp; Foil Circuit Traces</tspan></text>
 
-      <!-- Central Scene Graphics -->
+      <!-- Central Scene Line Art Illustration -->
       
     <g id="stem-blueprint-container" transform="translate(40, 120)">
       <rect x="0" y="0" width="520" height="510" rx="12" fill="#f0f9ff" stroke="#0284c7" stroke-width="3" />
@@ -1277,7 +1487,7 @@
         
       </g>
 
-      <!-- Bottom Banner & Instructions -->
+      <!-- Bottom Seek-and-Find Challenge Bar -->
       <rect x="30" y="650" width="540" height="70" rx="10" fill="#fffbebe" stroke="#f59e0b" stroke-width="2" />
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
