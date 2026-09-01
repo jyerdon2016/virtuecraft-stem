@@ -49,7 +49,7 @@ export class VirtueTechCLIAgentLoop extends VirtueTechAgentCore {
 }
 
 /**
- * Renders a full high-end 12-page magazine printable issue
+ * Renders a full high-end 12-page magazine printable issue with Locked Diffusion Prompts & Two-Layer Overlays
  */
 export function buildSingleIssuePrintableHtml(issue) {
   return `<!DOCTYPE html>
@@ -64,32 +64,35 @@ export function buildSingleIssuePrintableHtml(issue) {
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; padding: 2rem; }
-    .container { max-width: 900px; margin: 0 auto; }
+    .container { max-width: 920px; margin: 0 auto; }
     
-    .magazine-header { text-align: center; background: #ffffff; border: 3px solid #1e40af; padding: 2rem; border-radius: 16px; margin-bottom: 2.5rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
-    .magazine-masthead { font-family: 'Outfit', sans-serif; font-size: 2.4rem; font-weight: 800; color: #1e40af; letter-spacing: -0.02em; text-transform: uppercase; }
-    .magazine-subhead { color: #0d9488; font-weight: 700; font-size: 1.1rem; margin-top: 0.25rem; }
+    .magazine-header { text-align: center; background: #ffffff; border: 4px solid #000000; padding: 2rem; border-radius: 16px; margin-bottom: 2.5rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+    .magazine-masthead { font-family: 'Outfit', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1e40af; letter-spacing: -0.02em; text-transform: uppercase; }
+    .magazine-subhead { color: #0d9488; font-weight: 700; font-size: 1.15rem; margin-top: 0.25rem; }
     .meta-badges { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
-    .badge { font-size: 0.85rem; font-weight: 700; padding: 0.35rem 0.85rem; border-radius: 20px; font-family: 'Outfit', sans-serif; }
-    .badge-blue { background: #dbeafe; color: #1e40af; }
-    .badge-teal { background: #ccfbf1; color: #0f766e; }
-    .badge-gold { background: #fef3c7; color: #92400e; }
+    .badge { font-size: 0.85rem; font-weight: 800; padding: 0.35rem 0.85rem; border-radius: 20px; font-family: 'Outfit', sans-serif; }
+    .badge-blue { background: #dbeafe; color: #1e40af; border: 2px solid #1e40af; }
+    .badge-teal { background: #ccfbf1; color: #0f766e; border: 2px solid #0f766e; }
+    .badge-gold { background: #fef3c7; color: #92400e; border: 2px solid #92400e; }
     
-    .magazine-page-card { background: #ffffff; border: 2px solid #cbd5e1; border-radius: 16px; overflow: hidden; margin-bottom: 3rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05); }
-    .magazine-page-header { background: #f1f5f9; padding: 1.25rem 1.5rem; border-bottom: 2px solid #cbd5e1; display: flex; justify-content: space-between; align-items: center; }
-    .magazine-page-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.35rem; color: #1e40af; }
+    .magazine-page-card { background: #ffffff; border: 3px solid #000000; border-radius: 18px; overflow: hidden; margin-bottom: 3.5rem; box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.1); }
+    .magazine-page-header { background: #f1f5f9; padding: 1.25rem 1.5rem; border-bottom: 3px solid #000000; display: flex; justify-content: space-between; align-items: center; }
+    .magazine-page-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: #000000; font-weight: 800; }
     
     .magazine-page-content { padding: 1.5rem; }
     .svg-wrapper { text-align: center; margin-bottom: 1.5rem; }
     .svg-wrapper svg { width: 100%; height: auto; max-height: 750px; }
     
-    .editorial-narrative-box { background: #f8fafc; border-left: 5px solid #0d9488; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-top: 1rem; }
-    .editorial-title { font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 800; color: #0d9488; margin-bottom: 0.5rem; }
-    .editorial-paragraph { font-size: 1rem; line-height: 1.7; color: #334155; }
+    .editorial-narrative-box { background: #f8fafc; border-left: 6px solid #0d9488; border-top: 2px solid #000000; border-right: 2px solid #000000; border-bottom: 2px solid #000000; border-radius: 10px; padding: 1.5rem; margin-top: 1rem; }
+    .editorial-title { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 800; color: #0d9488; margin-bottom: 0.5rem; }
+    .editorial-paragraph { font-size: 1rem; line-height: 1.7; color: #0f172a; }
     
+    .prompt-spec-box { background: #0f172a; color: #f8fafc; border-radius: 10px; padding: 1.25rem; margin-top: 1rem; font-family: monospace; font-size: 0.85rem; line-height: 1.5; }
+    .prompt-label { font-weight: bold; color: #38bdf8; }
+
     @media print {
       body { background: white !important; padding: 0 !important; }
-      .magazine-header { display: none !important; }
+      .magazine-header, .prompt-spec-box { display: none !important; }
       .magazine-page-card { border: none !important; box-shadow: none !important; margin: 0 !important; page-break-after: always; height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
       .svg-wrapper svg { max-height: 70vh !important; }
     }
@@ -101,14 +104,14 @@ export function buildSingleIssuePrintableHtml(issue) {
       <div class="magazine-masthead">VirtueCraft STEM Magazine</div>
       <div class="magazine-subhead">Year 1 Issue #1: ${escapeXml(issue.topic)} — ${escapeXml(issue.subtitle)}</div>
       <div class="meta-badges">
-        <span class="badge badge-blue">Ages 4-9</span>
-        <span class="badge badge-teal">10 Christian Virtues Integrated</span>
-        <span class="badge badge-gold">Page 11: Circuit Pathfinder Maze</span>
-        <span class="badge badge-blue">Page 12: Household STEM Project & Master Blueprint Clue #1</span>
+        <span class="badge badge-blue">Ages 4-9 Chunky Lines</span>
+        <span class="badge badge-teal">Diffusion Locked Prompts</span>
+        <span class="badge badge-gold">Two-Layer Vector Overlays</span>
+        <span class="badge badge-blue">300 DPI High-Contrast Binary</span>
       </div>
     </div>
 
-    <!-- Render All 12 Pages with SVG Line Art and Vivid 5-Sentence Editorial Paragraphs -->
+    <!-- Render All 12 Pages with SVG Line Art, Two-Layer Overlay, and Diffusion Prompts -->
     ${issue.pages.map(page => {
       const { svgHtml } = renderPageSVG(page);
       return `
@@ -126,6 +129,15 @@ export function buildSingleIssuePrintableHtml(issue) {
             <div class="editorial-narrative-box">
               <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
               <p class="editorial-paragraph">${escapeXml(page.narrative)}</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>${escapeXml(page.prompt)}</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>${escapeXml(page.negativePrompt)}</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>${escapeXml(page.overlayDirective)}</div>
             </div>
           </div>
         </div>

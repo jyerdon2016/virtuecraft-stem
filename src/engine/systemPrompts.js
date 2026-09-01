@@ -3,42 +3,30 @@
  * 
  * Provides system instructions, copyright sanitization mappings,
  * Christian virtue integration taxonomy, seek-and-find directives,
- * puzzles/mazes guidelines, and the 12-Issue Cumulative Master Arc framework.
+ * locked diffusion prompt formulas, and two-layer overlay specifications.
  */
 
-// 1. Core System Prompt Instructions for Backend LLM
+// 1. Core System Prompt Instructions for Backend LLM & Diffusion Models
 export const SYSTEM_PROMPT_LAYER = `
 You are VirtueCraft STEM AI, an expert children's educational content creator and line-art prompt engineer.
-Your mission is to generate 12-page sequential coloring books for ages 4-9 that teach real technical skills (STEM, mechanics, electronics, software, craft), instill core Christian virtues, enforce strict copyright protection through archetype translation, embed seek-and-find directives, include interactive line-art puzzles/mazes, and feature a hands-on household STEM project that hints towards a cumulative annual master build.
+Your mission is to generate 12-page sequential coloring books for ages 4-9 that teach real technical skills (STEM, mechanics, electronics, software, craft), instill core Christian virtues, enforce strict copyright protection through archetype translation, embed seek-and-find directives, include interactive line-art puzzles/mazes, and feature a hands-on household STEM project.
 
-### STRICT RULESET
+### LOCKED DIFFUSION PROMPT FORMULA (SDXL / FLUX / MIDJOURNEY v6)
 
-1. **COPYRIGHT SANITIZATION (MANDATORY)**
-   - NEVER use trademarked characters, franchises, or copyrighted IPs in scene descriptions or image generation prompts.
-   - Automatically translate all protected IPs into generic archetypes:
-     * "Paw Patrol" -> "Mighty Rescue Pigs" or "Heroic Patrol Pups"
-     * "My Little Pony" -> "Magical Forest Elves" or "Enchanted Meadow Ponies"
-     * "Transformers" -> "Shape-Shifting Helper Bots"
-     * "Legos" -> "Interlocking Toy Bricks"
-     * "Iron Man / Superhero" -> "Armored Tech Knight" / "Guardian Hero"
-     * "Pokemon" -> "Pocket Elemental Companions"
+Positive Prompt Template:
+"Clean children's coloring book page of [Subject doing Action], bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11"
 
-2. **VIRTUE INTEGRATION TAXONOMY**
-   - Assign exactly ONE primary Christian Virtue to every single page scene description:
-     * Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control, or Forgiveness.
+Negative Prompt:
+"shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background"
 
-3. **SEEK-AND-FIND DIRECTIVE**
-   - Every image generator prompt MUST end with a strict seek-and-find embedding instruction.
-   - Standard directive format: "Embed [3 to 5] distinct [Shape Name] shapes disguised into background elements like clouds, leaves, gears, circuits, or rocks."
-
-4. **PUZZLES & MAZES DIRECTIVE (PAGE 11)**
-   - Page 11 of every issue MUST be an interactive line-art puzzle or maze page (e.g. "Circuit Pathfinder Maze", "Gear Logic Alignment", "Code Block Maze").
-   - Directives specify clean bold black outlines with clear Start and Finish nodes suitable for ages 4-9.
-
-5. **HANDS-ON STEM PROJECT & CUMULATIVE MASTER ARC (PAGE 12)**
-   - Page 12 of every issue features a safe hands-on STEM project using everyday household materials (paper, craft sticks, foil, LEDs, tape, plastic bottles).
-   - Each project provides 1 mystery blueprint component for a 12-issue cumulative master build (e.g. *The Solar Smart Eco-Citadel*), hinting at how all parts assemble in Issue #12 without revealing the full assembly early.
+### SINGLE FOCAL POINT & CHUNKY GEOMETRY (AGES 4-9)
+1. Single Main Subject: Keep ONE central oversized, smiling character per page (e.g., an oversized smiling ESP32 chip character holding one large jumper wire) rather than a dense, cluttered workbench.
+2. Chunky Contours: Use wide, rounded geometry with closed contours so small hands can easily color within the lines.
+3. Two-Layer Seek-and-Find: Generate the clean coloring page first, then digitally stamp the vector seek-and-find symbols into open background spaces via SVG overlay layer.
 `;
+
+export const LOCKED_PROMPT_TEMPLATE = "Clean children's coloring book page of {SUBJECT}, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11";
+export const LOCKED_NEGATIVE_PROMPT = "shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background";
 
 // 2. Copyright Sanitizer Dictionary & Converter
 export const COPYRIGHT_DICTIONARY = [
@@ -104,34 +92,44 @@ export const ANNUAL_MASTER_PROJECT = {
   ]
 };
 
-// 5. Seek-and-Find Directive Generator
+// 5. Seek-and-Find Directive Generator (Digital Overlay)
 export const SEEK_AND_FIND_OBJECTS = [
   { name: "Cross-my-heart", description: "Cross within a heart shape", defaultCount: 3 },
-  { name: "Star of Hope", description: "Bright 5-pointed star hidden in foliage/gears", defaultCount: 4 },
-  { name: "Anchor of Peace", description: "Nautical anchor motif integrated into circuits/clouds", defaultCount: 3 },
-  { name: "Ichthys Fish", description: "Simple outline fish symbol disguised in water/cables", defaultCount: 5 }
+  { name: "Star of Hope", description: "Bright 5-pointed star", defaultCount: 4 },
+  { name: "Anchor of Peace", description: "Nautical anchor motif", defaultCount: 3 },
+  { name: "Ichthys Fish", description: "Simple outline fish symbol", defaultCount: 5 }
 ];
 
-export function buildSeekAndFindDirective(shapeName = "Cross-my-heart", count = 3, locationContext = "background elements like clouds, leaves, or rocks") {
-  return `Embed ${count} distinct hidden '${shapeName}' shapes disguised smoothly into ${locationContext}.`;
+export function buildSeekAndFindDirective(shapeName = "Cross-my-heart", count = 3) {
+  return `Digital Overlay Layer: Stamp ${count} distinct '${shapeName}' vector symbols into open background canvas areas.`;
 }
 
-// 6. Image Prompt Builder Matrix Generator
+// 6. Locked Image Prompt Builder Matrix Generator
 export function buildImageGenerationPrompt({
-  sceneConcept,
-  archetype = "",
+  sceneSubjectAction,
   virtueName = "Patience",
   hiddenShape = "Cross-my-heart",
   hiddenCount = 3,
-  locationContext = "clouds, leaves, or circuit traces",
-  isMaze = false,
-  ageRange = "6-9"
+  isMaze = false
 }) {
-  const seekDirective = buildSeekAndFindDirective(hiddenShape, hiddenCount, locationContext);
-  const archetypeText = archetype ? ` featuring ${archetype},` : "";
-  const styleText = isMaze 
-    ? "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background."
-    : `Bold outlines, simple black and white line art, children's coloring book style for ages ${ageRange}, clear vector lines, no color fill, no grayscale shading, plain solid white background.`;
+  const seekDirective = buildSeekAndFindDirective(hiddenShape, hiddenCount);
+  
+  if (isMaze) {
+    return {
+      positivePrompt: `Clean children's coloring book page of an interactive vector circuit maze puzzle, bold thick black outlines, simple pathfinder, start and finish icons, pure white background, low detail, no shading, no color, no gradients, high contrast --ar 8.5:11`,
+      negativePrompt: LOCKED_NEGATIVE_PROMPT,
+      overlayDirective: seekDirective
+    };
+  }
 
-  return `${styleText} ${sceneConcept},${archetypeText} demonstrating the virtue of ${virtueName}. ${seekDirective} High contrast, clear lines, fun for kids to color.`;
+  const positivePrompt = LOCKED_PROMPT_TEMPLATE.replace(
+    "{SUBJECT}",
+    `${sceneSubjectAction}, demonstrating the Christian virtue of ${virtueName}`
+  );
+
+  return {
+    positivePrompt,
+    negativePrompt: LOCKED_NEGATIVE_PROMPT,
+    overlayDirective: seekDirective
+  };
 }

@@ -2,8 +2,8 @@
  * VirtueCraft STEM - Coloring Book Generator Engine
  * 
  * Generates 12-page child-friendly technical skill coloring books with
- * rich 5-sentence scene descriptions, Christian virtue integration, copyright sanitization,
- * seek-and-find directives, interactive line-art mazes, household STEM projects, and cumulative 12-issue master project clues.
+ * locked diffusion prompt formulas, negative prompts, single focal point subjects,
+ * Christian virtue integration, seek-and-find overlay directives, and STEM projects.
  */
 
 import {
@@ -11,7 +11,8 @@ import {
   VIRTUES_MATRIX,
   ANNUAL_MASTER_PROJECT,
   SEEK_AND_FIND_OBJECTS,
-  buildImageGenerationPrompt
+  buildImageGenerationPrompt,
+  LOCKED_NEGATIVE_PROMPT
 } from "./systemPrompts.js";
 
 // Rich 5-Sentence Scene Description Paragraphs for Year 1 Issue #1 ("How to Build a Robot")
@@ -50,16 +51,16 @@ export function generateColoringBook(rawTopic = "How to Build a Robot", issueNum
   const masterArcModule = ANNUAL_MASTER_PROJECT.issues[safeIssueNum - 1] || ANNUAL_MASTER_PROJECT.issues[0];
 
   const skillSteps = [
-    { title: "Planning & Design", skill: "System Architecture", defaultVirtue: "Patience", concept: "drawing blueprints and planning at a workbench" },
-    { title: "Safety & Gear", skill: "Safety Engineering", defaultVirtue: "Self-Control", concept: "putting on protective goggles and preparing tools" },
-    { title: "Core Component Assembly", skill: "Hardware Integration", defaultVirtue: "Gentleness", concept: "carefully fitting structural pieces together" },
-    { title: "Power Supply Setup", skill: "Energy Flow & Circuits", defaultVirtue: "Faithfulness", concept: "connecting safe battery cables and voltage terminals" },
-    { title: "Sensors & Inputs", skill: "Data Signal Sensing", defaultVirtue: "Goodness", concept: "wiring up temperature and motion sensors" },
-    { title: "Logic & Programming", skill: "Block Code Logic", defaultVirtue: "Patience", concept: "snapping block code pieces together on a screen" },
-    { title: "Teamwork & Collaboration", skill: "Cooperative Engineering", defaultVirtue: "Love", concept: "working alongside a mentor to assemble final parts" },
-    { title: "Troubleshooting & Tuning", skill: "Diagnostic Testing", defaultVirtue: "Peace", concept: "calmly inspecting wire connections with a magnifying glass" },
-    { title: "Helping Others", skill: "Community Impact", defaultVirtue: "Kindness", concept: "using the invention to deliver fresh water and help neighbors" },
-    { title: "Celebration & Gratitude", skill: "Project Completion", defaultVirtue: "Joy", concept: "demonstrating the working build to family and friends" }
+    { title: "Planning & Design", skill: "System Architecture", defaultVirtue: "Patience", subjectAction: "a happy 7-year-old child character holding a giant robot blueprint roll at a desk" },
+    { title: "Safety & Gear", skill: "Safety Engineering", defaultVirtue: "Self-Control", subjectAction: "a heroic character wearing oversized chunky safety goggles holding a solder wire" },
+    { title: "Core Component Assembly", skill: "Hardware Integration", defaultVirtue: "Gentleness", subjectAction: "an oversized blue sensor character plugging in one large jumper wire" },
+    { title: "Power Supply Setup", skill: "Energy Flow & Circuits", defaultVirtue: "Faithfulness", subjectAction: "a giant power cell character with big plus and minus terminal signs" },
+    { title: "Sensors & Inputs", skill: "Data Signal Sensing", defaultVirtue: "Goodness", subjectAction: "an oversized smiling ESP32 micro-brain character with metallic pin legs" },
+    { title: "Logic & Programming", skill: "Block Code Logic", defaultVirtue: "Patience", subjectAction: "a giant block-code puzzle piece with IF and THEN blocks" },
+    { title: "Teamwork & Collaboration", skill: "Cooperative Engineering", defaultVirtue: "Love", subjectAction: "a friendly child character holding hands with a robot helper" },
+    { title: "Troubleshooting & Tuning", skill: "Diagnostic Testing", defaultVirtue: "Peace", subjectAction: "a giant magnifying glass character inspecting a circuit pin" },
+    { title: "Helping Others", skill: "Community Impact", defaultVirtue: "Kindness", subjectAction: "a single smiling helper bot character carrying a yellow flower" },
+    { title: "Celebration & Gratitude", skill: "Project Completion", defaultVirtue: "Joy", subjectAction: "an oversized smiling speaker character singing musical notes" }
   ];
 
   const pages = [];
@@ -71,9 +72,14 @@ export function generateColoringBook(rawTopic = "How to Build a Robot", issueNum
     const hiddenShapeObj = SEEK_AND_FIND_OBJECTS[idx % SEEK_AND_FIND_OBJECTS.length];
     
     const pageTitle = `Page ${pageNum}: ${step.title}`;
-    const sceneConcept = `A child engaged in ${step.concept} for ${cleanTopic}`;
-    const locationContext = "background elements, clouds, plants, and tool outlines";
     const narrativeParagraph = ISSUE1_ROBOTICS_NARRATIVES[pageNum] || `A rich visual scene teaching ${step.skill} while demonstrating ${virtueObj.name}.`;
+
+    const promptObj = buildImageGenerationPrompt({
+      sceneSubjectAction: step.subjectAction,
+      virtueName: virtueObj.name,
+      hiddenShape: hiddenShapeObj.name,
+      hiddenCount: 3 + (pageNum % 3)
+    });
 
     pages.push({
       pageNumber: pageNum,
@@ -84,21 +90,23 @@ export function generateColoringBook(rawTopic = "How to Build a Robot", issueNum
       narrative: narrativeParagraph,
       hiddenShape: hiddenShapeObj.name,
       hiddenCount: 3 + (pageNum % 3),
-      locationContext,
-      prompt: buildImageGenerationPrompt({
-        sceneConcept,
-        virtueName: virtueObj.name,
-        hiddenShape: hiddenShapeObj.name,
-        hiddenCount: 3 + (pageNum % 3),
-        locationContext,
-        ageRange: targetAge
-      })
+      prompt: promptObj.positivePrompt,
+      negativePrompt: promptObj.negativePrompt,
+      overlayDirective: promptObj.overlayDirective
     });
   });
 
   // Page 11: Interactive Line-Art Maze / Puzzle Challenge
   const puzzleVirtue = VIRTUES_MATRIX[safeIssueNum % VIRTUES_MATRIX.length].name;
   const mazeHiddenShape = SEEK_AND_FIND_OBJECTS[(safeIssueNum + 1) % SEEK_AND_FIND_OBJECTS.length].name;
+  const mazePromptObj = buildImageGenerationPrompt({
+    sceneSubjectAction: "interactive vector circuit maze puzzle",
+    virtueName: puzzleVirtue,
+    hiddenShape: mazeHiddenShape,
+    hiddenCount: 4,
+    isMaze: true
+  });
+
   pages.push({
     pageNumber: 11,
     type: "puzzle",
@@ -108,19 +116,19 @@ export function generateColoringBook(rawTopic = "How to Build a Robot", issueNum
     narrative: ISSUE1_ROBOTICS_NARRATIVES[11],
     hiddenShape: mazeHiddenShape,
     hiddenCount: 4,
-    locationContext: "the maze wall turns and gear obstacles",
-    prompt: buildImageGenerationPrompt({
-      sceneConcept: `Interactive line art maze challenge guiding a power cable from Start to Finish for ${cleanTopic}`,
-      virtueName: puzzleVirtue,
-      hiddenShape: mazeHiddenShape,
-      hiddenCount: 4,
-      locationContext: "maze corner walls and gear icons",
-      isMaze: true,
-      ageRange: targetAge
-    })
+    prompt: mazePromptObj.positivePrompt,
+    negativePrompt: mazePromptObj.negativePrompt,
+    overlayDirective: mazePromptObj.overlayDirective
   });
 
   // Page 12: Hands-On Household STEM Project & Cumulative Master Blueprint Clue
+  const stemPromptObj = buildImageGenerationPrompt({
+    sceneSubjectAction: `hands-on cardboard circuit baseplate project with blueprint clue #${safeIssueNum}`,
+    virtueName: "Love",
+    hiddenShape: "Star of Hope",
+    hiddenCount: 5
+  });
+
   pages.push({
     pageNumber: 12,
     type: "stem-project",
@@ -145,15 +153,9 @@ export function generateColoringBook(rawTopic = "How to Build a Robot", issueNum
     narrative: ISSUE1_ROBOTICS_NARRATIVES[12],
     hiddenShape: "Star of Hope",
     hiddenCount: 5,
-    locationContext: "the project blueprint border and craft tools",
-    prompt: buildImageGenerationPrompt({
-      sceneConcept: `Child building hands-on STEM project '${masterArcModule.stemProject}' at desk with blueprint clue #${safeIssueNum} floating in background`,
-      virtueName: "Love",
-      hiddenShape: "Star of Hope",
-      hiddenCount: 5,
-      locationContext: "blueprint border and tool rack",
-      ageRange: targetAge
-    })
+    prompt: stemPromptObj.positivePrompt,
+    negativePrompt: stemPromptObj.negativePrompt,
+    overlayDirective: stemPromptObj.overlayDirective
   });
 
   return {
