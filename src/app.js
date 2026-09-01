@@ -17,16 +17,22 @@ import {
   renderPageSVG
 } from "./engine/lineArtRenderer.js";
 
+import {
+  VirtueTechAgentCore
+} from "./agent/agentCore.js";
+
 // Global Application State
 let currentBook = null;
 let currentArcadePageIndex = 0;
 let foundShapes = new Set();
+let activeAgentLoop = null;
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initGenerator();
   initSanitizer();
   initSystemRulesDisplay();
+  initAgentLoopUI();
   renderMasterArcGrid(1);
   
   // Default Initial Load: Issue #1 of Robotics
@@ -61,7 +67,82 @@ function initNavigation() {
   });
 }
 
-/* 2. Book Generator & Presets */
+/* 2. Agent Loop Controller UI */
+function initAgentLoopUI() {
+  const startBtn = document.getElementById("start-agent-btn");
+  const stepBtn = document.getElementById("step-agent-btn");
+  const clearBtn = document.getElementById("clear-agent-log-btn");
+  const queueTxt = document.getElementById("agent-topic-queue");
+  const consoleLog = document.getElementById("agent-console-log");
+  const statusDisplay = document.getElementById("agent-status-display");
+  const progressFill = document.getElementById("agent-progress-fill");
+
+  const appendLog = (msg) => {
+    const timestamp = new Date().toISOString().split("T")[1].slice(0, 8);
+    consoleLog.innerText += `\n[${timestamp}] ${msg}`;
+    consoleLog.scrollTop = consoleLog.scrollHeight;
+  };
+
+  const getQueueArray = () => {
+    return (queueTxt.value || "")
+      .split(",")
+      .map(s => s.trim())
+      .filter(Boolean);
+  };
+
+  startBtn?.addEventListener("click", async () => {
+    const queue = getQueueArray();
+    if (queue.length === 0) {
+      appendLog("[Agent Loop] Topic queue is empty!");
+      return;
+    }
+
+    startBtn.disabled = true;
+    statusDisplay.innerText = "Status: Autonomous Loop Running...";
+    statusDisplay.className = "badge badge-green";
+    appendLog(`[Agent Loop] Starting execution loop for ${queue.length} topics...`);
+
+    activeAgentLoop = new VirtueTechAgentCore({ queue });
+
+    const totalTopics = queue.length;
+    let completed = 0;
+
+    while (!activeAgentLoop.isCompleted) {
+      const result = await activeAgentLoop.runNextCycle();
+      if (result) {
+        completed++;
+        const pct = Math.round((completed / totalTopics) * 100);
+        progressFill.style.width = `${pct}%`;
+        appendLog(`[Agent Loop] Finished topic '${result.topic}' -> Generated 12 Issues`);
+      }
+    }
+
+    statusDisplay.innerText = "Status: Completed Queue!";
+    statusDisplay.className = "badge badge-purple";
+    appendLog("[Agent Loop] 🎉 All queued topics processed autonomously!");
+    startBtn.disabled = false;
+  });
+
+  stepBtn?.addEventListener("click", async () => {
+    const queue = getQueueArray();
+    if (!activeAgentLoop || activeAgentLoop.isCompleted) {
+      activeAgentLoop = new VirtueTechAgentCore({ queue });
+    }
+
+    appendLog("[Agent Loop] Executing single agent cycle step...");
+    const result = await activeAgentLoop.runNextCycle();
+    if (result) {
+      appendLog(`[Agent Loop] Single cycle complete for '${result.topic}'`);
+      loadBook(result.topic, 1);
+    }
+  });
+
+  clearBtn?.addEventListener("click", () => {
+    consoleLog.innerText = "[Agent Loop] Console log cleared.";
+  });
+}
+
+/* 3. Book Generator & Presets */
 function initGenerator() {
   const generateBtn = document.getElementById("generate-book-btn");
   const topicInput = document.getElementById("book-topic");
@@ -96,7 +177,7 @@ function loadBook(topic, issueNum = 1, age = "4-9 years") {
   renderBook(currentBook);
 }
 
-/* 3. Render Book Pages & UI Components */
+/* 4. Render Book Pages & UI Components */
 function renderBook(book) {
   currentBook = book;
   
@@ -151,7 +232,7 @@ function renderBook(book) {
   initArcade(book);
 }
 
-/* 4. Master Arc Components Grid */
+/* 5. Master Arc Components Grid */
 function renderMasterArcGrid(activeIssueNum = 1) {
   const container = document.getElementById("arc-components-grid");
   if (!container) return;
@@ -177,7 +258,7 @@ function renderMasterArcGrid(activeIssueNum = 1) {
   });
 }
 
-/* 5. Prompt Matrix Table */
+/* 6. Prompt Matrix Table */
 function initSystemRulesDisplay() {
   const rulesContainer = document.getElementById("system-rules-text");
   if (rulesContainer) {
@@ -204,7 +285,7 @@ function updatePromptMatrixTable(book) {
   });
 }
 
-/* 6. Copyright Sanitizer Sandbox */
+/* 7. Copyright Sanitizer Sandbox */
 function initSanitizer() {
   const inputTxt = document.getElementById("sanitizer-input");
   const runBtn = document.getElementById("run-sanitizer-btn");
@@ -243,7 +324,7 @@ function initSanitizer() {
   }
 }
 
-/* 7. Seek-and-Find Game Arcade */
+/* 8. Seek-and-Find Game Arcade */
 function initArcade(book) {
   const pageList = document.getElementById("arcade-page-list");
   if (!pageList) return;

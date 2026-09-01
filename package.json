@@ -2,16 +2,19 @@
   "name": "virtue-tech-coloring-books",
   "private": false,
   "version": "1.0.0",
-  "description": "AI engine and web application that generates technical skill coloring books instilling Christian virtues, copyright sanitization, and seek-and-find directives.",
+  "type": "module",
+  "description": "AI engine and web application that generates technical skill coloring books instilling Christian virtues, copyright sanitization, seek-and-find directives, mazes, and STEM projects.",
   "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "agent": "node src/agent/agentLoop.js"
   },
   "keywords": [
     "coloring-book",
     "ai",
+    "agent-loop",
     "llm-prompts",
     "stem",
     "virtues",

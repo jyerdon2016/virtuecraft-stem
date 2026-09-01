@@ -201,6 +201,41 @@ input[type="text"]:focus, select:focus, textarea:focus {
 .badge-purple { background: #f3e8ff; color: #6b21a8; }
 .badge-gold { background: #fef3c7; color: #92400e; }
 
+/* Agent Loop UI Styles */
+.agent-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+@media (max-width: 900px) { .agent-grid { grid-template-columns: 1fr; } }
+
+.agent-action-bar {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.agent-status-card {
+  background: #f8fafc;
+  border: 1px stroke var(--surface-border);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.4s ease;
+}
+
 .pages-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -262,7 +297,6 @@ input[type="text"]:focus, select:focus, textarea:focus {
   word-break: break-word;
 }
 
-/* Master Arc Grid Styling */
 .arc-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -303,7 +337,6 @@ input[type="text"]:focus, select:focus, textarea:focus {
   margin-top: 0.4rem;
 }
 
-/* Prompt Matrix & Tables */
 .prompt-matrix-grid { display: flex; flex-direction: column; gap: 1.5rem; }
 .code-block pre { background: #0f172a; color: #38bdf8; padding: 1.25rem; border-radius: var(--radius-sm); overflow-x: auto; font-size: 0.88rem; white-space: pre-wrap; }
 .table-responsive { overflow-x: auto; }

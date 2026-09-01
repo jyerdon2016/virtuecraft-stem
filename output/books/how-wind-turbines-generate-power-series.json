@@ -1,0 +1,2162 @@
+[
+  {
+    "issueNumber": 1,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #1: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 1,
+      "componentName": "Base Foundation & Power Grid Traces",
+      "stemProject": "Cardboard Baseplate & Foil Circuit Traces",
+      "hint": "Laying a strong, stable foundation built on truth and teamwork."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Joy",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #1",
+        "technicalSkill": "Hands-On Build: Cardboard Baseplate & Foil Circuit Traces",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Cardboard Baseplate & Foil Circuit Traces",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Base Foundation & Power Grid Traces following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 1,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Base Foundation & Power Grid Traces",
+          "hintText": "Laying a strong, stable foundation built on truth and teamwork."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #1 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Cardboard Baseplate & Foil Circuit Traces' at desk with blueprint clue #1 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 2,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #2: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 2,
+      "componentName": "Solar Canopy Array",
+      "stemProject": "Papercraft Solar Panel & Light Reflector",
+      "hint": "Catching rays of sun energy to power the citadel's lights."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Peace",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #2",
+        "technicalSkill": "Hands-On Build: Papercraft Solar Panel & Light Reflector",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Papercraft Solar Panel & Light Reflector",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Solar Canopy Array following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 2,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Solar Canopy Array",
+          "hintText": "Catching rays of sun energy to power the citadel's lights."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #2 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Papercraft Solar Panel & Light Reflector' at desk with blueprint clue #2 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 3,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #3: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 3,
+      "componentName": "Rainwater Harvest & Filtration Tower",
+      "stemProject": "Sand & Charcoal Plastic Bottle Filter",
+      "hint": "Purifying water to refresh plants and neighbors."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Patience",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #3",
+        "technicalSkill": "Hands-On Build: Sand & Charcoal Plastic Bottle Filter",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Sand & Charcoal Plastic Bottle Filter",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Rainwater Harvest & Filtration Tower following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 3,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Rainwater Harvest & Filtration Tower",
+          "hintText": "Purifying water to refresh plants and neighbors."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #3 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Sand & Charcoal Plastic Bottle Filter' at desk with blueprint clue #3 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 4,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #4: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 4,
+      "componentName": "Micro-Brain Command Center",
+      "stemProject": "Cardboard Console with LED Switch",
+      "hint": "Setting up the central control computer to process inputs."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Kindness",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #4",
+        "technicalSkill": "Hands-On Build: Cardboard Console with LED Switch",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Cardboard Console with LED Switch",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Micro-Brain Command Center following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 4,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Micro-Brain Command Center",
+          "hintText": "Setting up the central control computer to process inputs."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #4 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Cardboard Console with LED Switch' at desk with blueprint clue #4 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 5,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #5: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 5,
+      "componentName": "Wind Turbine Energy Mast",
+      "stemProject": "Pinwheel Paper Turbine & Motor Mount",
+      "hint": "Harnessing gentle breezes for extra evening power."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Goodness",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #5",
+        "technicalSkill": "Hands-On Build: Pinwheel Paper Turbine & Motor Mount",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Pinwheel Paper Turbine & Motor Mount",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Wind Turbine Energy Mast following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 5,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Wind Turbine Energy Mast",
+          "hintText": "Harnessing gentle breezes for extra evening power."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #5 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Pinwheel Paper Turbine & Motor Mount' at desk with blueprint clue #5 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 6,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #6: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 6,
+      "componentName": "Robotic Helper Docking Bay",
+      "stemProject": "Craft Stick Elevator & Ramp",
+      "hint": "Creating a safe home base for helper bots to charge."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Faithfulness",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #6",
+        "technicalSkill": "Hands-On Build: Craft Stick Elevator & Ramp",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Craft Stick Elevator & Ramp",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Robotic Helper Docking Bay following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 6,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Robotic Helper Docking Bay",
+          "hintText": "Creating a safe home base for helper bots to charge."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #6 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Craft Stick Elevator & Ramp' at desk with blueprint clue #6 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 7,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #7: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 7,
+      "componentName": "Hydroponic Greenhouse Roof",
+      "stemProject": "Sprout Tray & Foil Greenhouse Cover",
+      "hint": "Growing fresh food in clean water with kindness."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Gentleness",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #7",
+        "technicalSkill": "Hands-On Build: Sprout Tray & Foil Greenhouse Cover",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Sprout Tray & Foil Greenhouse Cover",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Hydroponic Greenhouse Roof following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 7,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Hydroponic Greenhouse Roof",
+          "hintText": "Growing fresh food in clean water with kindness."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #7 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Sprout Tray & Foil Greenhouse Cover' at desk with blueprint clue #7 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 8,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #8: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 8,
+      "componentName": "Audio Broadcast Beacon",
+      "stemProject": "Cup & String Sound Amplifier",
+      "hint": "Sharing messages of joy and encouragement across the city."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Self-Control",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #8",
+        "technicalSkill": "Hands-On Build: Cup & String Sound Amplifier",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Cup & String Sound Amplifier",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Audio Broadcast Beacon following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 8,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Audio Broadcast Beacon",
+          "hintText": "Sharing messages of joy and encouragement across the city."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #8 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Cup & String Sound Amplifier' at desk with blueprint clue #8 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 9,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #9: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 9,
+      "componentName": "Safety Barrier & Emergency Gate",
+      "stemProject": "Popsicle Stick Hydraulic Gate",
+      "hint": "Protecting the community with self-control and safety."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Forgiveness",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Forgiveness. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #9",
+        "technicalSkill": "Hands-On Build: Popsicle Stick Hydraulic Gate",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Popsicle Stick Hydraulic Gate",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Safety Barrier & Emergency Gate following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 9,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Safety Barrier & Emergency Gate",
+          "hintText": "Protecting the community with self-control and safety."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #9 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Popsicle Stick Hydraulic Gate' at desk with blueprint clue #9 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 10,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #10: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 10,
+      "componentName": "Automated Waste Sorting Chute",
+      "stemProject": "Gravity Marble & Magnet Sorter",
+      "hint": "Keeping God's creation clean and recycling resources."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Love",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #10",
+        "technicalSkill": "Hands-On Build: Gravity Marble & Magnet Sorter",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Gravity Marble & Magnet Sorter",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Automated Waste Sorting Chute following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 10,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Automated Waste Sorting Chute",
+          "hintText": "Keeping God's creation clean and recycling resources."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #10 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Gravity Marble & Magnet Sorter' at desk with blueprint clue #10 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 11,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #11: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 11,
+      "componentName": "Communication Satellite Dish",
+      "stemProject": "Foil Parabolic Sound Dish",
+      "hint": "Reaching out to far-away friends with good news."
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Joy",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #11",
+        "technicalSkill": "Hands-On Build: Foil Parabolic Sound Dish",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Foil Parabolic Sound Dish",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Communication Satellite Dish following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 11,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Communication Satellite Dish",
+          "hintText": "Reaching out to far-away friends with good news."
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #11 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Foil Parabolic Sound Dish' at desk with blueprint clue #11 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  },
+  {
+    "issueNumber": 12,
+    "topic": "How Wind Turbines Generate Power",
+    "subtitle": "Issue #12: A Children's Guide to How Wind Turbines Generate Power (Ages 4-9)",
+    "targetAge": "4-9 years",
+    "replacedIPs": [],
+    "masterArcModule": {
+      "issue": 12,
+      "componentName": "Grand Assembly & Power-On",
+      "stemProject": "Connecting All 11 Modules into The Master Citadel",
+      "hint": "Connecting every module together into one magnificent working citadel!"
+    },
+    "pages": [
+      {
+        "pageNumber": 1,
+        "type": "story",
+        "title": "Page 1: Planning & Design",
+        "technicalSkill": "System Architecture",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching System Architecture while demonstrating Patience.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in drawing blueprints and planning at a workbench for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 4 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 2,
+        "type": "story",
+        "title": "Page 2: Safety & Gear",
+        "technicalSkill": "Safety Engineering",
+        "virtue": "Self-Control",
+        "narrative": "A visual scene teaching Safety Engineering while demonstrating Self-Control.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in putting on protective goggles and preparing tools for How Wind Turbines Generate Power, demonstrating the virtue of Self-Control. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 3,
+        "type": "story",
+        "title": "Page 3: Core Component Assembly",
+        "technicalSkill": "Hardware Integration",
+        "virtue": "Gentleness",
+        "narrative": "A visual scene teaching Hardware Integration while demonstrating Gentleness.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in carefully fitting structural pieces together for How Wind Turbines Generate Power, demonstrating the virtue of Gentleness. Embed 3 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 4,
+        "type": "story",
+        "title": "Page 4: Power Supply Setup",
+        "technicalSkill": "Energy Flow & Circuits",
+        "virtue": "Faithfulness",
+        "narrative": "A visual scene teaching Energy Flow & Circuits while demonstrating Faithfulness.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in connecting safe battery cables and voltage terminals for How Wind Turbines Generate Power, demonstrating the virtue of Faithfulness. Embed 4 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 5,
+        "type": "story",
+        "title": "Page 5: Sensors & Inputs",
+        "technicalSkill": "Data Signal Sensing",
+        "virtue": "Goodness",
+        "narrative": "A visual scene teaching Data Signal Sensing while demonstrating Goodness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in wiring up temperature and motion sensors for How Wind Turbines Generate Power, demonstrating the virtue of Goodness. Embed 5 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 6,
+        "type": "story",
+        "title": "Page 6: Logic & Programming",
+        "technicalSkill": "Block Code Logic",
+        "virtue": "Patience",
+        "narrative": "A visual scene teaching Block Code Logic while demonstrating Patience.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in snapping block code pieces together on a screen for How Wind Turbines Generate Power, demonstrating the virtue of Patience. Embed 3 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 7,
+        "type": "story",
+        "title": "Page 7: Teamwork & Collaboration",
+        "technicalSkill": "Cooperative Engineering",
+        "virtue": "Love",
+        "narrative": "A visual scene teaching Cooperative Engineering while demonstrating Love.",
+        "hiddenShape": "Anchor of Peace",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in working alongside a mentor to assemble final parts for How Wind Turbines Generate Power, demonstrating the virtue of Love. Embed 4 distinct hidden 'Anchor of Peace' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 8,
+        "type": "story",
+        "title": "Page 8: Troubleshooting & Tuning",
+        "technicalSkill": "Diagnostic Testing",
+        "virtue": "Peace",
+        "narrative": "A visual scene teaching Diagnostic Testing while demonstrating Peace.",
+        "hiddenShape": "Ichthys Fish",
+        "hiddenCount": 5,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in calmly inspecting wire connections with a magnifying glass for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 5 distinct hidden 'Ichthys Fish' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 9,
+        "type": "story",
+        "title": "Page 9: Helping Others",
+        "technicalSkill": "Community Impact",
+        "virtue": "Kindness",
+        "narrative": "A visual scene teaching Community Impact while demonstrating Kindness.",
+        "hiddenShape": "Cross-my-heart",
+        "hiddenCount": 3,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in using the invention to deliver fresh water and help neighbors for How Wind Turbines Generate Power, demonstrating the virtue of Kindness. Embed 3 distinct hidden 'Cross-my-heart' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 10,
+        "type": "story",
+        "title": "Page 10: Celebration & Gratitude",
+        "technicalSkill": "Project Completion",
+        "virtue": "Joy",
+        "narrative": "A visual scene teaching Project Completion while demonstrating Joy.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "background elements, clouds, plants, and tool outlines",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. A child engaged in demonstrating the working build to family and friends for How Wind Turbines Generate Power, demonstrating the virtue of Joy. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into background elements, clouds, plants, and tool outlines. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 11,
+        "type": "puzzle",
+        "title": "Page 11: Circuit Pathfinder Maze",
+        "technicalSkill": "Logic Pathfinder & Algorithm Navigation",
+        "virtue": "Peace",
+        "narrative": "Help the young engineer guide the power signal through the circuit maze to activate the How Wind Turbines Generate Power central unit!",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 4,
+        "locationContext": "the maze wall turns and gear obstacles",
+        "prompt": "Black and white line art maze puzzle style, clear bold paths, start and finish icons, no shading, plain white background. Interactive line art maze challenge guiding a power cable from Start to Finish for How Wind Turbines Generate Power, demonstrating the virtue of Peace. Embed 4 distinct hidden 'Star of Hope' shapes disguised smoothly into maze corner walls and gear icons. High contrast, clear lines, fun for kids to color."
+      },
+      {
+        "pageNumber": 12,
+        "type": "stem-project",
+        "title": "Page 12: STEM Project & Master Blueprint Clue #12",
+        "technicalSkill": "Hands-On Build: Connecting All 11 Modules into The Master Citadel",
+        "virtue": "Love",
+        "stemProjectDetails": {
+          "projectName": "Connecting All 11 Modules into The Master Citadel",
+          "materials": [
+            "Cardboard or craft sticks",
+            "Aluminum foil",
+            "Tape & scissors",
+            "1.5V AA Battery & LED (optional)",
+            "Paper cups"
+          ],
+          "instructions": [
+            "Gather safe household craft items.",
+            "Assemble the Grand Assembly & Power-On following the step-by-step layout.",
+            "Save this completed piece in your Master Citadel Collector Box!"
+          ]
+        },
+        "masterArcClue": {
+          "issueNumber": 12,
+          "grandProjectTitle": "The Solar Smart Eco-Citadel",
+          "componentName": "Grand Assembly & Power-On",
+          "hintText": "Connecting every module together into one magnificent working citadel!"
+        },
+        "narrative": "Build your hands-on household STEM project! Collect component #12 of 12 for The Solar Smart Eco-Citadel.",
+        "hiddenShape": "Star of Hope",
+        "hiddenCount": 5,
+        "locationContext": "the project blueprint border and craft tools",
+        "prompt": "Bold outlines, simple black and white line art, children's coloring book style for ages 4-9 years, clear vector lines, no color fill, no grayscale shading, plain solid white background. Child building hands-on STEM project 'Connecting All 11 Modules into The Master Citadel' at desk with blueprint clue #12 floating in background, demonstrating the virtue of Love. Embed 5 distinct hidden 'Star of Hope' shapes disguised smoothly into blueprint border and tool rack. High contrast, clear lines, fun for kids to color."
+      }
+    ]
+  }
+]

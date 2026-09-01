@@ -24,10 +24,11 @@
 
       <nav class="nav-links">
         <button class="nav-btn active" data-tab="studio">🎨 Book Studio</button>
+        <button class="nav-btn" data-tab="agent-loop">🤖 Agent Loop</button>
         <button class="nav-btn" data-tab="master-arc">🏆 Master Build Arc</button>
         <button class="nav-btn" data-tab="prompt-matrix">⚡ Prompt Matrix</button>
         <button class="nav-btn" data-tab="sanitizer">🛡️ Copyright Sanitizer</button>
-        <button class="nav-btn" data-tab="arcade">🔍 Seek-and-Find Arcade</button>
+        <button class="nav-btn" data-tab="arcade">🔍 Seek & Find</button>
       </nav>
 
       <div class="header-actions">
@@ -121,7 +122,46 @@
       </div>
     </section>
 
-    <!-- TAB 2: ANNUAL MASTER BUILD ARC -->
+    <!-- TAB 2: AGENT LOOP CONTROLLER -->
+    <section id="tab-agent-loop" class="tab-content">
+      <div class="hero-section">
+        <h2>🤖 Autonomous Agent Loop Controller</h2>
+        <p>Run continuous, automated loops that observe task queues, run copyright sanitization, synthesize 12-issue annual series, and export printable HTML/PDF packages autonomously.</p>
+      </div>
+
+      <div class="agent-grid">
+        <div class="card glass-panel">
+          <h3>⚡ Agent Loop Controls</h3>
+          <div class="form-group mt-3">
+            <label for="agent-topic-queue">Topic Task Queue (Comma Separated):</label>
+            <textarea id="agent-topic-queue" rows="3">How to Build a Robot, How Solar Panels Work, How Computer Coding Works, How Water Filtration Works</textarea>
+          </div>
+
+          <div class="agent-action-bar mt-3">
+            <button id="start-agent-btn" class="btn btn-primary">▶️ Start Autonomous Agent Loop</button>
+            <button id="step-agent-btn" class="btn btn-outline">⏭️ Run 1 Agent Cycle</button>
+            <button id="clear-agent-log-btn" class="btn btn-outline">🧹 Clear Console Log</button>
+          </div>
+
+          <div class="agent-status-card mt-4">
+            <h4>Agent Execution Status:</h4>
+            <div id="agent-status-display" class="badge badge-purple mt-2" style="font-size: 1rem;">Status: Ready</div>
+            <div class="progress-bar mt-3">
+              <div id="agent-progress-fill" class="progress-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card glass-panel">
+          <h3>🖥️ Real-Time Agent Execution Console</h3>
+          <div class="code-block mt-3">
+            <pre id="agent-console-log" style="height: 340px; overflow-y: auto;">[Agent Loop] System initialized and ready for autonomous batch processing...</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: ANNUAL MASTER BUILD ARC -->
     <section id="tab-master-arc" class="tab-content">
       <div class="hero-section">
         <h2>🏆 Cumulative Annual Master Project: The Solar Smart Eco-Citadel</h2>
@@ -138,7 +178,7 @@
       </div>
     </section>
 
-    <!-- TAB 3: PROMPT MATRIX -->
+    <!-- TAB 4: PROMPT MATRIX -->
     <section id="tab-prompt-matrix" class="tab-content">
       <div class="hero-section">
         <h2>Backend LLM System Instructions & Image Prompt Matrix</h2>
@@ -175,7 +215,7 @@
       </div>
     </section>
 
-    <!-- TAB 4: COPYRIGHT SANITIZER -->
+    <!-- TAB 5: COPYRIGHT SANITIZER -->
     <section id="tab-sanitizer" class="tab-content">
       <div class="hero-section">
         <h2>Copyright Archetype Protection Engine</h2>
@@ -212,7 +252,7 @@
       </div>
     </section>
 
-    <!-- TAB 5: SEEK AND FIND GAME ARCADE -->
+    <!-- TAB 6: SEEK AND FIND GAME ARCADE -->
     <section id="tab-arcade" class="tab-content">
       <div class="hero-section">
         <h2>Interactive Seek-and-Find & Maze Arcade</h2>
