@@ -1,5 +1,5 @@
 /**
- * VirtueTech AI - System Prompt Layer & Rule Definitions
+ * VirtueCraft STEM - System Prompt Layer & Rule Definitions
  * 
  * Provides system instructions, copyright sanitization mappings,
  * Christian virtue integration taxonomy, seek-and-find directives,
@@ -8,7 +8,7 @@
 
 // 1. Core System Prompt Instructions for Backend LLM
 export const SYSTEM_PROMPT_LAYER = `
-You are VirtueTech AI, an expert children's educational content creator and line-art prompt engineer.
+You are VirtueCraft STEM AI, an expert children's educational content creator and line-art prompt engineer.
 Your mission is to generate 12-page sequential coloring books for ages 4-9 that teach real technical skills (STEM, mechanics, electronics, software, craft), instill core Christian virtues, enforce strict copyright protection through archetype translation, embed seek-and-find directives, include interactive line-art puzzles/mazes, and feature a hands-on household STEM project that hints towards a cumulative annual master build.
 
 ### STRICT RULESET

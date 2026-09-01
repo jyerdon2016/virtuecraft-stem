@@ -1,9 +1,9 @@
 {
-  "name": "virtue-tech-coloring-books",
+  "name": "virtuecraft-stem",
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "description": "AI engine and web application that generates technical skill coloring books instilling Christian virtues, copyright sanitization, seek-and-find directives, mazes, and STEM projects.",
+  "description": "VirtueCraft STEM - AI engine & web app generating children's STEM skill coloring books with Christian virtues, copyright protection, mazes, and cumulative annual master projects.",
   "main": "index.html",
   "scripts": {
     "dev": "vite",
@@ -12,18 +12,17 @@
     "agent": "node src/agent/agentLoop.js"
   },
   "keywords": [
+    "virtuecraft-stem",
+    "christian-stem",
     "coloring-book",
-    "ai",
-    "agent-loop",
-    "llm-prompts",
-    "stem",
-    "virtues",
-    "seek-and-find",
+    "homeschool-curriculum",
+    "kids-stem-activities",
+    "christian-virtues",
+    "seek-and-find-mazes",
     "copyright-sanitization",
-    "christian-values",
-    "kids-education"
+    "ai-coloring-generator"
   ],
-  "author": "Antigravity Open Source Initiative",
+  "author": "VirtueCraft STEM Open Source Initiative",
   "license": "MIT",
   "devDependencies": {
     "vite": "^5.0.0"
