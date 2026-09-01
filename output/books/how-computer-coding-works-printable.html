@@ -3,49 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Year 1 Issue #1: How Computer Coding Works - Complete 12-Page Printable Issue</title>
+  <title>VirtueCraft STEM Magazine - Issue #1: How Computer Coding Works</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; padding: 2rem; }
-    .container { max-width: 800px; margin: 0 auto; }
-    .header-banner { text-align: center; background: #ffffff; border: 2px stroke #1e40af; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
-    .header-banner h1 { font-family: 'Outfit', sans-serif; font-size: 2rem; color: #1e40af; margin-bottom: 0.25rem; }
-    .header-banner p { color: #0d9488; font-weight: 600; font-size: 1rem; }
-    .meta-badges { display: flex; gap: 0.5rem; justify-content: center; margin-top: 0.75rem; flex-wrap: wrap; }
-    .badge { font-size: 0.8rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 12px; font-family: 'Outfit', sans-serif; }
+    .container { max-width: 900px; margin: 0 auto; }
+    
+    .magazine-header { text-align: center; background: #ffffff; border: 3px solid #1e40af; padding: 2rem; border-radius: 16px; margin-bottom: 2.5rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+    .magazine-masthead { font-family: 'Outfit', sans-serif; font-size: 2.4rem; font-weight: 800; color: #1e40af; letter-spacing: -0.02em; text-transform: uppercase; }
+    .magazine-subhead { color: #0d9488; font-weight: 700; font-size: 1.1rem; margin-top: 0.25rem; }
+    .meta-badges { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
+    .badge { font-size: 0.85rem; font-weight: 700; padding: 0.35rem 0.85rem; border-radius: 20px; font-family: 'Outfit', sans-serif; }
     .badge-blue { background: #dbeafe; color: #1e40af; }
     .badge-teal { background: #ccfbf1; color: #0f766e; }
     .badge-gold { background: #fef3c7; color: #92400e; }
     
-    .page-sheet { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 1rem; margin-bottom: 2.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05); }
-    .page-sheet svg { width: 100%; height: auto; display: block; }
+    .magazine-page-card { background: #ffffff; border: 2px solid #cbd5e1; border-radius: 16px; overflow: hidden; margin-bottom: 3rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05); }
+    .magazine-page-header { background: #f1f5f9; padding: 1.25rem 1.5rem; border-bottom: 2px solid #cbd5e1; display: flex; justify-content: space-between; align-items: center; }
+    .magazine-page-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.35rem; color: #1e40af; }
+    
+    .magazine-page-content { padding: 1.5rem; }
+    .svg-wrapper { text-align: center; margin-bottom: 1.5rem; }
+    .svg-wrapper svg { width: 100%; height: auto; max-height: 750px; }
+    
+    .editorial-narrative-box { background: #f8fafc; border-left: 5px solid #0d9488; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-top: 1rem; }
+    .editorial-title { font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 800; color: #0d9488; margin-bottom: 0.5rem; }
+    .editorial-paragraph { font-size: 1rem; line-height: 1.7; color: #334155; }
     
     @media print {
       body { background: white !important; padding: 0 !important; }
-      .header-banner { display: none !important; }
-      .page-sheet { border: none !important; box-shadow: none !important; padding: 0 !important; margin: 0 !important; page-break-after: always; height: 100vh; display: flex; justify-content: center; align-items: center; }
-      .page-sheet svg { max-height: 98vh !important; }
+      .magazine-header { display: none !important; }
+      .magazine-page-card { border: none !important; box-shadow: none !important; margin: 0 !important; page-break-after: always; height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+      .svg-wrapper svg { max-height: 70vh !important; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header-banner">
-      <h1>🎨 VirtueCraft STEM: Year 1 Issue #1</h1>
-      <p>How Computer Coding Works — Issue #1: A Children's Guide to How Computer Coding Works (Ages 4-9)</p>
+    <div class="magazine-header">
+      <div class="magazine-masthead">VirtueCraft STEM Magazine</div>
+      <div class="magazine-subhead">Year 1 Issue #1: How Computer Coding Works — Issue #1: A Children's Guide to How Computer Coding Works (Ages 4-9)</div>
       <div class="meta-badges">
         <span class="badge badge-blue">Ages 4-9</span>
-        <span class="badge badge-teal">10 Virtues Integrated</span>
+        <span class="badge badge-teal">10 Christian Virtues Integrated</span>
         <span class="badge badge-gold">Page 11: Circuit Pathfinder Maze</span>
-        <span class="badge badge-blue">Page 12: STEM Project & Master Blueprint Clue #1</span>
+        <span class="badge badge-blue">Page 12: Household STEM Project & Master Blueprint Clue #1</span>
       </div>
     </div>
 
-    <!-- Render All 12 Full Vector SVG Pages -->
-    <div class="page-sheet">
+    <!-- Render All 12 Pages with SVG Line Art and Vivid 5-Sentence Editorial Paragraphs -->
+    
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 1: Planning &amp; Design</h2>
+            <span class="badge badge-blue">Virtue: Patience</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -127,8 +146,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">A curious seven-year-old child sits focused at a sunlit wooden workbench, carefully sketching the initial robot blueprint with a pencil and clear plastic ruler. Crumpled paper ideas dot the desk alongside colorful markers, showing that good engineering takes steady practice and careful planning. Soft morning light streams through the window, highlighting three hidden 'Cross-my-heart' shapes disguised seamlessly among the blueprint cloud bubbles and pencil jar patterns. The child smiles thoughtfully while measuring each arm component, demonstrating the virtue of Patience by taking time to plan before building. Resting on the corner shelf, a cheerful toy helper bot stands ready, inspiring the young builder to turn dreams into real mechanical designs.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 2: Safety &amp; Gear</h2>
+            <span class="badge badge-blue">Virtue: Self-Control</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -213,8 +250,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">An oversized, friendly ESP32 microcontroller character with glowing eyes and a wide, welcoming smile stands at the center of the workbench to explain how robot brains think. Tiny metallic pins extend from its sides like cheerful little legs, showing how data signals travel back and forth to control lights and motors. Intricate circuit board traces wind through the background, hiding four distinct 'Star of Hope' shapes tucked inside the corner power gears and leafy wall art. The child gazes in awe as the micro-brain glows softly, learning that technology should always be designed with Goodness to serve and protect people. Floating thought-bubbles around the microchip illustrate logic rules, showing young minds how simple computer code brings ideas to life.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 3: Core Component Assembly</h2>
+            <span class="badge badge-blue">Virtue: Gentleness</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -290,8 +345,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 3 hidden <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">With soft, careful hands, the child gently presses a blue DHT11 temperature sensor and a motion detector module into the tiny grid holes of a white breadboard. Flexible jumper wires curve gracefully across the desk like colorful vines, connecting the sensors to the robot's main circuit. Tucked into the window foliage outside and the wire loops on the table, three hidden 'Cross-my-heart' shapes wait to be discovered by keen young eyes. The scene teaches the virtue of Gentleness, demonstrating how delicate microchips and fragile pins require calm, careful handling to prevent bending. Outside the sunny window, birds chirp peacefully as the child tests how the sensor detects warm temperature changes in the room.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 4: Power Supply Setup</h2>
+            <span class="badge badge-blue">Virtue: Faithfulness</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -370,8 +443,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">A small PAM8403 audio amplifier board and mini circular speaker spring to life, sending cheerful musical soundwave bubbles floating through the air. The young engineer claps with delight as the robot utters its very first spoken words of encouragement and friendly greeting. Five hidden 'Ichthys Fish' symbols swim through the floating soundwave patterns and background wall decor, adding a fun seek-and-find challenge to the scene. This heartwarming moment celebrates the virtue of Joy, showing how technical discovery brings happiness when we use our voices to speak kind words. Glowing LED lights flicker rhythmically with each sound note, transforming the quiet workshop into a celebration of music and code.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 5: Sensors &amp; Inputs</h2>
+            <span class="badge badge-blue">Virtue: Goodness</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -460,8 +551,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Wearing protective safety goggles, the child works side-by-side with a caring parent or mentor at a brightly lit soldering station. Thin wisps of solder smoke curl gracefully into the air as they safely hold the soldering iron together to join copper wire connections. Three hidden 'Cross-my-heart' shapes lie disguised within the rising smoke currents and tool rack outlines in the background. The scene captures the deep virtue of Love, showing how passing down technical skills and practicing safety creates cherished family memories. An organized rack of pliers, wire strippers, and safety gear frames the workbench, reinforcing the importance of safety equipment.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 6: Logic &amp; Programming</h2>
+            <span class="badge badge-blue">Virtue: Patience</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -537,8 +646,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 3 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">The child carefully attaches compact blue servo motors to the robot's shoulder joints using small brass screws and a precision screwdriver. Clear angle markings from zero to one hundred eighty degrees arch around the motor arm, showing how smooth gear rotations provide exact physical motion. Embedded within the mechanical gear teeth and background wall tiles, three hidden 'Anchor of Peace' shapes await discovery. The scene illustrates Self-Control, teaching young builders that powerful mechanical arms must be programmed to move calmly, smoothly, and safely. The child double-checks every screw alignment, feeling proud of how precise engineering creates smooth, controlled robotic movement.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 7: Teamwork &amp; Collaboration</h2>
+            <span class="badge badge-blue">Virtue: Love</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -618,8 +745,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">A neat rechargeable battery power module connects securely to the main power bus, displaying bright positive and negative terminal symbols. Sparkles of clean electric energy glow around the insulated red and black leads, showing how reliable power keeps the robot running smoothly. Four hidden 'Star of Hope' shapes shimmer inside the energy spark bubbles and starry window view outside. The page highlights the virtue of Faithfulness, explaining that just as circuits require steady current flow, staying faithful to our goals keeps our work strong. The child double-checks wire polarities with confidence, ensuring the robot receives safe, steady voltage.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 8: Troubleshooting &amp; Tuning</h2>
+            <span class="badge badge-blue">Virtue: Peace</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -705,8 +850,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Sitting comfortably in an ergonomic chair, the child snaps colorful block-code puzzle pieces together on a laptop screen to write the robot's operational program. Code blocks labeled IF, THEN, and SENSE click into place seamlessly, translating human commands into digital machine instructions. Disguised within the floating code block shadows and background indoor house plants, three hidden 'Cross-my-heart' shapes are cleverly tucked away. The scene reinforces Patience, demonstrating that writing and organizing computer code requires calm focus and logical step-by-step thinking. A cute miniature helper bot sits beside the laptop screen, eagerly waiting for its new code program to upload.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 9: Helping Others</h2>
+            <span class="badge badge-blue">Virtue: Kindness</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -783,8 +946,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 3 hidden <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">When a motor doesn't turn on immediately, the child remains completely calm, using a handheld digital multimeter and magnifying glass to check connection paths. Rather than feeling frustrated, the young engineer smiles serenely, knowing that finding loose wires is a normal, rewarding part of the building process. Three hidden 'Anchor of Peace' shapes float peacefully inside the soft clouds visible through the workshop window. The page teaches the virtue of Peace, showing that maintaining a tranquil mind helps us solve complex problems with clarity. Sunshine fills the quiet room as the magnifying glass reveals a simple loose jumper pin that is easily plugged back in.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 10: Celebration &amp; Gratitude</h2>
+            <span class="badge badge-blue">Virtue: Joy</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -866,8 +1047,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Out in a blooming neighborhood garden, the finished rolling helper bot gently carries a tray with a fresh glass of water and a bright yellow flower to an elderly neighbor. Smiling family members and friends watch with warm hearts as the robot uses its arm to serve others with gentle care. Four hidden 'Cross-my-heart' shapes are woven into the garden flower petals and fluffy background clouds. The scene embodies the virtue of Kindness, showing that the ultimate purpose of acquiring STEM skills is to love and serve our community. Sunbeams illuminate the colorful garden path as children cheer for their working creation.</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 11: Circuit Pathfinder Maze</h2>
+            <span class="badge badge-blue">Virtue: Joy</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -964,8 +1163,26 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 4 hidden <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
-<div class="page-sheet">
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">An interactive vector line-art maze challenges young minds to guide a glowing power line from the green START terminal through complex circuit corridors to the red FINISH node. Thick, bold black walls create clean paths for ages 4-9 to trace with crayons or markers while dodging gear obstacles. Four hidden 'Ichthys Fish' symbols are cleverly integrated into the corridor turns and capacitor symbols along the way. The puzzle page reinforces logical pathfinding and spatial reasoning while teaching children to persevere through winding paths. Upon reaching the end, a glowing victory icon confirms that the circuit is complete and fully powered!</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 12: STEM Project &amp; Master Blueprint Clue #1</h2>
+            <span class="badge badge-blue">Virtue: Love</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
       <defs>
         <style>
@@ -1017,7 +1234,7 @@
 
       <rect x="20" y="20" width="480" height="80" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
       <text x="35" y="52" fill="#0369a1" font-family="'Outfit', sans-serif" font-weight="800" font-size="17">🔨 YEAR 1 ISSUE #1 BUILD: Cardboard Baseplate &amp; Foil Circuit Traces</text>
-      <text x="35" y="78" fill="#334155" font-family="'Inter', sans-serif" font-size="13">Materials needed: Cardboard or craft sticks, Aluminum foil, Tape &amp; scissors, 1.5V AA Battery &amp; LED (optional), Paper cups</text>
+      <text x="35" y="78" fill="#334155" font-family="'Inter', sans-serif" font-size="13">Materials needed: Cardboard baseplate, Aluminum foil strips, Tape &amp; scissors, 1.5V AA Battery &amp; LED (optional), Paper cups</text>
 
       <g transform="translate(140, 120)">
         <rect x="0" y="0" width="240" height="150" rx="10" class="bold-outline" />
@@ -1065,7 +1282,16 @@
       <text x="50" y="678" class="page-text" font-size="14" font-weight="700" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
       <text x="50" y="702" class="page-text" font-size="13" fill="#475569">Find 5 hidden <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> shapes in the line art above! Color them when found.</text>
     </svg>
-  </div>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">The final page presents a step-by-step hands-on craft project where kids build a real 'Cardboard Baseplate &amp; Foil Circuit Trace' using household materials like foil, tape, and paper cups. A prominent golden blueprint badge highlights 'Mystery Master Clue #1' of 12 for the grand annual project, The Solar Smart Eco-Citadel. Five hidden 'Star of Hope' shapes decorate the blueprint border grid and craft tool rack. The page instills Generosity &amp; Vision, encouraging children to save their completed baseplate module in their collector box as they look forward to assembling all 12 monthly pieces into one working master citadel!</p>
+            </div>
+          </div>
+        </div>
+      
   </div>
 </body>
 </html>
