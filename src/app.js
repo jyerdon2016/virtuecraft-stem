@@ -5,12 +5,12 @@
 import {
   SYSTEM_PROMPT_LAYER,
   COPYRIGHT_DICTIONARY,
+  ANNUAL_MASTER_PROJECT,
   sanitizeCopyrightText
 } from "./engine/systemPrompts.js";
 
 import {
-  generateColoringBook,
-  CURATED_BOOKS
+  generateColoringBook
 } from "./engine/coloringBookGenerator.js";
 
 import {
@@ -27,9 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
   initGenerator();
   initSanitizer();
   initSystemRulesDisplay();
+  renderMasterArcGrid(1);
   
-  // Default Initial Load: Generate Robotics Book
-  loadBook("robotics");
+  // Default Initial Load: Issue #1 of Robotics
+  loadBook("How to Build a Robot", 1);
 });
 
 /* 1. Navigation Tab Handling */
@@ -54,9 +55,9 @@ function initNavigation() {
     window.print();
   });
 
-  // Switch to matrix tab from summary banner
-  document.getElementById("view-matrix-btn")?.addEventListener("click", () => {
-    document.querySelector('[data-tab="prompt-matrix"]').click();
+  // Switch to Master Arc tab from summary banner
+  document.getElementById("view-arc-btn")?.addEventListener("click", () => {
+    document.querySelector('[data-tab="master-arc"]').click();
   });
 }
 
@@ -64,34 +65,34 @@ function initNavigation() {
 function initGenerator() {
   const generateBtn = document.getElementById("generate-book-btn");
   const topicInput = document.getElementById("book-topic");
+  const issueSelect = document.getElementById("issue-number");
   const ageSelect = document.getElementById("book-age");
-  const virtueSelect = document.getElementById("book-virtue");
 
   generateBtn.addEventListener("click", () => {
     const topic = topicInput.value.trim() || "How to Build a Robot";
+    const issueNum = parseInt(issueSelect.value) || 1;
     const age = ageSelect.value;
-    const virtue = virtueSelect.value;
 
-    const book = generateColoringBook(topic, age, virtue);
-    renderBook(book);
+    loadBook(topic, issueNum, age);
   });
 
   // Presets
   document.querySelectorAll(".pill-btn").forEach(presetBtn => {
     presetBtn.addEventListener("click", () => {
       const key = presetBtn.getAttribute("data-preset");
-      loadBook(key);
+      let presetTopic = "How to Build a Robot";
+      if (key === "solar") presetTopic = "How Solar Panels Work";
+      if (key === "coding") presetTopic = "How Computer Coding Works";
+      if (key === "water") presetTopic = "How Water Filtration Works";
+
+      document.getElementById("book-topic").value = presetTopic;
+      loadBook(presetTopic, 1);
     });
   });
 }
 
-function loadBook(key) {
-  if (CURATED_BOOKS[key]) {
-    currentBook = CURATED_BOOKS[key];
-    document.getElementById("book-topic").value = currentBook.topic;
-  } else {
-    currentBook = generateColoringBook("How to Build a Robot");
-  }
+function loadBook(topic, issueNum = 1, age = "4-9 years") {
+  currentBook = generateColoringBook(topic, issueNum, age);
   renderBook(currentBook);
 }
 
@@ -101,7 +102,8 @@ function renderBook(book) {
   
   // Display Header
   document.getElementById("book-title-display").innerText = book.topic;
-  document.getElementById("book-subtitle-display").innerText = book.subtitle || `Target Age: ${book.targetAge}`;
+  document.getElementById("book-subtitle-display").innerText = book.subtitle;
+  document.getElementById("issue-badge").innerText = `Issue #${book.issueNumber} of 12`;
 
   const container = document.getElementById("pages-container");
   container.innerHTML = "";
@@ -113,10 +115,14 @@ function renderBook(book) {
     // Generate SVG line art for this page
     const { svgHtml } = renderPageSVG(page);
 
+    let typeTag = `<span class="badge badge-purple">Story Step</span>`;
+    if (page.type === "puzzle") typeTag = `<span class="badge badge-gold">🧩 Vector Maze Puzzle</span>`;
+    if (page.type === "stem-project") typeTag = `<span class="badge badge-green">🔨 Household STEM Project</span>`;
+
     card.innerHTML = `
       <div class="page-card-header">
         <h4>${escapeHtml(page.title)}</h4>
-        <span class="badge badge-purple">${page.pageNumber} of ${book.pages.length}</span>
+        ${typeTag}
       </div>
 
       <div class="page-card-preview">
@@ -139,12 +145,39 @@ function renderBook(book) {
     container.appendChild(card);
   });
 
-  // Update Matrix Table & Arcade
+  // Update Matrix Table, Master Arc & Arcade
   updatePromptMatrixTable(book);
+  renderMasterArcGrid(book.issueNumber);
   initArcade(book);
 }
 
-/* 4. Prompt Matrix Table */
+/* 4. Master Arc Components Grid */
+function renderMasterArcGrid(activeIssueNum = 1) {
+  const container = document.getElementById("arc-components-grid");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  ANNUAL_MASTER_PROJECT.issues.forEach(item => {
+    const card = document.createElement("div");
+    const isActive = item.issue === activeIssueNum;
+    card.className = `arc-card ${isActive ? "active-issue" : ""}`;
+
+    card.innerHTML = `
+      <div class="arc-card-header">
+        <span class="badge ${isActive ? "badge-green" : "badge-blue"}">Issue #${item.issue}</span>
+        ${isActive ? '<span class="badge badge-gold">Active Issue</span>' : ''}
+      </div>
+      <div class="arc-card-title">${escapeHtml(item.componentName)}</div>
+      <p style="font-size: 0.85rem; margin-top: 0.4rem;"><strong>STEM Build:</strong> ${escapeHtml(item.stemProject)}</p>
+      <div class="arc-card-hint">"${escapeHtml(item.hint)}"</div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+/* 5. Prompt Matrix Table */
 function initSystemRulesDisplay() {
   const rulesContainer = document.getElementById("system-rules-text");
   if (rulesContainer) {
@@ -171,7 +204,7 @@ function updatePromptMatrixTable(book) {
   });
 }
 
-/* 5. Copyright Sanitizer Sandbox */
+/* 6. Copyright Sanitizer Sandbox */
 function initSanitizer() {
   const inputTxt = document.getElementById("sanitizer-input");
   const runBtn = document.getElementById("run-sanitizer-btn");
@@ -210,7 +243,7 @@ function initSanitizer() {
   }
 }
 
-/* 6. Seek-and-Find Game Arcade */
+/* 7. Seek-and-Find Game Arcade */
 function initArcade(book) {
   const pageList = document.getElementById("arcade-page-list");
   if (!pageList) return;
@@ -221,7 +254,7 @@ function initArcade(book) {
   book.pages.forEach((page, idx) => {
     const btn = document.createElement("button");
     btn.className = `arcade-page-btn ${idx === 0 ? "active" : ""}`;
-    btn.innerText = `Page ${page.pageNumber}: ${page.virtue} (${page.hiddenShape})`;
+    btn.innerText = `Page ${page.pageNumber}: ${page.title.split(":")[1] || page.title}`;
     
     btn.addEventListener("click", () => {
       document.querySelectorAll(".arcade-page-btn").forEach(b => b.classList.remove("active"));
@@ -247,7 +280,7 @@ function renderArcadeStage(page) {
   foundCountEl.innerText = "0";
   gameStatus.innerText = `Find ${page.hiddenCount} hidden '${page.hiddenShape}' shapes in the line art below!`;
 
-  const { svgHtml, hiddenPositions } = renderPageSVG(page);
+  const { svgHtml } = renderPageSVG(page);
   wrapper.innerHTML = svgHtml;
 
   // Attach click listeners to hidden shape paths
