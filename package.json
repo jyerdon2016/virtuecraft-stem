@@ -9,6 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "start": "node server.js",
     "agent": "node src/agent/agentLoop.js"
   },
   "keywords": [
@@ -26,5 +27,8 @@
   "license": "MIT",
   "devDependencies": {
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "stripe": "^22.6.1"
   }
 }

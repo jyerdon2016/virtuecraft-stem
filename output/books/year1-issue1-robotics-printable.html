@@ -1,1475 +1,1389 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VirtueCraft STEM Magazine - Issue #1: How 3D Printers Create Objects</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; padding: 2rem; }
-    .container { max-width: 920px; margin: 0 auto; }
-    
-    .magazine-header { text-align: center; background: #ffffff; border: 4px solid #000000; padding: 2rem; border-radius: 16px; margin-bottom: 2.5rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
-    .magazine-masthead { font-family: 'Outfit', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1e40af; letter-spacing: -0.02em; text-transform: uppercase; }
-    .magazine-subhead { color: #0d9488; font-weight: 700; font-size: 1.15rem; margin-top: 0.25rem; }
-    .meta-badges { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
-    .badge { font-size: 0.85rem; font-weight: 800; padding: 0.35rem 0.85rem; border-radius: 20px; font-family: 'Outfit', sans-serif; }
-    .badge-blue { background: #dbeafe; color: #1e40af; border: 2px solid #1e40af; }
-    .badge-teal { background: #ccfbf1; color: #0f766e; border: 2px solid #0f766e; }
-    .badge-gold { background: #fef3c7; color: #92400e; border: 2px solid #92400e; }
-    
-    .magazine-page-card { background: #ffffff; border: 3px solid #000000; border-radius: 18px; overflow: hidden; margin-bottom: 3.5rem; box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.1); }
-    .magazine-page-header { background: #f1f5f9; padding: 1.25rem 1.5rem; border-bottom: 3px solid #000000; display: flex; justify-content: space-between; align-items: center; }
-    .magazine-page-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: #000000; font-weight: 800; }
-    
-    .magazine-page-content { padding: 1.5rem; }
-    .svg-wrapper { text-align: center; margin-bottom: 1.5rem; }
-    .svg-wrapper svg { width: 100%; height: auto; max-height: 750px; }
-    
-    .editorial-narrative-box { background: #f8fafc; border-left: 6px solid #0d9488; border-top: 2px solid #000000; border-right: 2px solid #000000; border-bottom: 2px solid #000000; border-radius: 10px; padding: 1.5rem; margin-top: 1rem; }
-    .editorial-title { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 800; color: #0d9488; margin-bottom: 0.5rem; }
-    .editorial-paragraph { font-size: 1rem; line-height: 1.7; color: #0f172a; }
-    
-    .prompt-spec-box { background: #0f172a; color: #f8fafc; border-radius: 10px; padding: 1.25rem; margin-top: 1rem; font-family: monospace; font-size: 0.85rem; line-height: 1.5; }
-    .prompt-label { font-weight: bold; color: #38bdf8; }
 
-    @media print {
-      body { background: white !important; padding: 0 !important; }
-      .magazine-header, .prompt-spec-box { display: none !important; }
-      .magazine-page-card { border: none !important; box-shadow: none !important; margin: 0 !important; page-break-after: always; height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
-      .svg-wrapper svg { max-height: 70vh !important; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="magazine-header">
-      <div class="magazine-masthead">VirtueCraft STEM Magazine</div>
-      <div class="magazine-subhead">Year 1 Issue #1: How 3D Printers Create Objects — Issue #1: A Children's Guide to How 3D Printers Create Objects (Ages 4-9)</div>
-      <div class="meta-badges">
-        <span class="badge badge-blue">Ages 4-9 Chunky Lines</span>
-        <span class="badge badge-teal">Diffusion Locked Prompts</span>
-        <span class="badge badge-gold">Two-Layer Vector Overlays</span>
-        <span class="badge badge-blue">300 DPI High-Contrast Binary</span>
-      </div>
-    </div>
-
-    <!-- Render All 12 Pages with SVG Line Art, Two-Layer Overlay, and Diffusion Prompts -->
-    
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 1: Planning &amp; Design</h2>
-            <span class="badge badge-blue">Virtue: Patience</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Solar Powered Race Car Championship - 12-Page Printable Edition</title>
         <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
-          
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
-          
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
+          @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+          }
+          @media print {
+            body { margin: 0; background: #fff; }
+            .print-page { page-break-after: always; height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+            .no-print { display: none !important; }
+          }
+          body { font-family: 'Outfit', sans-serif; background: #e2e8f0; margin: 0; padding: 20px; }
+          .controls-bar { background: #1e40af; color: #fff; padding: 15px 30px; border-radius: 8px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
+          .print-btn { background: #f59e0b; color: #000; font-weight: bold; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 16px; }
+          .print-page { background: #fff; width: 8.5in; min-height: 10in; margin: 20px auto; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; box-sizing: border-box; }
+          .page-header-line { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; }
+          .page-svg-wrap svg { width: 100%; height: 7.5in; }
+          .page-footer-line { display: flex; justify-content: space-between; font-size: 12px; color: #475569; border-top: 1px solid #cbd5e1; padding-top: 10px; margin-top: 15px; }
         </style>
+      </head>
+      <body>
+        <div class="controls-bar no-print">
+          <div>
+            <h2 style="margin:0;">🖨️ Amazon KDP 8.5" x 11" Print Ready Package</h2>
+            <p style="margin:4px 0 0; font-size: 14px;">"Solar Powered Race Car Championship" — 12 High-Contrast Vector Pages (Commercial Resale Edition)</p>
+          </div>
+          <button class="print-btn" onclick="window.print()">🖨️ Print / Save as 300 DPI PDF</button>
+        </div>
 
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
-        </g>
-
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
-
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
-
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
-
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
-
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 1: Planning &amp; Design</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | Ages 4-9 Chunky Lines</text>
-
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
         
-      <g transform="translate(130, 130)">
-        <!-- Giant Smiling Child Character -->
-        <circle cx="170" cy="120" r="85" class="bold-outline" /> <!-- Oversized Head -->
-        <circle cx="140" cy="110" r="10" fill="#000" /> <circle cx="200" cy="110" r="10" fill="#000" />
-        <path d="M 135,145 Q 170,180 205,145" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round" />
+
         
-        <path d="M 170,205 L 170,390" class="bold-outline" /> <!-- Chunky Body -->
-        
-        <!-- Giant Blueprint Roll in Arm -->
-        <g transform="translate(210, 210)">
-          <rect x="0" y="0" width="100" height="150" rx="12" class="chunky-stroke" />
-          <path d="M 20,30 L 80,30 M 20,60 L 80,60 M 20,90 L 80,90" stroke="#000" stroke-width="4" stroke-linecap="round" />
-          <text x="25" y="125" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#000">PLAN</text>
-        </g>
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 1 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-1">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
+
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
+
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
+
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
+
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
+
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 1: The Blueprint &amp; Inspiration</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Planning &amp; Vision</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Patience</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-1-0" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-1-1" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-1-2" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-1-3" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">A curious seven-year-old child sits focused at a sunlit wooden workbench, carefully sketching the initial robot blueprint with a pencil and clear plastic ruler. Crumpled paper ideas dot the desk alongside colorful markers, showing that good engineering takes steady practice and careful planning. Soft morning light streams through the window, highlighting three hidden 'Cross-my-heart' shapes disguised seamlessly among the blueprint cloud bubbles and pencil jar patterns. The child smiles thoughtfully while measuring each arm component, demonstrating the virtue of Patience by taking time to plan before building. Resting on the corner shelf, a cheerful toy helper bot stands ready, inspiring the young builder to turn dreams into real mechanical designs.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of a happy 7-year-old child character holding a giant robot blueprint roll at a desk, demonstrating the Christian virtue of Patience, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 4 distinct 'Cross-my-heart' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 2: Safety &amp; Gear</h2>
-            <span class="badge badge-blue">Virtue: Self-Control</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-1-0" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-cross-heart" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-1-1" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-1-2" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">3 'Cross-my-heart'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 1</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 2 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-2">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 2: Safety &amp; Gear</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Self-Control</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(140, 140)">
-        <rect x="30" y="30" width="260" height="340" rx="28" class="bold-outline" /> <!-- Chunky Microchip -->
-        <text x="75" y="85" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#000">ESP32 BRAIN</text>
-        
-        <circle cx="110" cy="170" r="22" fill="#000" /> <circle cx="210" cy="170" r="22" fill="#000" />
-        <path d="M 100,230 Q 160,285 220,230" stroke="#000" stroke-width="7" fill="none" stroke-linecap="round" />
-        
-        <!-- Chunky Side Pins -->
-        <path d="M -10,90 L 30,90 M -10,160 L 30,160 M -10,230 L 30,230 M -10,300 L 30,300" class="bold-outline" />
-        <path d="M 290,90 L 330,90 M 290,160 L 330,160 M 290,230 L 330,230 M 290,300 L 330,300" class="bold-outline" />
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 2: Gathering Gear &amp; Preparation</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Organization &amp; Safety</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Self-Control</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-2-0" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-2-1" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-2-2" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-2-3" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-2-4" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-star" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">An oversized, friendly ESP32 microcontroller character with glowing eyes and a wide, welcoming smile stands at the center of the workbench to explain how robot brains think. Tiny metallic pins extend from its sides like cheerful little legs, showing how data signals travel back and forth to control lights and motors. Intricate circuit board traces wind through the background, hiding four distinct 'Star of Hope' shapes tucked inside the corner power gears and leafy wall art. The child gazes in awe as the micro-brain glows softly, learning that technology should always be designed with Goodness to serve and protect people. Floating thought-bubbles around the microchip illustrate logic rules, showing young minds how simple computer code brings ideas to life.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of a heroic character wearing oversized chunky safety goggles holding a solder wire, demonstrating the Christian virtue of Self-Control, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 5 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 3: Core Component Assembly</h2>
-            <span class="badge badge-blue">Virtue: Gentleness</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-2-0" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-star" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-2-1" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-2-2" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-2-3" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-star" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">4 'Star of Hope'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 2</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 3 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-3">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 3: Core Component Assembly</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Gentleness</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(150, 150)">
-        <rect x="40" y="40" width="240" height="240" rx="24" class="bold-outline" />
-        <text x="100" y="100" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#000">DHT11</text>
-        <circle cx="110" cy="160" r="16" fill="#000" /> <circle cx="210" cy="160" r="16" fill="#000" />
-        <path d="M 120,205 Q 160,235 200,205" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round" />
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
 
-        <!-- One Large Curved Jumper Wire -->
-        <path d="M 160,280 C 160,370 280,390 280,450" stroke="#000" stroke-width="12" stroke-linecap="round" fill="none" />
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 3: First Steps into the World</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Exploration &amp; Courage</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Faithfulness</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-3-0" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-3-1" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-3-2" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-anchor" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 3 stamped <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">With soft, careful hands, the child gently presses a blue DHT11 temperature sensor and a motion detector module into the tiny grid holes of a white breadboard. Flexible jumper wires curve gracefully across the desk like colorful vines, connecting the sensors to the robot's main circuit. Tucked into the window foliage outside and the wire loops on the table, three hidden 'Cross-my-heart' shapes wait to be discovered by keen young eyes. The scene teaches the virtue of Gentleness, demonstrating how delicate microchips and fragile pins require calm, careful handling to prevent bending. Outside the sunny window, birds chirp peacefully as the child tests how the sensor detects warm temperature changes in the room.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of an oversized blue sensor character plugging in one large jumper wire, demonstrating the Christian virtue of Gentleness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 3 distinct 'Anchor of Peace' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 4: Power Supply Setup</h2>
-            <span class="badge badge-blue">Virtue: Faithfulness</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-3-0" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-anchor" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-3-1" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-anchor" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-3-2" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-anchor" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-3-3" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-anchor" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-3-4" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-anchor" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">5 'Anchor of Peace'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 3</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 4 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-4">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 4: Power Supply Setup</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Faithfulness</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(160, 150)">
-        <circle cx="140" cy="170" r="130" class="bold-outline" />
-        <circle cx="140" cy="170" r="70" class="chunky-stroke" />
-        <circle cx="110" cy="150" r="12" fill="#000" /> <circle cx="170" cy="150" r="12" fill="#000" />
-        <path d="M 115,185 Q 140,210 165,185" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round" />
-        
-        <!-- Big Sound Notes -->
-        <g transform="translate(290, 80)">
-          <circle cx="20" cy="20" r="28" class="chunky-stroke" />
-          <text x="10" y="30" font-family="'Outfit', sans-serif" font-weight="800" font-size="28" fill="#000">♪</text>
-        </g>
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 4: The Hidden Wonder Discovery</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Perception &amp; Joy</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Joy</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-4-0" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-fish" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-4-1" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-fish" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-4-2" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-fish" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-4-3" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-fish" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">A small PAM8403 audio amplifier board and mini circular speaker spring to life, sending cheerful musical soundwave bubbles floating through the air. The young engineer claps with delight as the robot utters its very first spoken words of encouragement and friendly greeting. Five hidden 'Ichthys Fish' symbols swim through the floating soundwave patterns and background wall decor, adding a fun seek-and-find challenge to the scene. This heartwarming moment celebrates the virtue of Joy, showing how technical discovery brings happiness when we use our voices to speak kind words. Glowing LED lights flicker rhythmically with each sound note, transforming the quiet workshop into a celebration of music and code.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of a giant power cell character with big plus and minus terminal signs, demonstrating the Christian virtue of Faithfulness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 4 distinct 'Ichthys Fish' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 5: Sensors &amp; Inputs</h2>
-            <span class="badge badge-blue">Virtue: Goodness</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-4-0" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-fish" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-4-1" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-fish" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-4-2" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-fish" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">3 'Ichthys Fish'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 4</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 5 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-5">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 5: Sensors &amp; Inputs</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Goodness</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(160, 140)">
-        <circle cx="140" cy="130" r="90" class="bold-outline" />
-        <!-- Big Chunky Goggles -->
-        <rect x="80" y="105" width="55" height="40" rx="10" class="bold-outline" fill="#000" />
-        <rect x="145" y="105" width="55" height="40" rx="10" class="bold-outline" fill="#000" />
-        <path d="M 110,185 Q 140,215 170,185" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round" />
-        
-        <!-- Solder Wire Arc -->
-        <path d="M 60,250 C 140,320 220,320 220,250" stroke="#000" stroke-width="10" stroke-linecap="round" fill="none" />
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 5: The Workshop &amp; Invention</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Applied Engineering</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Gentleness</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-5-0" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-5-1" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-5-2" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-5-3" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-5-4" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">Wearing protective safety goggles, the child works side-by-side with a caring parent or mentor at a brightly lit soldering station. Thin wisps of solder smoke curl gracefully into the air as they safely hold the soldering iron together to join copper wire connections. Three hidden 'Cross-my-heart' shapes lie disguised within the rising smoke currents and tool rack outlines in the background. The scene captures the deep virtue of Love, showing how passing down technical skills and practicing safety creates cherished family memories. An organized rack of pliers, wire strippers, and safety gear frames the workbench, reinforcing the importance of safety equipment.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of an oversized smiling ESP32 micro-brain character with metallic pin legs, demonstrating the Christian virtue of Goodness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 5 distinct 'Cross-my-heart' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 6: Logic &amp; Programming</h2>
-            <span class="badge badge-blue">Virtue: Patience</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-5-0" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-cross-heart" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-5-1" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-5-2" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-5-3" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">4 'Cross-my-heart'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 5</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 6 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-6">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 6: Logic &amp; Programming</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(140, 150)">
-        <rect x="30" y="100" width="260" height="220" rx="20" class="bold-outline" />
-        <text x="75" y="160" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" fill="#000">SERVO ARM</text>
-        <circle cx="160" cy="100" r="40" class="bold-outline" />
-        <path d="M 160,60 L 320,10" stroke="#000" stroke-width="14" stroke-linecap="round" />
-        <circle cx="320" cy="10" r="16" class="bold-outline" />
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 6: Logic &amp; Creative Crafting</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Algorithm Design</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Goodness</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-6-0" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-6-1" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-6-2" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-star" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 3 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">The child carefully attaches compact blue servo motors to the robot's shoulder joints using small brass screws and a precision screwdriver. Clear angle markings from zero to one hundred eighty degrees arch around the motor arm, showing how smooth gear rotations provide exact physical motion. Embedded within the mechanical gear teeth and background wall tiles, three hidden 'Anchor of Peace' shapes await discovery. The scene illustrates Self-Control, teaching young builders that powerful mechanical arms must be programmed to move calmly, smoothly, and safely. The child double-checks every screw alignment, feeling proud of how precise engineering creates smooth, controlled robotic movement.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of a giant block-code puzzle piece with IF and THEN blocks, demonstrating the Christian virtue of Patience, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 3 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 7: Teamwork &amp; Collaboration</h2>
-            <span class="badge badge-blue">Virtue: Love</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-6-0" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-star" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-6-1" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-6-2" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-6-3" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-6-4" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-star" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">5 'Star of Hope'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 6</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 7 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-7">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 7: Teamwork &amp; Collaboration</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(170, 140)">
-        <rect x="20" y="30" width="180" height="340" rx="24" class="bold-outline" />
-        <rect x="75" y="-5" width="70" height="35" rx="8" fill="#000" />
-        <text x="80" y="110" font-family="'Outfit', sans-serif" font-weight="800" font-size="54" fill="#000">+</text>
-        <text x="85" y="290" font-family="'Outfit', sans-serif" font-weight="800" font-size="54" fill="#000">-</text>
-        <circle cx="80" cy="180" r="14" fill="#000" /> <circle cx="140" cy="180" r="14" fill="#000" />
-        <path d="M 85,215 Q 110,235 135,215" stroke="#000" stroke-width="5" fill="none" />
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 7: Overcoming a Great Challenge</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Diagnostic Reasoning</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Peace</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-7-0" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-7-1" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-7-2" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-7-3" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-anchor" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">A neat rechargeable battery power module connects securely to the main power bus, displaying bright positive and negative terminal symbols. Sparkles of clean electric energy glow around the insulated red and black leads, showing how reliable power keeps the robot running smoothly. Four hidden 'Star of Hope' shapes shimmer inside the energy spark bubbles and starry window view outside. The page highlights the virtue of Faithfulness, explaining that just as circuits require steady current flow, staying faithful to our goals keeps our work strong. The child double-checks wire polarities with confidence, ensuring the robot receives safe, steady voltage.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of a friendly child character holding hands with a robot helper, demonstrating the Christian virtue of Love, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 4 distinct 'Anchor of Peace' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 8: Troubleshooting &amp; Tuning</h2>
-            <span class="badge badge-blue">Virtue: Peace</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-7-0" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-anchor" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-7-1" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-anchor" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-7-2" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-anchor" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">3 'Anchor of Peace'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 7</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 8 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-8">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 8: Troubleshooting &amp; Tuning</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Peace</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(130, 160)">
-        <rect x="20" y="30" width="280" height="110" rx="16" class="bold-outline" />
-        <text x="50" y="95" font-family="'Outfit', sans-serif" font-weight="800" font-size="24" fill="#000">IF (START_CLICKED)</text>
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
 
-        <rect x="50" y="160" width="280" height="110" rx="16" class="bold-outline" />
-        <text x="80" y="225" font-family="'Outfit', sans-serif" font-weight="800" font-size="24" fill="#000">THEN (ROBOT_MOVE)</text>
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 8: Cooperative Teamwork</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Collaboration</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Love</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-8-0" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-fish" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-8-1" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-fish" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-8-2" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-fish" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-8-3" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-fish" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-8-4" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-fish" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">Sitting comfortably in an ergonomic chair, the child snaps colorful block-code puzzle pieces together on a laptop screen to write the robot's operational program. Code blocks labeled IF, THEN, and SENSE click into place seamlessly, translating human commands into digital machine instructions. Disguised within the floating code block shadows and background indoor house plants, three hidden 'Cross-my-heart' shapes are cleverly tucked away. The scene reinforces Patience, demonstrating that writing and organizing computer code requires calm focus and logical step-by-step thinking. A cute miniature helper bot sits beside the laptop screen, eagerly waiting for its new code program to upload.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of a giant magnifying glass character inspecting a circuit pin, demonstrating the Christian virtue of Peace, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 5 distinct 'Ichthys Fish' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 9: Helping Others</h2>
-            <span class="badge badge-blue">Virtue: Kindness</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-8-0" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-fish" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-8-1" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-fish" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-8-2" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-fish" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-8-3" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-fish" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">4 'Ichthys Fish'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 8</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 9 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-9">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 9: Helping Others</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Kindness</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(160, 140)">
-        <circle cx="140" cy="140" r="110" class="bold-outline" />
-        <circle cx="140" cy="140" r="70" class="chunky-stroke" />
-        <path d="M 70,230 L 15,310" stroke="#000" stroke-width="16" stroke-linecap="round" />
-        <text x="100" y="148" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#000">DEBUG</text>
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 9: Helping Others &amp; Generosity</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Benevolence &amp; Purpose</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Kindness</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-9-0" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-9-1" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-9-2" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-cross-heart" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 3 stamped <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">When a motor doesn't turn on immediately, the child remains completely calm, using a handheld digital multimeter and magnifying glass to check connection paths. Rather than feeling frustrated, the young engineer smiles serenely, knowing that finding loose wires is a normal, rewarding part of the building process. Three hidden 'Anchor of Peace' shapes float peacefully inside the soft clouds visible through the workshop window. The page teaches the virtue of Peace, showing that maintaining a tranquil mind helps us solve complex problems with clarity. Sunshine fills the quiet room as the magnifying glass reveals a simple loose jumper pin that is easily plugged back in.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of a single smiling helper bot character carrying a yellow flower, demonstrating the Christian virtue of Kindness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 3 distinct 'Cross-my-heart' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 10: Celebration &amp; Gratitude</h2>
-            <span class="badge badge-blue">Virtue: Joy</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-9-0" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-cross-heart" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+            <g class="digital-overlay-symbol" data-id="hidden-obj-9-1" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-9-2" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-9-3" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-9-4" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">5 'Cross-my-heart'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 9</span>
+              </div>
+            </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 10 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-10">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
 
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
 
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 10: Celebration &amp; Gratitude</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | Ages 4-9 Chunky Lines</text>
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
 
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-      <g transform="translate(160, 140)">
-        <rect x="30" y="30" width="200" height="180" rx="24" class="bold-outline" />
-        <circle cx="90" cy="90" r="16" fill="#000" /> <circle cx="170" cy="90" r="16" fill="#000" />
-        <path d="M 95,140 Q 130,175 165,140" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round" />
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
 
-        <circle cx="70" cy="270" r="35" class="bold-outline" />
-        <circle cx="190" cy="270" r="35" class="bold-outline" />
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 10: The Grand Celebration</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Achievement &amp; Joy</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Joy</tspan> 
+          | Amazon KDP Ready
+        </text>
 
-        <!-- Big Flower in Arm -->
-        <g transform="translate(250, 100)">
-          <circle cx="0" cy="0" r="22" class="bold-outline" />
-          <path d="M 0,22 L 0,100" stroke="#000" stroke-width="8" stroke-linecap="round" />
-        </g>
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g transform="translate(120, 140)">
+        <!-- Race Car Sleek Body -->
+        <path d="M 40,260 C 90,260 140,180 240,180 L 280,220 L 330,260 L 330,300 L 40,300 Z" class="bold-outline colorable-region" />
+        <!-- Cockpit & Driver Helmet -->
+        <circle cx="180" cy="160" r="25" class="bold-outline colorable-region" />
+        <rect x="175" y="152" width="22" height="12" rx="4" fill="#000" />
+        <!-- Front & Rear Giant Wheels -->
+        <circle cx="100" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="100" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <circle cx="270" cy="300" r="42" class="bold-outline colorable-region" />
+        <circle cx="270" cy="300" r="22" class="chunky-stroke colorable-region" />
+        <!-- Racing Number 7 -->
+        <text x="185" y="260" class="page-text" font-weight="900" font-size="34">#7</text>
       </g>
     
-      </g>
+        </g>
 
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-10-0" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-10-1" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-10-2" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-10-3" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-star" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">Out in a blooming neighborhood garden, the finished rolling helper bot gently carries a tray with a fresh glass of water and a bright yellow flower to an elderly neighbor. Smiling family members and friends watch with warm hearts as the robot uses its arm to serve others with gentle care. Four hidden 'Cross-my-heart' shapes are woven into the garden flower petals and fluffy background clouds. The scene embodies the virtue of Kindness, showing that the ultimate purpose of acquiring STEM skills is to love and serve our community. Sunbeams illuminate the colorful garden path as children cheer for their working creation.</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of an oversized smiling speaker character singing musical notes, demonstrating the Christian virtue of Joy, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 4 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 11: Circuit Pathfinder Maze</h2>
-            <span class="badge badge-blue">Virtue: Joy</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-10-0" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-star" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
-        </g>
-
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
-
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
-
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
-
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
-
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 11: Circuit Pathfinder Maze</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | Ages 4-9 Chunky Lines</text>
-
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-    <g id="maze-container" transform="translate(60, 130)">
-      <rect x="0" y="0" width="480" height="500" rx="16" class="bold-outline" />
-
-      <g transform="translate(20, 20)">
-        <rect x="0" y="0" width="90" height="45" rx="8" fill="#000000" />
-        <text x="14" y="30" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">START</text>
-      </g>
-
-      <g transform="translate(370, 435)">
-        <rect x="0" y="0" width="90" height="45" rx="8" fill="#000000" />
-        <text x="12" y="30" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">FINISH</text>
-      </g>
-
-      <path d="M 120,0 L 120,140 M 220,70 L 360,70 M 360,0 L 360,140" class="maze-wall" />
-      <path d="M 0,140 L 220,140 M 290,140 L 480,140" class="maze-wall" />
-      <path d="M 80,210 L 80,340 M 160,280 L 320,280 M 400,210 L 400,340" class="maze-wall" />
-      <path d="M 0,340 L 160,340 M 240,340 L 480,340" class="maze-wall" />
-      <path d="M 120,410 L 240,410 M 320,410 L 480,410" class="maze-wall" />
-    </g>
-  
-      </g>
-
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-11-0" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-11-1" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-11-2" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-anchor" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-11-3" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-anchor" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
-            </div>
-
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">An interactive vector line-art maze challenges young minds to guide a glowing power line from the green START terminal through complex circuit corridors to the red FINISH node. Thick, bold black walls create clean paths for ages 4-9 to trace with crayons or markers while dodging gear obstacles. Four hidden 'Ichthys Fish' symbols are cleverly integrated into the corridor turns and capacitor symbols along the way. The puzzle page reinforces logical pathfinding and spatial reasoning while teaching children to persevere through winding paths. Upon reaching the end, a glowing victory icon confirms that the circuit is complete and fully powered!</p>
-            </div>
-
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of an interactive vector circuit maze puzzle, bold thick black outlines, simple pathfinder, start and finish icons, pure white background, low detail, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 4 distinct 'Anchor of Peace' vector symbols into open background canvas areas.</div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="magazine-page-card">
-          <div class="magazine-page-header">
-            <h2>Page 12: STEM Project &amp; Master Blueprint Clue #1</h2>
-            <span class="badge badge-blue">Virtue: Love</span>
-          </div>
-
-          <div class="magazine-page-content">
-            <div class="svg-wrapper">
-              
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg">
-      <defs>
-        <style>
-          /* 300 DPI High-Contrast Threshold Binary Line Rules */
-          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
-          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-10-1" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-star" />
+            </g>
           
-          /* Layer 2 Digital Overlay Symbol Styling */
-          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
-          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
-          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+            <g class="digital-overlay-symbol" data-id="hidden-obj-10-2" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-star" />
+            </g>
           
-          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; }
-        </style>
-
-        <!-- Vector Seek-and-Find Overlay Symbol Definitions -->
-        <g id="shape-cross-heart">
-          <path d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
-          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
         </g>
 
-        <g id="shape-star">
-          <polygon points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
-        </g>
-
-        <g id="shape-anchor">
-          <circle cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" fill="none" />
-          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
-        </g>
-
-        <g id="shape-fish">
-          <path d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
-          <circle cx="-6" cy="-3" r="2" fill="#000000" />
-        </g>
-      </defs>
-
-      <!-- Outer Page Border (8.5 x 11 Aspect Ratio) -->
-      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline" />
-
-      <!-- Top Header Banner -->
-      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 12: STEM Project &amp; Master Blueprint Clue #1</text>
-      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | Ages 4-9 Chunky Lines</text>
-
-      <!-- LAYER 1: CLEAN LINE ART COLORING PAGE (Single Subject, Wide Open Areas) -->
-      <g id="layer-1-clean-lineart">
-        
-    <g id="stem-blueprint-container" transform="translate(40, 120)">
-      <rect x="0" y="0" width="520" height="510" rx="16" fill="#ffffff" stroke="#000000" stroke-width="4" />
-      
-      <rect x="30" y="30" width="460" height="90" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="70" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="20">🔨 STEM BUILD: Cardboard Circuit Baseplate</text>
-      <text x="50" y="100" fill="#0f172a" font-family="'Inter', sans-serif" font-size="14">Materials: Cardboard base, aluminum foil strips, tape, LED</text>
-
-      <g transform="translate(130, 150)">
-        <rect x="0" y="0" width="260" height="150" rx="14" class="bold-outline" />
-        <circle cx="130" cy="75" r="35" class="chunky-stroke" />
-        <text x="110" y="84" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#000">LED</text>
-      </g>
-
-      <rect x="30" y="330" width="460" height="150" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="370" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">🏆 MASTER BLUEPRINT CLUE (#1 of 12)</text>
-      <text x="50" y="405" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="16">🧩 Component #1: Base Foundation &amp; Power Grid Traces</text>
-      <text x="50" y="445" fill="#475569" font-family="'Inter', sans-serif" font-style="italic" font-size="13">"Hint: Laying a strong, stable foundation built on truth and teamwork."</text>
-    </g>
-  
-      </g>
-
-      <!-- LAYER 2: DIGITAL OVERLAY ENGINE (Stamped Vector Symbols) -->
-      <g id="layer-2-digital-overlay">
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-12-0" transform="translate(500, 560) scale(0.9) rotate(35)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-12-1" transform="translate(90, 590) scale(0.8) rotate(-10)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-12-2" transform="translate(280, 680) scale(0.85) rotate(25)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-12-3" transform="translate(100, 150) scale(0.85) rotate(10)">
-            <use href="#shape-star" />
-          </g>
-        
-          <g class="digital-overlay-symbol" data-id="hidden-obj-12-4" transform="translate(490, 160) scale(0.8) rotate(-15)">
-            <use href="#shape-star" />
-          </g>
-        
-      </g>
-
-      <!-- Bottom Seek-and-Find Banner -->
-      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
-      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Digital Overlay Challenge:</text>
-      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
-    </svg>
-  
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">3 'Star of Hope'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 10</span>
+              </div>
             </div>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 11 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-11">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
 
-            <div class="editorial-narrative-box">
-              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
-              <p class="editorial-paragraph">The final page presents a step-by-step hands-on craft project where kids build a real 'Cardboard Baseplate &amp; Foil Circuit Trace' using household materials like foil, tape, and paper cups. A prominent golden blueprint badge highlights 'Mystery Master Clue #1' of 12 for the grand annual project, The Solar Smart Eco-Citadel. Five hidden 'Star of Hope' shapes decorate the blueprint border grid and craft tool rack. The page instills Generosity &amp; Vision, encouraging children to save their completed baseplate module in their collector box as they look forward to assembling all 12 monthly pieces into one working master citadel!</p>
-            </div>
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
 
-            <div class="prompt-spec-box">
-              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
-              <div>Clean children's coloring book page of hands-on cardboard circuit baseplate project with blueprint clue #1, demonstrating the Christian virtue of Love, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
-              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
-              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
-              <div>Digital Overlay Layer: Stamp 5 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
+
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
+
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
+
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 11: The Pathfinder Maze Challenge</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Spatial Logic &amp; Route Navigation</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Perseverance</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g id="maze-container" transform="translate(50, 115)">
+        <rect x="0" y="0" width="500" height="520" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- START Badge -->
+        <g transform="translate(25, 20)">
+          <rect x="0" y="0" width="100" height="46" rx="8" fill="#000000" />
+          <text x="18" y="31" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">START</text>
+        </g>
+
+        <!-- FINISH Badge -->
+        <g transform="translate(375, 455)">
+          <rect x="0" y="0" width="100" height="46" rx="8" fill="#000000" />
+          <text x="16" y="31" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">FINISH</text>
+        </g>
+
+        <!-- Maze Corridor Walls -->
+        <path d="M 135,0 L 135,150 M 240,75 L 380,75 M 380,0 L 380,150" class="maze-wall" />
+        <path d="M 0,150 L 240,150 M 310,150 L 500,150" class="maze-wall" />
+        <path d="M 90,225 L 90,360 M 170,300 L 340,300 M 420,225 L 420,360" class="maze-wall" />
+        <path d="M 0,360 L 170,360 M 255,360 L 500,360" class="maze-wall" />
+        <path d="M 130,435 L 255,435 M 340,435 L 500,435" class="maze-wall" />
+      </g>
+    
+        </g>
+
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-11-0" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-11-1" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-11-2" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-star" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-11-3" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-star" />
+            </g>
+          
+        </g>
+
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">4 'Star of Hope'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 11</span>
+              </div>
             </div>
-          </div>
-        </div>
-      
-  </div>
-</body>
-</html>
+          
+            <div class="print-page">
+              <div class="page-header-line">
+                <h2 style="margin:0; text-transform: uppercase; font-size: 20px;">Solar Powered Race Car Championship</h2>
+                <span style="font-size: 12px; color: #64748b;">Page 12 of 12 • Published by Young Adventurer</span>
+              </div>
+              <div class="page-svg-wrap">
+                
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-canvas-page-12">
+        <defs>
+          <style>
+            .colorable-region { cursor: pointer; transition: fill 0.15s ease, stroke 0.15s ease; fill: #ffffff; }
+            .colorable-region:hover { stroke: #2563eb !important; stroke-width: 6 !important; }
+            .chunky-stroke { stroke: #000000; stroke-width: 5; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .bold-outline { stroke: #000000; stroke-width: 7; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+            .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+            .fine-detail { stroke: #000000; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+            
+            .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.25s ease; }
+            .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; transform: scale(1.15); }
+            .digital-overlay-symbol.found { stroke: #0d9488 !important; stroke-width: 5 !important; fill: #a7f3d0 !important; }
+            .page-text { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; fill: #0f172a; pointer-events: none; }
+          </style>
+
+          <!-- Hidden Shape Stencil Symbols -->
+          <g id="shape-cross-heart">
+            <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+            <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+          </g>
+
+          <g id="shape-star">
+            <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+          </g>
+
+          <g id="shape-anchor">
+            <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+            <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+          </g>
+
+          <g id="shape-fish">
+            <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+            <circle cx="-6" cy="-3" r="2" fill="#000000" />
+          </g>
+        </defs>
+
+        <!-- Outer Printable Margin & Border (KDP 8.5x11 Clean Line) -->
+        <rect x="12" y="12" width="576" height="726" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Header Banner -->
+        <rect x="28" y="26" width="544" height="68" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="54" class="page-text" font-size="18" font-weight="800" fill="#1e40af">Page 12: Hands-On Craft &amp; Collector Blueprint</text>
+        <text x="44" y="78" class="page-text" font-size="12" fill="#475569">
+          Skill: <tspan font-weight="bold" fill="#0d9488">Applied Making &amp; Household Engineering</tspan> 
+          | Virtue: <tspan font-weight="bold" fill="#e11d48">Generosity</tspan> 
+          | Amazon KDP Ready
+        </text>
+
+        <!-- Layer 1: Clean Line Art Focal Subject -->
+        <g id="layer-1-focal-art">
+          
+      <g id="craft-blueprint-container" transform="translate(40, 115)">
+        <rect x="0" y="0" width="520" height="520" rx="16" fill="#ffffff" stroke="#000000" stroke-width="4" />
+        
+        <rect x="30" y="25" width="460" height="85" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="50" y="60" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">🔨 HANDS-ON KEEPSAKE BLUEPRINT</text>
+        <text x="50" y="90" fill="#0f172a" font-family="'Inter', sans-serif" font-size="13">Materials: Paper, safe glue/tape, craft sticks, coloring markers</text>
+
+        <g transform="translate(110, 130)">
+          <!-- Craft Assembly Diagram -->
+          <rect x="0" y="0" width="300" height="170" rx="14" class="bold-outline colorable-region" fill="#ffffff" />
+          <circle cx="150" cy="85" r="45" class="chunky-stroke colorable-region" fill="#ffffff" />
+          <text x="110" y="94" class="page-text" font-weight="800" font-size="20">KEEPSAKE</text>
+        </g>
+
+        <rect x="30" y="325" width="460" height="165" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="50" y="360" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="17">🏆 COLLECTOR'S CERTIFICATE OF COMPLETION</text>
+        <text x="50" y="395" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="14">Master Build Module for: Solar Powered Race Car Championship</text>
+        <text x="50" y="430" fill="#475569" font-family="'Inter', sans-serif" font-style="italic" font-size="13">"Assemble your module, stamp your secret shape, and sign your name below!"</text>
+        <line x1="50" y1="465" x2="300" y2="465" stroke="#000000" stroke-width="2" stroke-dasharray="4,4" />
+        <text x="50" y="480" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Builder's Signature & Date</text>
+      </g>
+    
+        </g>
+
+        <!-- Layer 2: Seek-and-Find Overlay -->
+        <g id="layer-2-seek-and-find">
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-12-0" transform="translate(505, 560) scale(0.9) rotate(30)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-12-1" transform="translate(85, 585) scale(0.8) rotate(-10)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-12-2" transform="translate(290, 685) scale(0.85) rotate(20)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-12-3" transform="translate(95, 145) scale(0.85) rotate(12)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+            <g class="digital-overlay-symbol" data-id="hidden-obj-12-4" transform="translate(495, 155) scale(0.8) rotate(-15)">
+              <use href="#shape-cross-heart" />
+            </g>
+          
+        </g>
+
+        <!-- Footer Banner & Seek-and-Find Challenge -->
+        <rect x="28" y="654" width="544" height="66" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+        <text x="44" y="678" class="page-text" font-size="13" font-weight="800" fill="#92400e">🔍 Seek-and-Find Challenge:</text>
+        <text x="44" y="702" class="page-text" font-size="12" fill="#1e293b">Spot and click all <tspan font-weight="bold" fill="#e11d48">5 'Cross-my-heart'</tspan> shapes! Click any outline to fill with color.</text>
+      </svg>
+    
+              </div>
+              <div class="page-footer-line">
+                <span>Published via coloring.shomerepair.com</span>
+                <span>Amazon KDP Standard Bleed 8.5" x 11"</span>
+                <span>Page 12</span>
+              </div>
+            </div>
+          
+
+        
+      </body>
+      </html>
+    

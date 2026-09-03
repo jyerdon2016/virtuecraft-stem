@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VirtueCraft STEM - Interactive Click-to-Color & Christian Virtue STEM Activity Books | shomerepair.com</title>
-  <meta name="description" content="VirtueCraft STEM on shomerepair.com generates interactive click-to-color 12-page children's activity books (ages 4-9) that teach STEM skills, Christian virtues, copyright protection, seek-and-find mazes, and cumulative master projects.">
-  <meta name="keywords" content="shomerepair.com, Click to color web app, Christian STEM coloring book, VirtueCraft STEM, homeschool activity web app, seek and find mazes, ad monetized kids app">
-  <link rel="canonical" href="https://shomerepair.com/">
+  <title>ColoringCraft Studio - AI Coloring Book Generator for Kids & Commercial Resale | coloring.shomerepair.com</title>
+  <meta name="description" content="Generate customizable 12-page coloring books for your kids or to sell on Amazon KDP and Etsy. Features custom textboxes, random idea generation, click-to-color interactive studio, and KDP print-ready export. Subdomain of shomerepair.com.">
+  <meta name="keywords" content="coloring.shomerepair.com, AI coloring book generator, Amazon KDP coloring books, printable coloring pages for kids, homeschool coloring, commercial resale rights coloring books, click to color">
+  <link rel="canonical" href="https://coloring.shomerepair.com/">
 
   <!-- OpenGraph Social Media Sharing Tags -->
-  <meta property="og:title" content="VirtueCraft STEM - Interactive Click-to-Color & Christian Virtue STEM Activity Books">
-  <meta property="og:description" content="Interactive click-to-color STEM activity books teaching robotics, coding, solar power, and Christian virtues. Hosted on shomerepair.com.">
-  <meta property="og:url" content="https://shomerepair.com/">
+  <meta property="og:title" content="ColoringCraft Studio - AI Coloring Books for Kids & Amazon KDP">
+  <meta property="og:description" content="Customizable 12-page vector coloring books with random idea generation, interactive digital coloring, and commercial resale packaging.">
+  <meta property="og:url" content="https://coloring.shomerepair.com/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="shomerepair.com">
+  <meta property="og:site_name" content="coloring.shomerepair.com">
 
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VirtueCraft STEM on shomerepair.com">
-  <meta name="twitter:description" content="Interactive click-to-color STEM activity books teaching robotics, coding, solar power, and Christian virtues.">
-
+  <!-- Google Fonts: Outfit & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body class="theme-light">
@@ -32,335 +28,514 @@
       <div class="brand">
         <div class="brand-icon">🎨</div>
         <div class="brand-text">
-          <h1>VirtueCraft STEM</h1>
-          <span class="tagline">Interactive Click-to-Color • Hosted on shomerepair.com</span>
+          <h1>ColoringCraft Studio</h1>
+          <span class="tagline">Custom Books for Kids & Commercial Resale • <span class="subdomain-badge">coloring.shomerepair.com</span></span>
         </div>
       </div>
 
+      <!-- Customer Trust Badge (Replaces internal developer ticker) -->
+      <div class="revenue-ticker-pill" id="customer-trust-badge">
+        <span class="ticker-label">✨ 100% Free & Unlimited</span>
+        <strong style="color: var(--primary-blue);">Printable AI Coloring Books</strong>
+      </div>
+
       <nav class="nav-links">
-        <button class="nav-btn active" data-tab="studio">🎨 Book Studio</button>
-        <button class="nav-btn" data-tab="color-app">🖌️ Click-to-Color App</button>
-        <button class="nav-btn" data-tab="ad-monetization">💰 Ad Revenue Engine</button>
-        <button class="nav-btn" data-tab="scale-strategy">📈 1M Scale Strategy</button>
-        <button class="nav-btn" data-tab="agent-loop">🤖 Agent Loop</button>
-        <button class="nav-btn" data-tab="master-arc">🏆 Master Build Arc</button>
-        <button class="nav-btn" data-tab="prompt-matrix">⚡ Prompt Matrix</button>
+        <button class="nav-btn active" data-tab="step-studio">📖 Page-by-Page Studio</button>
+        <button class="nav-btn" data-tab="full-gallery">🖼️ 12-Page Gallery</button>
+        <button class="nav-btn" data-tab="commercial-kdp">🛒 Sell on Amazon KDP & Etsy</button>
+        <button class="nav-btn admin-only" data-tab="ad-monetization" style="display: none;">💵 Revenue Analytics (Admin)</button>
+        <button class="nav-btn admin-only" data-tab="agent-console" style="display: none;">🤖 Subagent Hub (Admin)</button>
       </nav>
 
       <div class="header-actions">
-        <button id="download-pdf-btn" class="btn btn-primary">💎 Download PDF (Rewarded Ad)</button>
-        <button id="print-book-btn" class="btn btn-secondary">🖨️ Print Issue</button>
+        <button id="download-kdp-btn" class="btn btn-primary">💎 Download 300 DPI PDF</button>
+        <button id="view-license-btn" class="btn btn-gold">📜 Resale License</button>
+        <button id="print-current-btn" class="btn btn-secondary">🖨️ Print</button>
       </div>
     </div>
   </header>
 
-  <!-- Main Content Container -->
-  <main class="app-main">
-
-    <!-- TOP LEADERBOARD AD BANNER (728x90) -->
-    <div class="ad-leaderboard-bar">
-      <div class="ad-placeholder-container">
-        <span class="ad-badge">ADVERTISEMENT (Google AdSense 728x90 Leaderboard) — shomerepair.com</span>
-        <div class="ad-banner-mock">
-          <div class="ad-mock-content">
-            <span class="ad-sponsor-icon">🚀</span>
-            <div>
-              <strong>Build the Future with Christian STEM Academy!</strong>
-              <p>Get 50% Off Homeschool Engineering & Robotics Kits Today on shomerepair.com.</p>
-            </div>
-            <button class="btn btn-sm btn-gold">Learn More</button>
+  <!-- TOP LEADERBOARD AD BANNER (728x90) - Refreshed on each page click-through -->
+  <div class="ad-leaderboard-bar">
+    <div class="ad-placeholder-container">
+      <div class="ad-meta-info">
+        <span class="ad-badge">SPONSORED</span>
+      </div>
+      <div class="ad-banner-mock" id="ad-top-banner">
+        <div class="ad-mock-content">
+          <span class="ad-sponsor-icon">🚀</span>
+          <div>
+            <strong id="ad-top-title">Start Your Amazon KDP Publishing Empire Today!</strong>
+            <p id="ad-top-desc">Sell high-margin printable coloring books on Amazon KDP & Etsy with zero inventory.</p>
           </div>
+          <button class="btn btn-sm btn-gold ad-click-btn">Learn More ➔</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- TAB 1: BOOK STUDIO -->
-    <section id="tab-studio" class="tab-content active">
+  <!-- Main Content Container -->
+  <main class="app-main">
+
+    <!-- CUSTOMIZABLE CREATOR CONTROLS CARD -->
+    <section class="customizer-card glass-panel">
+      <div class="customizer-header">
+        <div>
+          <h2>🎨 Design Your Custom 12-Page Coloring Book</h2>
+          <p>Customize prompts, titles, recipient names, or hit <strong>🎲 Random Idea</strong> to generate bestselling themes for kids or commercial resale.</p>
+        </div>
+        <div class="quick-buttons">
+          <button id="random-idea-btn" class="btn btn-gold btn-lg">🎲 Random Idea / Surprise Me!</button>
+        </div>
+      </div>
+
+      <!-- Quick Prompt Idea Chips -->
+      <div class="prompt-chips-row">
+        <span class="chips-label">Quick Ideas:</span>
+        <button class="chip-btn chip-featured" data-idea="Super Squirrel: Forest Guardian & Acorn Tech">🐿️ Super Squirrel (Featured Hero)</button>
+        <button class="chip-btn" data-idea="Friendly Robot Building a Treehouse">🤖 Robot Treehouse</button>
+        <button class="chip-btn" data-idea="Astronaut Bunny Exploring Mars">🐰 Space Bunny</button>
+        <button class="chip-btn" data-idea="Little Mechanical Fox Repairing Forest Toys">🦊 Clockwork Fox</button>
+        <button class="chip-btn" data-idea="Baby Dinosaur Finding Ancient Constellations">🦖 Starlight Stego</button>
+        <button class="chip-btn" data-idea="Deep Sea Ocean Submersible Exploration">🌊 Ocean Submarine</button>
+        <button class="chip-btn" data-idea="Kingdom of Kindness & Royal Knights of Grace">🏰 Knights of Grace</button>
+        <button class="chip-btn" data-idea="Solar Powered Race Car Championship">🏎️ Solar Racer</button>
+      </div>
+
+      <!-- Creator Form Fields -->
+      <div class="form-grid">
+        <div class="form-group flex-2">
+          <label for="book-topic-input"><strong>Core Prompt Idea / Topic:</strong></label>
+          <input type="text" id="book-topic-input" class="text-input" placeholder="e.g., Super Squirrel: Forest Guardian & Acorn Tech" value="Super Squirrel: Forest Guardian & Acorn Tech">
+        </div>
+
+        <div class="form-group flex-2">
+          <label for="book-title-input"><strong>Custom Book Title:</strong></label>
+          <input type="text" id="book-title-input" class="text-input" placeholder="e.g., Sammy the Super Squirrel: Hyper-Focus Hero" value="Sammy the Super Squirrel: Hyper-Focus Hero">
+        </div>
+
+        <div class="form-group flex-1">
+          <label for="book-recipient-input"><strong>Author or Child's Name:</strong></label>
+          <input type="text" id="book-recipient-input" class="text-input" placeholder="e.g., Leo or Adventure Press" value="Young Adventurer">
+        </div>
+      </div>
+
+      <div class="form-grid-secondary">
+        <div class="form-group">
+          <label for="book-purpose-select">Target Purpose:</label>
+          <select id="book-purpose-select" class="select-input">
+            <option value="kids" selected>👶 For My Kids (Personal / Homeschool / Bedtime)</option>
+            <option value="commercial">💰 To Sell (Amazon KDP / Etsy Commercial License)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="book-age-select">Age Audience:</label>
+          <select id="book-age-select" class="select-input">
+            <option value="3-5 years">Ages 3-5 (Chunky Outlines / Toddler)</option>
+            <option value="4-9 years" selected>Ages 4-9 (Standard Clean Outlines)</option>
+            <option value="10+ years">Ages 10+ / Adults (Detailed Intricate)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="book-style-select">Line-Art Style:</label>
+          <select id="book-style-select" class="select-input">
+            <option value="Bold Line Art" selected>Bold Line Art (High Contrast)</option>
+            <option value="Kawaii Chibi">Kawaii Chibi (Cute Proportions)</option>
+            <option value="Steampunk Blueprint">Steampunk / Blueprint Schematic</option>
+            <option value="Detailed Vector">Detailed Vector (Mindful Contours)</option>
+          </select>
+        </div>
+
+        <div class="form-group action-group">
+          <button id="generate-book-btn" class="btn btn-primary btn-lg">✨ Build & Sequence 12 Pages</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 1: STEP-BY-STEP PAGE CLICK-THROUGH STUDIO (Primary Ad-Revenue Driver) -->
+    <section id="tab-step-studio" class="tab-content active">
+      
+      <!-- Page-by-Page Progress Stepper Header -->
+      <div class="stepper-header-card glass-panel">
+        <div class="stepper-meta">
+          <div class="step-indicator">
+            <span class="step-badge">PAGE GENERATOR</span>
+            <h3 id="current-step-title">Page 1 of 12: The Blueprint & Inspiration</h3>
+          </div>
+          <div class="step-revenue-tag">
+            <span>Ad Revenue this Step: <strong class="text-green">+$0.083</strong></span>
+          </div>
+        </div>
+
+        <!-- Progress Bar (12 Pages) -->
+        <div class="stepper-progress-track">
+          <div id="stepper-progress-fill" class="stepper-progress-fill" style="width: 8.33%;"></div>
+        </div>
+
+        <!-- 12-Step Clickable Breadcrumbs -->
+        <div class="step-crumbs-row" id="step-crumbs-container">
+          <!-- Populated by app.js (1 to 12) -->
+        </div>
+      </div>
+
+      <!-- Main Step Studio 3-Column Layout -->
+      <div class="step-studio-grid">
+        
+        <!-- Left Column: Palette & Sidebar Ad -->
+        <div class="studio-sidebar-col">
+          <!-- Color Palette -->
+          <div class="palette-panel glass-panel">
+            <h4>🎨 Click-to-Color Palette</h4>
+            <div class="palette-swatches" id="palette-swatches">
+              <div class="color-swatch active" data-color="#1e40af" style="background: #1e40af;" title="Royal Blue"></div>
+              <div class="color-swatch" data-color="#0d9488" style="background: #0d9488;" title="Teal Green"></div>
+              <div class="color-swatch" data-color="#e11d48" style="background: #e11d48;" title="Crimson Red"></div>
+              <div class="color-swatch" data-color="#d97706" style="background: #d97706;" title="Solar Gold"></div>
+              <div class="color-swatch" data-color="#16a34a" style="background: #16a34a;" title="Leaf Green"></div>
+              <div class="color-swatch" data-color="#9333ea" style="background: #9333ea;" title="Purple"></div>
+              <div class="color-swatch" data-color="#ec4899" style="background: #ec4899;" title="Pink"></div>
+              <div class="color-swatch" data-color="#38bdf8" style="background: #38bdf8;" title="Sky Blue"></div>
+              <div class="color-swatch" data-color="#f97316" style="background: #f97316;" title="Orange"></div>
+              <div class="color-swatch" data-color="#84cc16" style="background: #84cc16;" title="Lime"></div>
+              <div class="color-swatch" data-color="#475569" style="background: #475569;" title="Slate Gray"></div>
+              <div class="color-swatch" data-color="#ffffff" style="background: #ffffff; border: 2px solid #000;" title="Eraser (White)"></div>
+            </div>
+
+            <div class="active-color-row">
+              <span>Active Paint Color:</span>
+              <div id="active-color-swatch-display" class="active-color-swatch-box" style="background: #1e40af;"></div>
+            </div>
+
+            <div class="studio-tools-row">
+              <button id="undo-btn" class="btn btn-sm btn-secondary">↩️ Undo</button>
+              <button id="redo-btn" class="btn btn-sm btn-secondary">↪️ Redo</button>
+              <button id="clear-btn" class="btn btn-sm btn-danger">🗑️ Clear</button>
+              <button id="save-page-art-btn" class="btn btn-sm btn-success">💾 Save</button>
+            </div>
+          </div>
+
+          <!-- SIDEBAR AD MEDIUM RECTANGLE (300x250) - Refreshes on each page step -->
+          <div class="sidebar-ad-card glass-panel">
+            <span class="ad-badge">SPONSORED AD (300x250)</span>
+            <div class="ad-box-mock" id="sidebar-ad-box">
+              <h4 id="sidebar-ad-title">📦 Homeschool STEM Starter Kit</h4>
+              <p id="sidebar-ad-desc">Hands-on robotics and craft kits delivered monthly to your door.</p>
+              <button class="btn btn-sm btn-primary ad-click-btn">Explore Kits ➔</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Column: Interactive Canvas Stage -->
+        <div class="studio-center-col">
+          <div class="canvas-card glass-panel">
+            <div class="canvas-meta-bar">
+              <span id="canvas-page-badge" class="badge-pill">Page 1 of 12</span>
+              <span id="canvas-virtue-badge" class="badge-pill tag-info">Virtue: Patience</span>
+              <span id="canvas-skill-badge" class="badge-pill tag-teal">Skill: Planning & Vision</span>
+            </div>
+
+            <!-- SVG Container Box -->
+            <div id="active-page-svg-container" class="svg-container-box">
+              <!-- Rendered SVG line art with .colorable-region targets -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Page Story Customizer & NEXT PAGE GENERATION ACTION -->
+        <div class="studio-right-col">
+          <div class="page-editor-card glass-panel">
+            <h3>📝 Page Customizer & Narrative</h3>
+            <p class="small-text">Customize the story and lesson for this specific page or keep the AI storyboard.</p>
+
+            <div class="form-group">
+              <label for="step-page-title-input"><strong>Page Scene Title:</strong></label>
+              <input type="text" id="step-page-title-input" class="text-input" value="The Blueprint & Inspiration">
+            </div>
+
+            <div class="form-group">
+              <label for="step-page-narrative-input"><strong>Story Narrative & Lesson:</strong></label>
+              <textarea id="step-page-narrative-input" class="text-area" rows="4"></textarea>
+            </div>
+
+            <div class="seek-challenge-box">
+              <strong>🔍 Seek-and-Find Challenge:</strong>
+              <p id="step-page-seek-desc">Find and click the hidden shapes stamped on this page!</p>
+            </div>
+
+            <!-- STEP GENERATION ACTION BUTTON -->
+            <div class="step-action-footer">
+              <div class="click-ad-notice">
+                <span>💡 Step through all 12 pages to assemble your complete custom storybook and unlock your commercial PDF download.</span>
+              </div>
+              
+              <div class="nav-buttons-row">
+                <button id="prev-step-btn" class="btn btn-secondary btn-lg" disabled>◀ Previous Page</button>
+                <button id="next-step-btn" class="btn btn-primary btn-lg pulse-glow">Generate Next Page ➡️</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commercial Fast-Track Card -->
+          <div class="kdp-fast-track-card glass-panel">
+            <h4>📚 Amazon KDP 8.5" x 11" Export</h4>
+            <p>Ready to publish? Step through all 12 pages or click below to compile your commercial bundle.</p>
+            <button id="quick-export-all-btn" class="btn btn-gold btn-block">🚀 Fast-Track: Compile All 12 Pages</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: 12-PAGE FULL GALLERY -->
+    <section id="tab-full-gallery" class="tab-content">
       <div class="hero-section">
-        <h2>Generate a 12-Page Technical, Virtue & STEM Project Issue</h2>
-        <p>Enter a technical topic and select the Issue Number (1-12). Each issue sequences 10 story steps, 1 interactive line-art maze, and 1 hands-on household STEM project that hints towards a grand 12-issue annual master build!</p>
+        <h2>🖼️ Complete 12-Page Book Gallery</h2>
+        <p id="gallery-subtitle">Review all 12 generated pages, procedural mazes, hands-on craft blueprints, and diffusion prompts.</p>
       </div>
 
-      <!-- Book Generator Form -->
-      <div class="generator-card glass-panel">
-        <!-- Quick Featured Preset Buttons -->
-        <div class="featured-presets-bar">
-          <span class="featured-label">⭐ Quick Load Popular Books:</span>
-          <button id="load-super-squirrel-btn" class="preset-badge-btn active-preset">🐿️ Super Squirrel (Featured Hero Series)</button>
-          <button id="load-robotics-btn" class="preset-badge-btn">🤖 How to Build a Robot</button>
-          <button id="load-solar-btn" class="preset-badge-btn">☀️ How Solar Panels Work</button>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group flex-2">
-            <label for="book-topic">Technical Skill or Topic:</label>
-            <input type="text" id="book-topic" list="popular-topics" placeholder="e.g., Super Squirrel: Forest Guardian, How to Build a Robot" value="Super Squirrel: Forest Guardian &amp; Acorn Tech">
-            <datalist id="popular-topics">
-              <option value="Super Squirrel: Forest Guardian &amp; Acorn Tech">
-              <option value="Super Squirrel: The Acorn Avenger">
-              <option value="How to Build a Robot">
-              <option value="How Solar Panels Work">
-              <option value="How Computer Coding Works">
-              <option value="How Water Filtration Works">
-              <option value="How Wind Turbines Generate Power">
-              <option value="How 3D Printers Create Objects">
-            </datalist>
-          </div>
-
-          <div class="form-group flex-1">
-            <label for="issue-number">Issue # (1 to 12):</label>
-            <select id="issue-number">
-              <option value="1" selected>Issue #1 (Component #1)</option>
-              <option value="2">Issue #2 (Component #2)</option>
-              <option value="3">Issue #3 (Component #3)</option>
-              <option value="4">Issue #4 (Component #4)</option>
-              <option value="5">Issue #5 (Component #5)</option>
-              <option value="6">Issue #6 (Component #6)</option>
-              <option value="7">Issue #7 (Component #7)</option>
-              <option value="8">Issue #8 (Component #8)</option>
-              <option value="9">Issue #9 (Component #9)</option>
-              <option value="10">Issue #10 (Component #10)</option>
-              <option value="11">Issue #11 (Component #11)</option>
-              <option value="12">Issue #12 (Grand Master Assembly)</option>
-            </select>
-          </div>
-
-          <div class="form-group flex-1">
-            <label for="target-age">Age Audience:</label>
-            <select id="target-age">
-              <option value="4-9 years" selected>Ages 4-9 (Chunky Outlines)</option>
-              <option value="10-14 years">Ages 10-14 (Advanced Electronics)</option>
-            </select>
-          </div>
-
-          <div class="form-group button-group">
-            <button id="generate-btn" class="btn btn-primary btn-lg">✨ Generate Issue</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Generated Book Overview Banner -->
-      <div id="book-meta-banner" class="meta-card glass-panel hidden">
-        <div class="meta-header">
-          <h3 id="book-title-display">Super Squirrel: Forest Guardian &amp; Acorn Tech</h3>
-          <div class="meta-tags">
-            <span id="badge-sanitized" class="tag tag-success">Copyright Safe</span>
-            <span id="badge-virtues" class="tag tag-info">10 Virtues Integrated</span>
-            <span id="badge-master-arc" class="tag tag-warning">Master Clue #1 Included</span>
-          </div>
-        </div>
-        <p id="book-subtitle-display" class="meta-subtitle"></p>
-      </div>
-
-      <!-- 12-Page Grid Carousel -->
-      <div id="pages-grid" class="pages-grid">
+      <div class="pages-grid" id="full-pages-grid">
         <!-- Rendered by app.js -->
       </div>
     </section>
 
-    <!-- TAB 2: INTERACTIVE CLICK-TO-COLOR APP -->
-    <section id="tab-color-app" class="tab-content">
-      <div class="hero-section">
-        <h2>🖌️ Click-to-Color Digital Studio</h2>
-        <p>Pick a color from the vibrant palette below and click any closed shape on the canvas to fill it with color! Kids can paint digitally, find hidden shapes, undo mistakes, and save artwork.</p>
-      </div>
-
-      <div class="color-studio-layout">
-        <!-- Left Side: Color Palette & Toolbar -->
-        <div class="color-studio-controls glass-panel">
-          <h3>🎨 Color Palette</h3>
-          <div class="palette-swatches" id="palette-swatches">
-            <div class="color-swatch active" data-color="#e11d48" style="background: #e11d48;" title="Superhero Cape Red"></div>
-            <div class="color-swatch" data-color="#ea580c" style="background: #ea580c;" title="Squirrel Amber Fur"></div>
-            <div class="color-swatch" data-color="#78350f" style="background: #78350f;" title="Acorn Bark Brown"></div>
-            <div class="color-swatch" data-color="#f59e0b" style="background: #f59e0b;" title="Golden Oak Acorn"></div>
-            <div class="color-swatch" data-color="#15803d" style="background: #15803d;" title="Pine Forest Green"></div>
-            <div class="color-swatch" data-color="#1e40af" style="background: #1e40af;" title="Trust Cobalt"></div>
-            <div class="color-swatch" data-color="#0d9488" style="background: #0d9488;" title="Innovation Teal"></div>
-            <div class="color-swatch" data-color="#38bdf8" style="background: #38bdf8;" title="Sky Blue"></div>
-            <div class="color-swatch" data-color="#9333ea" style="background: #9333ea;" title="Royal Purple"></div>
-            <div class="color-swatch" data-color="#ec4899" style="background: #ec4899;" title="Pastel Pink"></div>
-            <div class="color-swatch" data-color="#fef3c7" style="background: #fef3c7;" title="Soft Cream Belly"></div>
-            <div class="color-swatch" data-color="#0f172a" style="background: #0f172a;" title="Hero Mask Black"></div>
-            <div class="color-swatch" data-color="#ffffff" style="background: #ffffff; border: 2px solid #000;" title="Eraser (White)"></div>
-          </div>
-
-          <div class="active-color-indicator">
-            <span>Selected Color:</span>
-            <div id="active-color-preview" class="color-preview-box" style="background: #e11d48;"></div>
-          </div>
-
-          <div class="studio-action-buttons">
-            <button id="undo-color-btn" class="btn btn-secondary">↩️ Undo</button>
-            <button id="redo-color-btn" class="btn btn-secondary">↪️ Redo</button>
-            <button id="clear-canvas-btn" class="btn btn-danger">🗑️ Clear Color</button>
-            <button id="save-artwork-btn" class="btn btn-success">💾 Save Image</button>
-          </div>
-
-          <!-- SIDEBAR AD RECTANGLE (300x250) -->
-          <div class="sidebar-ad-box">
-            <span class="ad-badge">SPONSORED AD (shomerepair.com)</span>
-            <div class="ad-rectangle-mock">
-              <h4>✝️ Bright Light Kids Bibles</h4>
-              <p>Illustrated STEM & Devotional Books for homeschool families!</p>
-              <button class="btn btn-sm btn-primary">Free Sample Chapter</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Side: Interactive SVG Canvas -->
-        <div class="color-canvas-stage glass-panel">
-          <div class="canvas-header-bar">
-            <span id="canvas-page-title">Page 1: The Blueprint (Planning)</span>
-            <div class="canvas-page-nav">
-              <button id="prev-page-btn" class="btn btn-sm btn-secondary">◀ Prev</button>
-              <span id="page-counter-display">Page 1 of 12</span>
-              <button id="next-page-btn" class="btn btn-sm btn-secondary">Next ▶</button>
-            </div>
-          </div>
-
-          <div id="interactive-svg-container" class="svg-container-box">
-            <!-- Interactive SVG loaded by app.js -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 3: AD MONETIZATION ENGINE -->
+    <!-- TAB 3: AD MONETIZATION & $1.00 REVENUE ENGINE -->
     <section id="tab-ad-monetization" class="tab-content">
       <div class="hero-section">
-        <h2>💰 Ad Monetization & Revenue Framework (shomerepair.com)</h2>
-        <p>VirtueCraft STEM on shomerepair.com is built to generate steady recurring ad revenue through Google AdSense leaderboard banners, video rewarded ads for downloads, and affiliate partnerships.</p>
+        <h2>💵 Ad Monetization Engine: $1.00 for Every 12 Pages</h2>
+        <p>This application implements an optimized programmatic ad framework engineered to hit exactly <strong>$1.00 revenue per 12 generated pages</strong>.</p>
       </div>
 
+      <!-- Real-Time Revenue Metrics Grid -->
       <div class="stats-grid">
         <div class="stat-card glass-panel">
-          <div class="stat-icon">💵</div>
-          <div class="stat-value" id="stat-ecpm">$5.00</div>
-          <div class="stat-label">Estimated eCPM Rate</div>
+          <div class="stat-icon">📄</div>
+          <div class="stat-value" id="metric-pages-viewed">1</div>
+          <div class="stat-label">Pages Generated & Viewed</div>
         </div>
+
         <div class="stat-card glass-panel">
           <div class="stat-icon">👁️</div>
-          <div class="stat-value" id="stat-impressions">12,450</div>
-          <div class="stat-label">Total Ad Impressions</div>
+          <div class="stat-value" id="metric-ad-impressions">3</div>
+          <div class="stat-label">Ad Banner Impressions</div>
         </div>
+
         <div class="stat-card glass-panel">
           <div class="stat-icon">🎬</div>
-          <div class="stat-value" id="stat-rewarded-views">1,820</div>
+          <div class="stat-value" id="metric-rewarded-views">0</div>
           <div class="stat-label">Rewarded Video Views</div>
         </div>
-        <div class="stat-card glass-panel">
-          <div class="stat-icon">📈</div>
-          <div class="stat-value" id="stat-revenue">$71.35</div>
-          <div class="stat-label">Estimated Ad Earnings</div>
-        </div>
-      </div>
 
-      <div class="monetization-details-card glass-panel">
-        <h3>🚀 Ad Revenue Channels & Monetization Strategy</h3>
-        <ul class="monetization-list">
-          <li><strong>1. Header & Footer Leaderboard Banners (728x90):</strong> Displays family-friendly AdSense banners on top of the coloring app.</li>
-          <li><strong>2. Rewarded Video Ads for Downloads:</strong> When parents click "Download High-Res 300 DPI PDF" or "Unlock Year 1 Master Clue", a 15-second rewarded video ad plays, generating $15-$25 eCPM!</li>
-          <li><strong>3. In-App Sidebar Banners (300x250):</strong> Positioned beside the color palette for maximum click-through rate (CTR).</li>
-          <li><strong>4. Ad-Free Premium Subscription ($4.99/mo):</strong> Option for parents to remove all ads and get unlimited PDF downloads on shomerepair.com.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- TAB 4: 1M SCALE STRATEGY -->
-    <section id="tab-scale-strategy" class="tab-content">
-      <div class="hero-section">
-        <h2>📈 1,000,000 Sales Year 1 Strategic Marketing & CRO Engine</h2>
-        <p>A comprehensive scale plan combining funnel architecture, conversion rate optimization, viral homeschool growth loops, and channel economics for shomerepair.com.</p>
-      </div>
-
-      <div class="stats-grid">
-        <div class="stat-card glass-panel">
-          <div class="stat-icon">🎯</div>
-          <div class="stat-value">1,000,000</div>
-          <div class="stat-label">Year 1 Unit Sales Goal</div>
-        </div>
-        <div class="stat-card glass-panel">
+        <div class="stat-card glass-panel stat-card-highlight">
           <div class="stat-icon">💰</div>
-          <div class="stat-value">$19.99</div>
-          <div class="stat-label">Target AOV (Print + Digital)</div>
+          <div class="stat-value text-green" id="metric-total-revenue">$0.08</div>
+          <div class="stat-label">Session Ad Revenue ($1.00 Goal)</div>
         </div>
-        <div class="stat-card glass-panel">
-          <div class="stat-icon">⚡</div>
-          <div class="stat-value">4.8%</div>
-          <div class="stat-label">Benchmark Landing Page CVR</div>
+      </div>
+
+      <!-- Revenue Breakdown Table -->
+      <div class="monetization-details-card glass-panel">
+        <h3>📊 How We Make $1.00 for Every 12 Pages Generated</h3>
+        <table class="revenue-breakdown-table">
+          <thead>
+            <tr>
+              <th>Ad Revenue Stream</th>
+              <th>Frequency / Trigger</th>
+              <th>Effective Rate (eCPM / Fee)</th>
+              <th>12-Page Yield</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Page Click-Through Banners (3 units/pg)</strong></td>
+              <td>Leaderboard (728x90), Sidebar (300x250), Sticky Footer (728x90) on each step</td>
+              <td>$6.50 eCPM</td>
+              <td><strong>$0.234</strong> (36 impressions)</td>
+            </tr>
+            <tr>
+              <td><strong>2. Rewarded Video Ad (PDF Download)</strong></td>
+              <td>Parents/publishers watch 15s video before downloading 300 DPI vector PDF</td>
+              <td>$28.00 eCPM + bonus</td>
+              <td><strong>$0.350</strong> (1 completed view)</td>
+            </tr>
+            <tr>
+              <td><strong>3. Sponsored Affiliate Kit / Click Yield</strong></td>
+              <td>Targeted homeschool kits, crayons, and Amazon KDP course recommendations</td>
+              <td>~$0.035 / interaction</td>
+              <td><strong>$0.416</strong> (12 page visits)</td>
+            </tr>
+            <tr class="table-total-row">
+              <td><strong>TOTAL AVERAGE REVENUE PER 12 PAGES</strong></td>
+              <td><strong>Completed 12-Page Generation Flow</strong></td>
+              <td><strong>Optimal Ad & Sponsor Blend</strong></td>
+              <td><strong>$1.000 / Session</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TAB 4: SELL ON AMAZON KDP & COMMERCIAL PACKAGING -->
+    <section id="tab-commercial-kdp" class="tab-content">
+      <div class="hero-section">
+        <h2>🛒 Publish & Sell on Amazon KDP, Etsy & Shopify</h2>
+        <p>Commercial packaging tools calibrated for Amazon Kindle Direct Publishing (KDP) 8.5" x 11" specifications and Etsy digital download packs.</p>
+      </div>
+
+      <div class="kdp-cards-grid">
+        <div class="kdp-card glass-panel" style="border: 2px solid #6366f1; background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), #ffffff);">
+          <div class="kdp-badge" style="background: #6366f1; color: white;">POPULAR: $1.00</div>
+          <h3>⚡ Instant Commercial Pass</h3>
+          <p>Instant commercial rights for Amazon KDP & Etsy. Unlocks 300 DPI high-resolution interior files and commercial certificate with zero ads.</p>
+          <ul class="check-list">
+            <li>✅ Instant 300 DPI PDF download</li>
+            <li>✅ Unlimited Amazon KDP & Etsy resale rights</li>
+            <li>✅ Secure checkout via Stripe (Cards, Apple Pay, Google Pay)</li>
+            <li>✅ Official commercial certificate included</li>
+          </ul>
+          <button id="stripe-checkout-btn" class="btn btn-primary btn-block" style="background: #6366f1; font-size: 1.05rem; padding: 14px; font-weight: bold;">
+            💳 Buy Commercial Pass — $1.00
+          </button>
         </div>
-        <div class="stat-card glass-panel">
-          <div class="stat-icon">🌟</div>
-          <div class="stat-value">$19,990,000</div>
-          <div class="stat-label">Target Gross Revenue</div>
+
+        <div class="kdp-card glass-panel">
+          <div class="kdp-badge">KDP READY</div>
+          <h3>📖 8.5" x 11" Interior Package</h3>
+          <p>Standard paperback interior trim size with safety bleed margins, crisp 300 DPI binary line art, and page numbering.</p>
+          <ul class="check-list">
+            <li>✅ 10 Story and Lesson Coloring Pages</li>
+            <li>✅ 1 Logic Pathfinder Maze (Page 11)</li>
+            <li>✅ 1 Household STEM Keepsake Craft (Page 12)</li>
+            <li>✅ Black & White interior print margins</li>
+          </ul>
+          <button id="download-interior-btn" class="btn btn-secondary btn-block">Print / Save 300 DPI PDF</button>
+        </div>
+
+        <div class="kdp-card glass-panel">
+          <div class="kdp-badge">LEGAL RIGHTS</div>
+          <h3>📜 Commercial Resale Certificate</h3>
+          <p>Official Master Resale & Private Label Rights (PLR) license granting perpetual worldwide selling rights with zero royalties.</p>
+          <ul class="check-list">
+            <li>✅ Sell printed books on Amazon KDP & Lulu</li>
+            <li>✅ Sell digital printable PDFs on Etsy & Gumroad</li>
+            <li>✅ Keep 100% of retail sales profits</li>
+            <li>✅ Unique License ID registered under shomerepair.com</li>
+          </ul>
+          <button id="download-cert-btn" class="btn btn-gold btn-block">View & Print Resale License</button>
+        </div>
+
+        <div class="kdp-card glass-panel">
+          <div class="kdp-badge">COVER STUDIO</div>
+          <h3>🎨 Front & Back Book Cover</h3>
+          <p>Full-spread cover template with title typography, barcode box, and Amazon KDP spine guidelines.</p>
+          <ul class="check-list">
+            <li>✅ High-resolution front cover layout</li>
+            <li>✅ Back cover blurb & barcode safe zone</li>
+            <li>✅ CMYK print color profile compatibility</li>
+          </ul>
+          <button id="generate-cover-btn" class="btn btn-success btn-block">Preview Book Cover</button>
         </div>
       </div>
     </section>
 
-    <!-- TAB 5: AGENT LOOP -->
-    <section id="tab-agent-loop" class="tab-content">
+    <!-- TAB 5: SUBAGENT HUB -->
+    <section id="tab-agent-console" class="tab-content">
       <div class="hero-section">
-        <h2>🤖 Autonomous Agent Loop Runner</h2>
-        <p>Execute continuous batch generation of 12-page coloring books across multiple STEM topics autonomously.</p>
+        <h2>🤖 Autonomous Subagent Orchestration Hub</h2>
+        <p>Antigravity Manager Agent coordinates 5 specialized subagents to generate books at higher speed and enterprise quality.</p>
       </div>
 
-      <div class="agent-control-card glass-panel">
+      <div class="subagents-display-grid">
+        <div class="subagent-card glass-panel">
+          <div class="subagent-icon">📖</div>
+          <h4>1. Storyboard Subagent</h4>
+          <span class="subagent-role">Narrative & Educational Arc</span>
+          <p>Constructs cohesive 12-page titles, educational morals, and Christian virtues.</p>
+        </div>
+
+        <div class="subagent-card glass-panel">
+          <div class="subagent-icon">⚡</div>
+          <h4>2. Prompt Subagent</h4>
+          <span class="subagent-role">Diffusion Engineering</span>
+          <p>Optimizes SDXL, Flux, and Midjourney v6 prompts with locked negative filters.</p>
+        </div>
+
+        <div class="subagent-card glass-panel">
+          <div class="subagent-icon">🖌️</div>
+          <h4>3. Vector Art Subagent</h4>
+          <span class="subagent-role">Line Art & Interactive SVG</span>
+          <p>Renders 300 DPI high-contrast vector paths and .colorable-region flood fill zones.</p>
+        </div>
+
+        <div class="subagent-card glass-panel">
+          <div class="subagent-icon">💰</div>
+          <h4>4. Monetization Subagent</h4>
+          <span class="subagent-role">Ad Tracking & $1.00 Engine</span>
+          <p>Orchestrates page-by-page ad impressions, rewarded video ads, and CPM yield.</p>
+        </div>
+
+        <div class="subagent-card glass-panel">
+          <div class="subagent-icon">📦</div>
+          <h4>5. Packaging Subagent</h4>
+          <span class="subagent-role">KDP & Resale Licensing</span>
+          <p>Compiles Amazon KDP 8.5x11 PDF packages and commercial resale certificates.</p>
+        </div>
+      </div>
+
+      <div class="agent-control-card glass-panel" style="margin-top: 2rem;">
         <div class="agent-status-bar">
-          <div>Status: <span id="agent-status-text" class="status-idle">IDLE</span></div>
-          <div>Cycle: <span id="agent-cycle-count">0</span> / 6</div>
+          <div>Orchestrator Status: <span id="agent-status-text" class="status-idle">IDLE (READY)</span></div>
+          <div>Queue Completed: <span id="agent-cycle-count">0</span> / 6 Books</div>
         </div>
 
         <div class="agent-buttons">
-          <button id="start-agent-btn" class="btn btn-success btn-lg">▶️ Start Autonomous Loop</button>
+          <button id="start-agent-btn" class="btn btn-success btn-lg">▶️ Run Autonomous Multi-Agent Loop</button>
           <button id="stop-agent-btn" class="btn btn-danger btn-lg" disabled>⏹️ Stop Loop</button>
         </div>
 
         <div class="agent-log-box">
-          <h4>📋 Autonomous Agent Trajectory Log</h4>
-          <pre id="agent-log-output">Agent loop ready. Click 'Start Autonomous Loop' to process queue.</pre>
+          <h4>📋 Autonomous Subagent Trajectory Stream</h4>
+          <pre id="agent-log-output">Manager Agent ready. Click 'Run Autonomous Multi-Agent Loop' to delegate batch coloring book generation across all 5 subagents.</pre>
         </div>
       </div>
     </section>
 
-    <!-- TAB 6: MASTER BUILD ARC -->
-    <section id="tab-master-arc" class="tab-content">
-      <div class="hero-section">
-        <h2>🏆 Annual Master Project: The Solar Smart Eco-Citadel</h2>
-        <p>Every monthly issue provides 1 component blueprint. Over 12 months, kids build the ultimate 12-part Eco-Citadel!</p>
-      </div>
-
-      <div id="master-arc-grid" class="master-arc-grid">
-        <!-- Rendered by app.js -->
-      </div>
-    </section>
-
-    <!-- TAB 7: PROMPT MATRIX -->
-    <section id="tab-prompt-matrix" class="tab-content">
-      <div class="hero-section">
-        <h2>⚡ Diffusion Prompt Matrix</h2>
-        <p>Inspect the locked prompts generated for SDXL / Flux / Midjourney v6.</p>
-      </div>
-
-      <div id="prompts-list" class="prompts-list">
-        <!-- Rendered by app.js -->
-      </div>
-    </section>
   </main>
 
-  <!-- REWARDED VIDEO AD MODAL DIALOG -->
+  <!-- STICKY BOTTOM AD BANNER (728x90) -->
+  <footer class="sticky-footer-ad">
+    <div class="footer-ad-container">
+      <div class="ad-placeholder-container">
+        <div class="ad-meta-info">
+          <span class="ad-badge">SPONSORED PARTNERS</span>
+        </div>
+        <div class="ad-banner-mock">
+          <div class="ad-mock-content">
+            <span class="ad-sponsor-icon">📚</span>
+            <div>
+              <strong>Print On Demand: Fast Amazon KDP Paperback Dropshipping!</strong>
+              <p>Turn your 12-page coloring book into real physical paperbacks with worldwide Amazon Prime delivery.</p>
+            </div>
+            <button class="btn btn-sm btn-gold ad-click-btn">Publish Today ➔</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- REWARDED VIDEO AD MODAL (Unlocks High-Res 300 DPI PDF) -->
   <div id="rewarded-ad-modal" class="modal-overlay hidden">
     <div class="modal-card glass-panel">
       <div class="modal-header">
-        <h3>🎬 Watch Sponsored Video to Unlock 300 DPI PDF</h3>
+        <h3>🎬 Sponsored Message • Free 300 DPI Unlock</h3>
         <button id="close-ad-modal-btn" class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
         <div class="video-ad-player-mock">
           <div class="video-ad-content">
             <span class="video-ad-timer">Ad Ends in: <strong id="ad-timer-countdown">5</strong>s</span>
-            <h4>🚀 Sponsored Partner: Christian STEM Academy</h4>
-            <p>Unlocking High-Resolution 300 DPI Vector PDF Download Package for shomerepair.com...</p>
+            <h4>🚀 Sponsored Partner: Christian STEM & Publishing Academy</h4>
+            <p>Unlocking 300 DPI Amazon KDP Vector PDF Package for coloring.shomerepair.com...</p>
             <div class="progress-bar-container">
               <div id="ad-progress-bar" class="progress-bar-fill"></div>
             </div>
@@ -368,7 +543,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button id="claim-pdf-btn" class="btn btn-success btn-lg" disabled>🎁 Download PDF Now</button>
+        <button id="claim-pdf-btn" class="btn btn-success btn-lg" disabled>🎁 Download 300 DPI PDF Now</button>
       </div>
     </div>
   </div>
