@@ -11,6 +11,7 @@ import {
 } from "../engine/coloringBookGenerator.js";
 
 export const DEFAULT_TOPIC_QUEUE = [
+  "Super Squirrel: Forest Guardian & Acorn Tech",
   "How to Build a Robot",
   "How Solar Panels Work",
   "How Computer Coding Works",

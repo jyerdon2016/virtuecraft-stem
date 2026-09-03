@@ -15,7 +15,7 @@ import { VirtueTechAgentCore } from "./agent/agentCore.js";
 
 // Global State
 let currentBook = null;
-let activeColor = "#1e40af"; // Default Trust Cobalt
+let activeColor = "#e11d48"; // Default Superhero Cape Red
 let activeColorStudioPageIndex = 0;
 let colorHistory = [];
 let colorRedoStack = [];
@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initAdMonetizationManager();
   initAgentLoopUI();
   
-  // Initial default book load: Issue #1
-  loadBook("How to Build a Robot", 1);
+  // Initial default book load: Super Squirrel (Featured Hero Series)
+  loadBook("Super Squirrel: Forest Guardian & Acorn Tech", 1);
 });
 
 /* 1. Navigation Tab Handling */
@@ -63,12 +63,38 @@ function initGenerator() {
   const topicInput = document.getElementById("book-topic");
   const issueSelect = document.getElementById("issue-number");
   const ageSelect = document.getElementById("target-age");
+  const presetBtns = document.querySelectorAll(".preset-badge-btn");
 
   generateBtn?.addEventListener("click", () => {
-    const topic = topicInput.value.trim() || "How to Build a Robot";
+    const topic = topicInput.value.trim() || "Super Squirrel: Forest Guardian & Acorn Tech";
     const issueNum = parseInt(issueSelect.value) || 1;
     const age = ageSelect.value;
     loadBook(topic, issueNum, age);
+  });
+
+  // Preset quick-load buttons
+  document.getElementById("load-super-squirrel-btn")?.addEventListener("click", () => {
+    presetBtns.forEach(b => b.classList.remove("active-preset"));
+    document.getElementById("load-super-squirrel-btn").classList.add("active-preset");
+    topicInput.value = "Super Squirrel: Forest Guardian & Acorn Tech";
+    issueSelect.value = "1";
+    loadBook("Super Squirrel: Forest Guardian & Acorn Tech", 1);
+  });
+
+  document.getElementById("load-robotics-btn")?.addEventListener("click", () => {
+    presetBtns.forEach(b => b.classList.remove("active-preset"));
+    document.getElementById("load-robotics-btn").classList.add("active-preset");
+    topicInput.value = "How to Build a Robot";
+    issueSelect.value = "1";
+    loadBook("How to Build a Robot", 1);
+  });
+
+  document.getElementById("load-solar-btn")?.addEventListener("click", () => {
+    presetBtns.forEach(b => b.classList.remove("active-preset"));
+    document.getElementById("load-solar-btn").classList.add("active-preset");
+    topicInput.value = "How Solar Panels Work";
+    issueSelect.value = "2";
+    loadBook("How Solar Panels Work", 2);
   });
 }
 
@@ -76,6 +102,8 @@ function loadBook(topic, issueNum, targetAge = "4-9 years") {
   currentBook = generateColoringBook(topic, issueNum, targetAge);
   renderBookOverview(currentBook);
   renderStudioPages(currentBook);
+  renderMasterArcGrid(currentBook);
+  renderPromptMatrix(currentBook);
   loadColorStudioPage(0); // Load Page 1 into Click-to-Color Studio
 }
 
@@ -89,8 +117,21 @@ function renderStudioPages(book) {
   const pagesGrid = document.getElementById("pages-grid");
   pagesGrid.innerHTML = "";
 
+  const squirrelImages = {
+    1: "/images/super_squirrel/page1_flight_planning.jpg",
+    2: "/images/super_squirrel/page2_workshop_safety.jpg",
+    3: "/images/super_squirrel/page3_canopy_gliding.jpg",
+    4: "/images/super_squirrel/page4_acorn_radar.jpg",
+    5: "/images/super_squirrel/page5_solar_treehouse.jpg",
+    6: "/images/super_squirrel/page6_gentle_rescue.jpg",
+    11: "/images/super_squirrel/page11_canopy_maze.jpg",
+    12: "/images/super_squirrel/page12_stem_catapult.jpg"
+  };
+
   book.pages.forEach((page, idx) => {
     const { svgHtml } = renderPageSVG(page);
+    const aiImg = (book.isSuperSquirrel && squirrelImages[page.pageNumber]) ? squirrelImages[page.pageNumber] : null;
+
     const card = document.createElement("div");
     card.className = "page-card glass-panel";
     card.innerHTML = `
@@ -98,12 +139,22 @@ function renderStudioPages(book) {
         <h4>${page.title}</h4>
         <span class="tag tag-info">${page.virtue}</span>
       </div>
-      <div class="page-card-svg">${svgHtml}</div>
+      <div class="page-preview-box">
+        ${aiImg ? `
+          <div style="text-align: center; margin-bottom: 0.75rem;">
+            <img src="${aiImg}" alt="${page.title}" class="card-ai-img" />
+            <div><span class="badge-ai-indicator">✨ High-Definition AI Coloring Page</span></div>
+          </div>
+        ` : `
+          <div class="page-card-svg">${svgHtml}</div>
+        `}
+      </div>
       <div class="page-card-narrative">
         <p><strong>📖 Story Exploration:</strong> ${page.narrative}</p>
       </div>
       <div class="page-card-actions">
         <button class="btn btn-sm btn-primary open-in-studio-btn" data-index="${idx}">🖌️ Open in Click-to-Color</button>
+        ${aiImg ? `<a href="${aiImg}" target="_blank" download="super_squirrel_page_${page.pageNumber}.jpg" class="btn btn-sm btn-secondary">💾 Download 300 DPI</a>` : ''}
       </div>
     `;
 
@@ -259,7 +310,57 @@ function initAdMonetizationManager() {
 
   claimPdfBtn?.addEventListener("click", () => {
     modal.classList.add("hidden");
-    window.open("./output/books/year1-issue1-robotics-printable.html", "_blank");
+    const targetFile = (currentBook && currentBook.isSuperSquirrel)
+      ? "./output/books/super-squirrel-forest-guardian-acorn-tech-printable.html"
+      : "./output/books/year1-issue1-robotics-printable.html";
+    window.open(targetFile, "_blank");
+  });
+}
+
+function renderMasterArcGrid(book) {
+  const container = document.getElementById("master-arc-grid");
+  if (!container) return;
+  container.innerHTML = "";
+
+  ANNUAL_MASTER_PROJECT.issues.forEach(item => {
+    const isCurrent = book && book.issueNumber === item.issue;
+    const card = document.createElement("div");
+    card.className = `arc-module-card ${isCurrent ? "current-issue" : ""}`;
+    card.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+        <span class="badge ${isCurrent ? "badge-gold" : "badge-blue"}">Issue #${item.issue}</span>
+        ${isCurrent ? '<span style="font-size: 0.8rem; font-weight: bold; color: #d97706;">★ Current Active Issue</span>' : ''}
+      </div>
+      <h4 style="font-family: \'Outfit\', sans-serif; font-size: 1.1rem; color: #1e40af; margin-bottom: 0.25rem;">${item.componentName}</h4>
+      <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0.5rem;"><strong>🔨 STEM Build:</strong> ${item.stemProject}</p>
+      <p style="font-size: 0.85rem; color: #64748b; font-style: italic;">"${item.hint}"</p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderPromptMatrix(book) {
+  const container = document.getElementById("prompts-list");
+  if (!container || !book) return;
+  container.innerHTML = "";
+
+  book.pages.forEach(page => {
+    const card = document.createElement("div");
+    card.className = "prompt-card";
+    card.innerHTML = `
+      <h4>${page.title} — <span style="color: #0d9488;">${page.virtue}</span></h4>
+      <p style="font-size: 0.9rem; margin-bottom: 0.4rem;"><strong>Skill:</strong> ${page.technicalSkill}</p>
+      <div class="prompt-box">
+        <span style="color: #4ade80; font-weight: bold;">[Positive Prompt]:</span> ${page.prompt}
+      </div>
+      <div class="prompt-box" style="color: #f87171;">
+        <span style="color: #f87171; font-weight: bold;">[Negative Prompt]:</span> ${page.negativePrompt}
+      </div>
+      <div style="font-size: 0.85rem; color: #64748b; margin-top: 0.25rem;">
+        🔍 <strong>Directive:</strong> ${page.overlayDirective}
+      </div>
+    `;
+    container.appendChild(card);
   });
 }
 

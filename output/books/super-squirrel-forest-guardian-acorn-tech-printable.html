@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtueCraft STEM Magazine - Issue #1: Super Squirrel: Forest Guardian &amp; Acorn Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; padding: 2rem; }
+    .container { max-width: 920px; margin: 0 auto; }
+    
+    .magazine-header { text-align: center; background: #ffffff; border: 4px solid #000000; padding: 2rem; border-radius: 16px; margin-bottom: 2.5rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+    .magazine-masthead { font-family: 'Outfit', sans-serif; font-size: 2.5rem; font-weight: 800; color: #1e40af; letter-spacing: -0.02em; text-transform: uppercase; }
+    .magazine-subhead { color: #0d9488; font-weight: 700; font-size: 1.15rem; margin-top: 0.25rem; }
+    .meta-badges { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
+    .badge { font-size: 0.85rem; font-weight: 800; padding: 0.35rem 0.85rem; border-radius: 20px; font-family: 'Outfit', sans-serif; }
+    .badge-blue { background: #dbeafe; color: #1e40af; border: 2px solid #1e40af; }
+    .badge-teal { background: #ccfbf1; color: #0f766e; border: 2px solid #0f766e; }
+    .badge-gold { background: #fef3c7; color: #92400e; border: 2px solid #92400e; }
+    
+    .magazine-page-card { background: #ffffff; border: 3px solid #000000; border-radius: 18px; overflow: hidden; margin-bottom: 3.5rem; box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.1); }
+    .magazine-page-header { background: #f1f5f9; padding: 1.25rem 1.5rem; border-bottom: 3px solid #000000; display: flex; justify-content: space-between; align-items: center; }
+    .magazine-page-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: #000000; font-weight: 800; }
+    
+    .magazine-page-content { padding: 1.5rem; }
+    .svg-wrapper { text-align: center; margin-bottom: 1.5rem; }
+    .svg-wrapper svg { width: 100%; height: auto; max-height: 750px; }
+    
+    .editorial-narrative-box { background: #f8fafc; border-left: 6px solid #0d9488; border-top: 2px solid #000000; border-right: 2px solid #000000; border-bottom: 2px solid #000000; border-radius: 10px; padding: 1.5rem; margin-top: 1rem; }
+    .editorial-title { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 800; color: #0d9488; margin-bottom: 0.5rem; }
+    .editorial-paragraph { font-size: 1rem; line-height: 1.7; color: #0f172a; }
+    
+    .prompt-spec-box { background: #0f172a; color: #f8fafc; border-radius: 10px; padding: 1.25rem; margin-top: 1rem; font-family: monospace; font-size: 0.85rem; line-height: 1.5; }
+    .prompt-label { font-weight: bold; color: #38bdf8; }
+
+    @media print {
+      body { background: white !important; padding: 0 !important; }
+      .magazine-header, .prompt-spec-box { display: none !important; }
+      .magazine-page-card { border: none !important; box-shadow: none !important; margin: 0 !important; page-break-after: always; height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+      .svg-wrapper svg { max-height: 70vh !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="magazine-header">
+      <div class="magazine-masthead">VirtueCraft STEM Magazine</div>
+      <div class="magazine-subhead">Year 1 Issue #1: Super Squirrel: Forest Guardian &amp; Acorn Tech — Issue #1: The High-Flying Adventures of Super Squirrel (Ages 4-9)</div>
+      <div class="meta-badges">
+        <span class="badge badge-blue">Ages 4-9 Chunky Lines</span>
+        <span class="badge badge-teal">Diffusion Locked Prompts</span>
+        <span class="badge badge-gold">Two-Layer Vector Overlays</span>
+        <span class="badge badge-blue">300 DPI High-Contrast Binary</span>
+      </div>
+    </div>
+
+    <!-- Render All 12 Pages with SVG Line Art, Two-Layer Overlay, and Diffusion Prompts -->
+    
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 1: Treetop Flight Planning</h2>
+            <span class="badge badge-blue">Virtue: Patience</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 1: Treetop Flight Planning</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-1" transform="translate(60, 110)">
+        <!-- Sun & Cloud -->
+        <circle cx="410" cy="50" r="35" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <path d="M 40,50 Q 65,30 90,48 Q 115,30 140,50 Q 155,70 135,88 Q 45,88 40,50 Z" class="chunky-stroke colorable-region" fill="#ffffff" />
+        
+        <!-- Large Oak Branch -->
+        <path d="M 0,390 Q 230,360 480,395 L 480,450 L 0,450 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="400" cy="380" rx="35" ry="18" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="445" cy="390" r="14" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Fluffy Curled Rudder Tail -->
+        <path d="M 235,280 C 360,240 395,70 305,45 C 240,25 210,95 235,160 C 245,195 235,245 220,275 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        
+        <!-- Superhero Cape -->
+        <path d="M 125,160 C 45,170 30,270 45,350 C 90,325 125,345 145,300 Z" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Super Squirrel Body & Belt -->
+        <ellipse cx="175" cy="225" rx="55" ry="68" class="bold-outline colorable-region" fill="#ffffff" />
+        <!-- Acorn Chest Emblem -->
+        <path d="M 157,192 Q 175,182 193,192 L 193,200 L 157,200 Z" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <path d="M 157,200 C 157,222 193,222 193,200 Z" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <polygon points="175,203 170,212 176,212 172,220 180,210 174,210" fill="#000000" />
+        <rect x="135" y="272" width="80" height="16" rx="6" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Legs & Hero Boots -->
+        <rect x="140" y="288" width="28" height="58" rx="10" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="180" y="288" width="28" height="58" rx="10" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="154" cy="350" rx="20" ry="12" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="194" cy="350" rx="20" ry="12" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Head, Ears, Mask & Cheerful Face -->
+        <circle cx="175" cy="115" r="50" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 135,90 Q 120,25 145,55 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 135,80 Q 128,45 142,60 Z" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <path d="M 200,85 Q 230,25 205,55 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 203,75 Q 220,45 205,60 Z" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <path d="M 135,110 C 150,95 165,115 175,105 C 185,115 200,95 215,110 C 205,125 185,120 175,115 C 165,120 145,125 135,110 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="155" cy="110" r="7" fill="#000" /><circle cx="195" cy="110" r="7" fill="#000" />
+        <circle cx="157" cy="108" r="2.5" fill="#fff" /><circle cx="197" cy="108" r="2.5" fill="#fff" />
+        <polygon points="171,128 179,128 175,135" fill="#000" />
+        <path d="M 165,140 Q 175,152 185,140" stroke="#000" stroke-width="4" fill="none" stroke-linecap="round" />
+
+        <!-- Unrolled Map in Paws -->
+        <rect x="45" y="215" width="115" height="80" rx="10" class="bold-outline colorable-region" fill="#ffffff" />
+        <text x="55" y="240" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" fill="#000">OAK FOREST MAP</text>
+        <path d="M 55,258 Q 85,248 110,268 T 150,260" stroke="#000" stroke-width="3" fill="none" />
+        <circle cx="140" cy="235" r="7" class="chunky-stroke colorable-region" fill="#ffffff" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-1-0" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-1-1" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-1-2" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-1-3" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">At the peak of the Great Forest Oak Tree, Sammy the Super Squirrel stands tall on a mossy branch, unrolling an ancient woodland tree-map with determined eyes. His superhero cape ripples in the morning breeze while the golden acorn emblem on his chest shines brightly in the rising sunlight. In the soft clouds drifting past and the oak leaf veins below, three hidden 'Cross-my-heart' shapes are cleverly woven into the scene. Sammy smiles with deep Patience, knowing that every great mission begins with careful planning before taking flight. Resting beside his boots, a compass carved from an acorn shell helps him calculate the gentle winds across the canopy.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of a heroic Super Squirrel wearing a cape standing on an oak tree branch holding an aerial map, demonstrating the Christian virtue of Patience, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 4 distinct 'Cross-my-heart' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 2: Acorn Flight Suit Safety</h2>
+            <span class="badge badge-blue">Virtue: Self-Control</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 2: Acorn Flight Suit Safety</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Self-Control</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-2" transform="translate(60, 110)">
+        <!-- Workshop Shelf & Checklist -->
+        <rect x="310" y="80" width="140" height="170" rx="14" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="350" y="68" width="60" height="20" rx="6" fill="#000" />
+        <text x="330" y="115" font-family="'Outfit', sans-serif" font-weight="800" font-size="16" fill="#000">SAFETY CHECK</text>
+        <text x="330" y="148" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#000">☑ AVIATOR GOGGLES</text>
+        <text x="330" y="178" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#000">☑ ACORN HARNESS</text>
+        <text x="330" y="208" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#000">☑ GLIDER WINGS</text>
+        <text x="330" y="235" font-family="'Inter', sans-serif" font-weight="800" font-size="14" fill="#16a34a">★ READY TO FLY!</text>
+
+        <!-- Tail -->
+        <path d="M 230,280 C 350,240 380,80 300,50 C 240,30 215,95 235,160 Z" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Acorn Jetpack Thrusters -->
+        <rect x="80" y="180" width="36" height="85" rx="12" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="235" y="180" width="36" height="85" rx="12" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="98" cy="265" rx="18" ry="8" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="253" cy="265" rx="18" ry="8" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Body & Crossed Harness Straps -->
+        <ellipse cx="175" cy="235" rx="55" ry="68" class="bold-outline colorable-region" fill="#ffffff" />
+        <line x1="125" y1="185" x2="225" y2="275" stroke="#000" stroke-width="9" stroke-linecap="round" />
+        <line x1="225" y1="185" x2="125" y2="275" stroke="#000" stroke-width="9" stroke-linecap="round" />
+        
+        <!-- Central Golden Lock -->
+        <circle cx="175" cy="230" r="22" class="bold-outline colorable-region" fill="#ffffff" />
+        <polygon points="175,215 180,225 192,225 182,233 186,245 175,238 164,245 168,233 158,225 170,225" fill="#000" />
+
+        <!-- Legs & Boots -->
+        <rect x="140" y="298" width="28" height="58" rx="10" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="180" y="298" width="28" height="58" rx="10" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="154" cy="360" rx="20" ry="12" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="194" cy="360" rx="20" ry="12" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Head, Ears, Goggles on Forehead -->
+        <circle cx="175" cy="120" r="50" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 135,90 Q 120,25 145,55 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 200,85 Q 230,25 205,55 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        
+        <!-- Chunky Aviator Goggles -->
+        <rect x="120" y="85" width="46" height="34" rx="8" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="182" y="85" width="46" height="34" rx="8" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="166" y="96" width="16" height="12" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <path d="M 120,102 L 95,110 M 228,102 L 253,110" stroke="#000" stroke-width="8" stroke-linecap="round" />
+
+        <circle cx="155" cy="135" r="7" fill="#000" /><circle cx="195" cy="135" r="7" fill="#000" />
+        <polygon points="171,148 179,148 175,155" fill="#000" />
+        <path d="M 165,158 Q 175,170 185,158" stroke="#000" stroke-width="4" fill="none" stroke-linecap="round" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-2-0" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-2-1" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-2-2" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-2-3" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-2-4" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-star" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Inside his hollow-trunk workshop, Super Squirrel straps on his oversized aviator goggles and clicks the sturdy buckles of his Acorn Glider harness securely into place. High-tech leaf-spring straps and polished acorn buckles fit snugly over his shoulders, showing that real heroes always prioritize safety before adventure. Tucked into the wooden tool pegs and hanging pinecone lamps in the background, four hidden 'Star of Hope' shapes shimmer in the cozy workshop light. Demonstrating the virtue of Self-Control, Sammy carefully tests each strap tension and refuses to rush his pre-flight safety checklist. Outside the tree window, a gentle morning dew confirms optimal weather conditions for testing his new aerial gear.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel adjusting oversized aviator goggles and buckling an acorn flight harness, demonstrating the Christian virtue of Self-Control, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 5 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 3: Canopy Gliding Physics</h2>
+            <span class="badge badge-blue">Virtue: Joy</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 3: Canopy Gliding Physics</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-3" transform="translate(40, 110)">
+        <!-- Streamlines -->
+        <path d="M 20,100 Q 80,80 140,90 M 10,210 Q 70,200 130,220 M 240,60 Q 300,40 370,55" stroke="#000" stroke-width="5" stroke-dasharray="14,10" fill="none" stroke-linecap="round" />
+        
+        <!-- Forest Treetops Below -->
+        <path d="M 20,410 Q 80,360 140,410 Q 200,350 260,410 Q 330,350 400,410 Q 450,370 480,410 L 480,450 L 20,450 Z" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Outstretched Wing Flaps -->
+        <path d="M 160,180 Q 230,120 310,150 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 170,285 Q 240,340 320,290 Z" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Giant Rudder Tail -->
+        <path d="M 290,250 C 420,280 470,140 400,80 C 340,30 320,120 310,220 Z" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Flowing Superhero Cape -->
+        <path d="M 200,200 Q 260,310 330,330 Q 270,260 240,210 Z" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Tilted Flying Body -->
+        <ellipse cx="230" cy="235" rx="75" ry="48" transform="rotate(-15 230 235)" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="215" cy="225" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Flying Arms Outstretched -->
+        <ellipse cx="140" cy="175" rx="24" ry="14" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="325" cy="145" rx="24" ry="14" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Head, Mask & Aviator Goggles Looking Forward -->
+        <circle cx="125" cy="195" r="44" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 105,160 Q 90,110 115,135 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 145,155 Q 165,110 145,135 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        
+        <rect x="95" y="180" width="30" height="24" rx="6" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="130" y="180" width="30" height="24" rx="6" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="110" cy="192" r="5" fill="#000" /><circle cx="145" cy="192" r="5" fill="#000" />
+        <path d="M 115,215 Q 125,225 135,215" stroke="#000" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-3-0" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-3-1" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-3-2" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-anchor" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 3 stamped <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">With a joyful leap from the highest bough, Super Squirrel extends his aerodynamic wingsuit flaps and lets the warm updrafts lift him high into the blue sky. His giant fluffy bushy tail acts as an expert rudder, banking smoothly past sun-drenched pine needles and singing songbirds. Three hidden 'Cross-my-heart' shapes drift peacefully within the wispy cloud ribbons and swirling leaf trails behind him. This exhilarating flight celebrates the virtue of Joy, proving that studying the science of aerodynamics turns soaring dreams into reality. Down below in the green forest clearings, friendly rabbits and blue jays gaze upward in delight as Sammy executes a graceful loop-de-loop.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel soaring high in the air with outstretched gliding flaps and fluffy bushy tail, demonstrating the Christian virtue of Joy, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 3 distinct 'Anchor of Peace' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 4: Acorn Radar &amp; Sonar</h2>
+            <span class="badge badge-blue">Virtue: Goodness</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 4: Acorn Radar &amp; Sonar</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Goodness</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-4" transform="translate(50, 110)">
+        <!-- Giant Tree Hollow with Discovered Acorns -->
+        <path d="M 400,60 L 400,430 M 460,60 L 460,430" stroke="#000" stroke-width="10" />
+        <ellipse cx="410" cy="220" rx="36" ry="70" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="410" cy="180" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <circle cx="410" cy="220" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <circle cx="410" cy="260" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Radar Pulse Waves -->
+        <path d="M 335,175 A 50 50 0 0 1 335,245" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round" />
+        <path d="M 365,155 A 80 80 0 0 1 365,265" stroke="#000" stroke-width="6" fill="none" stroke-linecap="round" />
+
+        <!-- Super Squirrel with Radar -->
+        <path d="M 180,270 C 270,240 290,90 220,60 C 180,40 160,100 180,160 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="135" cy="235" rx="50" ry="65" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="135" cy="125" r="46" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 100,100 Q 85,45 110,70 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 155,95 Q 180,45 160,70 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="120" cy="120" r="6" fill="#000" /><circle cx="150" cy="120" r="6" fill="#000" />
+
+        <!-- Handheld Radar Device -->
+        <line x1="170" y1="210" x2="250" y2="210" stroke="#000" stroke-width="12" stroke-linecap="round" />
+        <circle cx="270" cy="210" r="46" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="270" cy="210" r="34" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <line x1="236" y1="210" x2="304" y2="210" stroke="#000" stroke-width="3" />
+        <line x1="270" y1="176" x2="270" y2="244" stroke="#000" stroke-width="3" />
+        <circle cx="282" cy="198" r="6" fill="#000" /><circle cx="258" cy="226" r="5" fill="#000" />
+        <line x1="270" y1="164" x2="270" y2="135" stroke="#000" stroke-width="6" stroke-linecap="round" />
+        <circle cx="270" cy="130" r="8" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Cape & Boots -->
+        <path d="M 90,170 C 40,180 30,270 45,340 C 75,315 100,335 115,290 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="110" y="295" width="24" height="55" rx="8" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="145" y="295" width="24" height="55" rx="8" class="bold-outline colorable-region" fill="#ffffff" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-4-0" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-fish" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-4-1" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-fish" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-4-2" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-fish" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-4-3" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-fish" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Perched high in an ancient elm, Super Squirrel activates his handheld Acorn Radar Scanner, watching its round screen beep softly as it maps hidden seed caches across the valley. The gentle scanner waves detect fallen oak acorns that got buried beneath autumn leaves, ensuring no woodland creature goes hungry this season. Four distinct 'Ichthys Fish' symbols are cleverly tucked within the scanner wave ripples and distant branch textures. Super Squirrel exercises Goodness by dedicating his advanced tracking technology to caring for the forest ecosystem and protecting nature's bounty. A friendly chipmunk watches eagerly from a nearby twig, learning how sound pulses bounce back to find buried treasures.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel holding a handheld acorn radar scanner device emitting gentle sound waves, demonstrating the Christian virtue of Goodness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 4 distinct 'Ichthys Fish' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 5: Solar Treehouse Generator</h2>
+            <span class="badge badge-blue">Virtue: Faithfulness</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 5: Solar Treehouse Generator</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Faithfulness</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-5" transform="translate(50, 110)">
+        <!-- Radiant Sun -->
+        <circle cx="390" cy="50" r="34" class="chunky-stroke colorable-region" fill="#ffffff" />
+        
+        <!-- Solar Leaf Panel Array -->
+        <polygon points="260,110 410,90 390,220 240,240" class="bold-outline colorable-region" fill="#ffffff" />
+        <line x1="335" y1="100" x2="315" y2="230" stroke="#000" stroke-width="4" />
+        <line x1="250" y1="175" x2="400" y2="155" stroke="#000" stroke-width="4" />
+        <line x1="315" y1="230" x2="315" y2="350" stroke="#000" stroke-width="12" stroke-linecap="round" />
+
+        <!-- Power Cables -->
+        <path d="M 250,240 C 240,300 200,310 180,310" stroke="#000" stroke-width="8" fill="none" stroke-linecap="round" />
+
+        <!-- Giant Acorn Battery -->
+        <rect x="80" y="280" width="115" height="130" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+        <rect x="105" y="260" width="22" height="20" rx="4" fill="#000" />
+        <rect x="150" y="260" width="22" height="20" rx="4" fill="#000" />
+        <text x="108" y="325" font-size="34" font-weight="900" fill="#000">+</text>
+        <text x="155" y="325" font-size="34" font-weight="900" fill="#000">-</text>
+        <polygon points="140,340 130,365 142,365 135,390 155,360 142,360" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Super Squirrel Connecting Wire -->
+        <path d="M 180,210 C 230,170 250,90 200,60 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="130" cy="140" r="40" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="120" cy="135" r="5" fill="#000" /><circle cx="140" cy="135" r="5" fill="#000" />
+        <path d="M 125,150 Q 130,158 135,150" stroke="#000" stroke-width="3" fill="none" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-5-0" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-5-1" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-5-2" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-5-3" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-5-4" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Working alongside his robotic woodland helper, Super Squirrel installs a glistening miniature solar leaf panel atop the sunny lookout tower. Bright red and black insulated wires connect the clean solar collector to an acorn battery pack that will power the forest emergency beacons all night. Four hidden 'Star of Hope' shapes twinkle among the sunbeams and solar panel grid facets. The moment highlights the virtue of Faithfulness, reminding builders that clean solar energy stays faithful every time the morning sun shines down. Super Squirrel tightens each brass terminal screw with care, smiling as a warm green indicator LED lights up.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel connecting miniature solar leaf panels to a glowing acorn battery pack, demonstrating the Christian virtue of Faithfulness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 5 distinct 'Cross-my-heart' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 6: Gentle Rescue Mission</h2>
+            <span class="badge badge-blue">Virtue: Kindness</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 6: Gentle Rescue Mission</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Kindness</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-6" transform="translate(40, 110)">
+        <!-- Heavy Fallen Log -->
+        <rect x="170" y="290" width="240" height="55" rx="16" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="410" cy="317" rx="14" ry="27" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Fulcrum Rock & Wooden Lever Pole -->
+        <polygon points="175,395 205,340 235,395" class="bold-outline colorable-region" fill="#ffffff" />
+        <line x1="70" y1="375" x2="310" y2="305" stroke="#000" stroke-width="14" stroke-linecap="round" />
+
+        <!-- Cute Baby Hedgehog Safe on Ground -->
+        <ellipse cx="280" cy="375" rx="36" ry="25" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 255,355 L 250,338 L 265,348 L 270,332 L 285,348 L 295,332 L 305,352" stroke="#000" stroke-width="5" stroke-linejoin="round" />
+        <circle cx="310" cy="375" r="14" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <circle cx="316" cy="373" r="4" fill="#000" />
+        <path d="M 310,382 Q 315,388 320,382" stroke="#000" stroke-width="3" fill="none" />
+
+        <!-- Super Squirrel using Lever -->
+        <ellipse cx="110" cy="245" rx="45" ry="60" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="110" cy="145" r="44" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 80,120 Q 65,70 90,95 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 130,115 Q 155,70 135,95 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="98" cy="140" r="6" fill="#000" /><circle cx="122" cy="140" r="6" fill="#000" />
+        <path d="M 105,158 Q 110,166 115,158" stroke="#000" stroke-width="3" fill="none" />
+        <path d="M 80,180 C 40,190 30,280 40,340 C 65,315 90,335 100,290 Z" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="95" cy="360" rx="16" ry="10" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="125" cy="360" rx="16" ry="10" class="chunky-stroke colorable-region" fill="#ffffff" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-6-0" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-6-1" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-6-2" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-star" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 3 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Hearing a quiet rustling down on the forest floor, Super Squirrel swoops down gently to discover a timid baby hedgehog trapped beneath a heavy fallen pine branch. Using his biomechanical acorn lever and calm, measured power, Super Squirrel gently lifts the heavy bark without scaring the little critter. Three hidden 'Anchor of Peace' shapes are carved gracefully into the tree bark grooves and forest moss. The scene exemplifies the virtue of Kindness and Gentleness, teaching young heroes that great strength should always be used to protect and comfort those in need. The little hedgehog wiggles out safely, nose twitching with gratitude as Sammy offers a comforting high-five.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel using a wooden lever to gently lift a fallen branch and rescue a baby hedgehog, demonstrating the Christian virtue of Kindness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 3 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 7: Automated Acorn Logic</h2>
+            <span class="badge badge-blue">Virtue: Patience</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 7: Automated Acorn Logic</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Patience</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-7" transform="translate(40, 110)">
+        <!-- Tree-Slab Workbench Desk -->
+        <rect x="40" y="210" width="390" height="200" rx="20" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Oversized Logic Code Blocks -->
+        <rect x="70" y="235" width="290" height="65" rx="14" class="bold-outline colorable-region" fill="#ffffff" />
+        <text x="90" y="275" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" fill="#000">IF (SENSE_ACORN)</text>
+
+        <rect x="110" y="320" width="290" height="65" rx="14" class="bold-outline colorable-region" fill="#ffffff" />
+        <text x="130" y="360" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" fill="#000">THEN (ROLL_BASKET)</text>
+
+        <!-- Acorn Sorting Chute on Right -->
+        <path d="M 380,110 L 415,190 L 450,190" stroke="#000" stroke-width="8" fill="none" />
+        <circle cx="400" cy="140" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Super Squirrel at Computer/Desk -->
+        <ellipse cx="140" cy="140" rx="45" ry="50" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="125" cy="135" r="5" fill="#000" /><circle cx="155" cy="135" r="5" fill="#000" />
+        <path d="M 130,150 Q 140,160 150,150" stroke="#000" stroke-width="3" fill="none" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-7-0" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-7-1" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-7-2" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-7-3" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-anchor" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">Back at his tree-hollow lab desk, Super Squirrel assembles colorful logic puzzle blocks on his bark tablet to program an automated acorn-sorting machine. Bright wooden block code commands labeled IF SENSE NUT, THEN ROLL BASKET click smoothly into place, turning smart ideas into working robotic machinery. Tucked among the floating logic arrows and hanging vine coils, three hidden 'Cross-my-heart' shapes wait to be discovered. The page reinforces Wisdom and Logic, demonstrating how computer coding helps solve community challenges through step-by-step thinking. Super Squirrel nods with focused pride as the machine successfully sorts big acorns from little pine nuts.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel assembling wooden logic code puzzle blocks on a tree-slab workbench, demonstrating the Christian virtue of Patience, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 4 distinct 'Anchor of Peace' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 8: Meadow Harvest Sharing</h2>
+            <span class="badge badge-blue">Virtue: Love</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 8: Meadow Harvest Sharing</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-8" transform="translate(40, 110)">
+        <!-- Harvest Cart -->
+        <rect x="160" y="250" width="190" height="95" rx="14" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="195" cy="360" r="32" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="315" cy="360" r="32" class="bold-outline colorable-region" fill="#ffffff" />
+
+        <!-- Acorns Piled in Cart -->
+        <circle cx="190" cy="230" r="22" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <circle cx="230" cy="220" r="24" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <circle cx="270" cy="225" r="22" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <circle cx="310" cy="235" r="20" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Friendly Bunny Receiving Acorn -->
+        <ellipse cx="410" cy="320" rx="25" ry="35" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 400,285 L 395,235 M 420,285 L 425,235" stroke="#000" stroke-width="7" stroke-linecap="round" />
+        <circle cx="405" cy="315" r="4" fill="#000" />
+
+        <!-- Super Squirrel Pushing Cart -->
+        <line x1="120" y1="280" x2="160" y2="290" stroke="#000" stroke-width="8" stroke-linecap="round" />
+        <ellipse cx="90" cy="250" rx="40" ry="55" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="90" cy="155" r="40" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="80" cy="150" r="5" fill="#000" /><circle cx="100" cy="150" r="5" fill="#000" />
+        <path d="M 85,165 Q 90,172 95,165" stroke="#000" stroke-width="3" fill="none" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-8-0" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-fish" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-8-1" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-fish" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-8-2" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-fish" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-8-3" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-fish" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-8-4" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-fish" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Ichthys Fish'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">In the center of the sunny woodland meadow, Super Squirrel arrives with a rolling cedar cart piled high with fresh, nutritious acorns and sweet berries. Smiling deer, hedgehogs, birds, and badgers gather around as Sammy shares his bountiful harvest with every family in the forest. Four hidden 'Cross-my-heart' shapes bloom among the meadow wildflowers and picnic basket weaves. This heartwarming feast embodies the virtue of Love and Generosity, showing that true heroism is found in giving freely and lifting up our neighbors. Laughter fills the forest air as woodland friends enjoy a delicious autumn feast together.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel sharing baskets of golden acorns and sweet berries with woodland forest animals, demonstrating the Christian virtue of Love, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 5 distinct 'Ichthys Fish' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 9: Windmill Troubleshooting</h2>
+            <span class="badge badge-blue">Virtue: Peace</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 9: Windmill Troubleshooting</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Peace</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-9" transform="translate(40, 110)">
+        <!-- Windmill Tower -->
+        <polygon points="250,390 275,170 315,170 340,390" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="295" cy="170" r="24" class="bold-outline colorable-region" fill="#ffffff" />
+        <ellipse cx="295" cy="90" rx="18" ry="48" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="295" cy="250" rx="18" ry="48" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="215" cy="170" rx="48" ry="18" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="375" cy="170" rx="48" ry="18" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Ladder & Super Squirrel with Wrench -->
+        <line x1="160" y1="190" x2="160" y2="400" stroke="#000" stroke-width="8" />
+        <line x1="200" y1="190" x2="200" y2="400" stroke="#000" stroke-width="8" />
+        <line x1="160" y1="230" x2="200" y2="230" stroke="#000" stroke-width="6" />
+        <line x1="160" y1="280" x2="200" y2="280" stroke="#000" stroke-width="6" />
+        <line x1="160" y1="330" x2="200" y2="330" stroke="#000" stroke-width="6" />
+        
+        <circle cx="180" cy="220" r="22" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <path d="M 195,225 L 225,200" stroke="#000" stroke-width="8" stroke-linecap="round" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-9-0" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-9-1" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-9-2" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-cross-heart" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 3 stamped <tspan font-weight="bold" fill="#e11d48">'Cross-my-heart'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">When a sudden thunderstorm gust stops the treetop windmill from spinning, Super Squirrel climbs calmly up the mast with his wooden wrench and oil dropper. Instead of worrying, he methodically inspects the cedar gear teeth and applies a drop of pine resin lubricant to restore smooth rotation. Three hidden 'Anchor of Peace' shapes float quietly inside the clearing sky clouds and windmill blades. The scene inspires Peace, showing that remaining calm under pressure allows young inventors to diagnose mechanical problems with clarity and poise. With a satisfying click, the gear slips into proper alignment and the windmill spins merrily once again.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel holding a wooden wrench to carefully adjust a miniature treetop windmill gear, demonstrating the Christian virtue of Peace, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 3 distinct 'Cross-my-heart' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 10: Woodland Honor Celebration</h2>
+            <span class="badge badge-blue">Virtue: Joy</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 10: Woodland Honor Celebration</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+      <g id="sq-page-10" transform="translate(40, 110)">
+        <!-- 1st Place Victory Podium -->
+        <polygon points="130,390 150,280 290,280 310,390" class="bold-outline colorable-region" fill="#ffffff" />
+        <text x="205" y="348" font-family="'Outfit', sans-serif" font-weight="900" font-size="44" fill="#000">1</text>
+
+        <!-- Golden Oak Leaf Medal on Ribbon -->
+        <path d="M 190,180 L 215,220 M 240,180 L 215,220" stroke="#000" stroke-width="8" />
+        <circle cx="215" cy="245" r="26" class="bold-outline colorable-region" fill="#ffffff" />
+        <path d="M 215,228 Q 205,245 215,260 Q 225,245 215,228 Z" class="chunky-stroke colorable-region" fill="#ffffff" />
+
+        <!-- Super Squirrel on Podium -->
+        <ellipse cx="215" cy="210" rx="45" ry="60" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="215" cy="115" r="46" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="200" cy="110" r="6" fill="#000" /><circle cx="230" cy="110" r="6" fill="#000" />
+        <path d="M 205,130 Q 215,142 225,130" stroke="#000" stroke-width="3.5" fill="none" />
+
+        <!-- Cheering Friends in Foreground -->
+        <ellipse cx="70" cy="380" rx="30" ry="40" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <ellipse cx="370" cy="380" rx="30" ry="40" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <!-- Floating Stars -->
+        <polygon points="70,110 75,125 90,125 78,135 82,150 70,140 58,150 62,135 50,125 65,125" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <polygon points="360,100 365,115 380,115 368,125 372,140 360,130 348,140 352,125 340,115 355,115" class="chunky-stroke colorable-region" fill="#ffffff" />
+      </g>
+    
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-10-0" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-10-1" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-10-2" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-10-3" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-star" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">In an open sunlit forest glade, the Woodland Council gathers to present Super Squirrel with a hand-carved Golden Oak Leaf Medal of Honor. Whistling birds drop flower petals from above while squirrels, rabbits, and bears cheer enthusiastically for their selfless, high-flying hero. Five hidden 'Star of Hope' shapes sparkle in the golden medal reflections and festive banner ribbons. The scene celebrates Joy and Gratitude, reminding children that developing technical talents and virtues brings genuine blessing to our world. Super Squirrel places his paw over his heart in humble thanks, eager for tomorrow's next exciting adventure.</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of Super Squirrel wearing a golden oak leaf medal surrounded by cheering forest friends, demonstrating the Christian virtue of Joy, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 4 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 11: Super Squirrel Canopy Treetop Maze</h2>
+            <span class="badge badge-blue">Virtue: Joy</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 11: Super Squirrel Canopy Treetop Maze</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Joy</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+    <g id="super-squirrel-maze-container" transform="translate(60, 130)">
+      <rect x="0" y="0" width="480" height="500" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <!-- START: Treetop Branch -->
+      <g transform="translate(20, 20)">
+        <rect x="0" y="0" width="110" height="48" rx="10" fill="#000000" />
+        <text x="12" y="32" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="16">🐿️ START</text>
+      </g>
+
+      <!-- FINISH: Golden Acorn Nest -->
+      <g transform="translate(340, 432)">
+        <rect x="0" y="0" width="120" height="48" rx="10" fill="#000000" />
+        <text x="10" y="32" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="16">🌰 FINISH</text>
+      </g>
+
+      <!-- Maze Branch Paths -->
+      <path d="M 130,0 L 130,130 M 230,70 L 370,70 M 370,0 L 370,140" class="maze-wall" />
+      <path d="M 0,140 L 230,140 M 300,140 L 480,140" class="maze-wall" />
+      <path d="M 70,210 L 70,350 M 150,280 L 310,280 M 390,210 L 390,350" class="maze-wall" />
+      <path d="M 0,350 L 150,350 M 230,350 L 480,350" class="maze-wall" />
+      <path d="M 120,420 L 230,420 M 310,420 L 480,420" class="maze-wall" />
+
+      <!-- Oak Leaf & Acorn Vector Obstacles in Dead Ends -->
+      <circle cx="180" cy="105" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+      <circle cx="430" cy="245" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+      <circle cx="40" cy="275" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+      <circle cx="270" cy="385" r="16" class="chunky-stroke colorable-region" fill="#ffffff" />
+    </g>
+  
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-11-0" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-11-1" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-11-2" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-anchor" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-11-3" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-anchor" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 4 stamped <tspan font-weight="bold" fill="#e11d48">'Anchor of Peace'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">An interactive vector line-art maze challenges young rangers to guide Super Squirrel from the green START branch through winding oak tree corridors, leafy bridges, and acorn obstacles to the Golden Oak Acorn at the FINISH nest. Thick, bold black branch walls create clean paths for ages 4-9 to trace with crayons or markers without getting confused. Four hidden 'Ichthys Fish' symbols are cleverly integrated into the branch knots and acorn caps along the trail. The canopy maze reinforces spatial navigation, motor control, and determination as kids help Super Squirrel find the safest route home. Reaching the finish line unlocks a proud Super Squirrel flight badge!</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of an interactive vector circuit maze puzzle, bold thick black outlines, simple pathfinder, start and finish icons, pure white background, low detail, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 4 distinct 'Anchor of Peace' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="magazine-page-card">
+          <div class="magazine-page-header">
+            <h2>Page 12: Super Squirrel STEM Project — Acorn Catapult &amp; Glider</h2>
+            <span class="badge badge-blue">Virtue: Love</span>
+          </div>
+
+          <div class="magazine-page-content">
+            <div class="svg-wrapper">
+              
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" class="coloring-page-svg interactive-svg" id="interactive-coloring-canvas">
+      <defs>
+        <style>
+          .colorable-region { cursor: pointer; transition: fill 0.2s ease, stroke-width 0.2s ease; }
+          .colorable-region:hover { stroke: #e11d48 !important; stroke-width: 6 !important; }
+          .chunky-stroke { stroke: #000000; stroke-width: 6; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .bold-outline { stroke: #000000; stroke-width: 8; fill: #ffffff; stroke-linecap: round; stroke-linejoin: round; }
+          .maze-wall { stroke: #000000; stroke-width: 8; fill: none; stroke-linecap: round; }
+          
+          .digital-overlay-symbol { stroke: #000000; stroke-width: 3.5; fill: #ffffff; cursor: pointer; transition: all 0.3s ease; }
+          .digital-overlay-symbol:hover { stroke: #e11d48; stroke-width: 5; fill: #fff1f2; }
+          .digital-overlay-symbol.found { stroke: #0d9488; stroke-width: 5; fill: #ccfbf1; }
+          .page-text { font-family: 'Outfit', 'Inter', sans-serif; fill: #0f172a; pointer-events: none; }
+        </style>
+
+        <g id="shape-cross-heart">
+          <path class="colorable-region" d="M 0,-14 C -10,-26 -24,-14 -24,0 C -24,14 0,26 0,26 C 0,26 24,14 24,0 C 24,-14 10,-26 0,-14 Z" />
+          <path d="M 0,-10 L 0,12 M -8,-2 L 8,-2" stroke="#000000" stroke-width="3" />
+        </g>
+
+        <g id="shape-star">
+          <polygon class="colorable-region" points="0,-20 6,-6 20,-5 9,6 12,20 0,11 -12,20 -9,6 -20,-5 -6,-6" />
+        </g>
+
+        <g id="shape-anchor">
+          <circle class="colorable-region" cx="0" cy="-14" r="5" stroke="#000000" stroke-width="3" />
+          <path d="M 0,-9 L 0,14 M -14,5 C -14,18 14,18 14,5" stroke="#000000" stroke-width="3.5" fill="none" />
+        </g>
+
+        <g id="shape-fish">
+          <path class="colorable-region" d="M -18,0 C -6,-14 14,0 18,0 C 14,0 -6,14 -18,0 Z M 14,0 L 22,-9 L 22,9 Z" />
+          <circle cx="-6" cy="-3" r="2" fill="#000000" />
+        </g>
+      </defs>
+
+      <rect x="10" y="10" width="580" height="730" rx="18" class="bold-outline colorable-region" fill="#ffffff" />
+
+      <rect x="30" y="30" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="60" class="page-text" font-size="19" font-weight="800" fill="#1e40af">Page 12: Super Squirrel STEM Project — Acorn Catapult &amp; Glider</text>
+      <text x="50" y="85" class="page-text" font-size="13" fill="#0f172a">Virtue Focus: <tspan font-weight="bold" fill="#0d9488">Love</tspan> | 🎨 Click Any Shape to Color!</text>
+
+      <g id="layer-1-clean-lineart">
+        
+    <g id="super-squirrel-stem-blueprint" transform="translate(40, 120)">
+      <rect x="0" y="0" width="520" height="510" rx="16" fill="#ffffff" stroke="#000000" stroke-width="4" />
+      
+      <!-- Header Banner -->
+      <rect x="30" y="25" width="460" height="90" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="45" y="60" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">🔨 STEM BUILD: Acorn Catapult &amp; Glider Launcher</text>
+      <text x="45" y="90" fill="#0f172a" font-family="'Inter', sans-serif" font-size="13">Materials: 6 Craft sticks, rubber bands, plastic bottle cap, pom-pom acorn</text>
+
+      <!-- Craft Catapult Diagram -->
+      <g transform="translate(90, 135)">
+        <!-- Stack of 5 sticks base -->
+        <rect x="80" y="90" width="180" height="40" rx="8" class="bold-outline colorable-region" fill="#ffffff" />
+        <line x1="100" y1="90" x2="100" y2="130" stroke="#000" stroke-width="6" />
+        <line x1="240" y1="90" x2="240" y2="130" stroke="#000" stroke-width="6" />
+        <text x="115" y="115" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" fill="#000">5-STICK BASE STACK</text>
+
+        <!-- Tilting Launch Lever Stick -->
+        <line x1="40" y1="120" x2="290" y2="30" stroke="#000" stroke-width="16" stroke-linecap="round" />
+        <rect x="260" y="5" width="45" height="30" rx="6" class="bold-outline colorable-region" fill="#ffffff" />
+        <circle cx="282" cy="12" r="14" class="chunky-stroke colorable-region" fill="#ffffff" />
+        <text x="270" y="48" font-family="'Outfit', sans-serif" font-weight="800" font-size="11" fill="#000">ACORN</text>
+
+        <!-- Trajectory Launch Arc -->
+        <path d="M 285,5 Q 330,-30 380,20" stroke="#e11d48" stroke-width="5" stroke-dasharray="8,6" fill="none" />
+        <polygon points="380,20 370,12 378,5" fill="#e11d48" />
+        <text x="320" y="-15" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" fill="#e11d48">FLIGHT PATH</text>
+      </g>
+
+      <!-- Master Blueprint Clue Card -->
+      <rect x="30" y="330" width="460" height="150" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="365" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="18">🏆 MASTER BLUEPRINT CLUE: Eco-Citadel Series</text>
+      <text x="50" y="400" fill="#000000" font-family="'Outfit', sans-serif" font-weight="800" font-size="15">🧩 Component: Eco-Aerodynamic Acorn Launch Module</text>
+      <text x="50" y="440" fill="#475569" font-family="'Inter', sans-serif" font-style="italic" font-size="13">"Hint: Harnessing spring elasticity and kinetic launch angles to deliver forest supplies."</text>
+    </g>
+  
+      </g>
+
+      <g id="layer-2-digital-overlay">
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-12-0" transform="translate(500, 560) scale(0.9) rotate(35)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-12-1" transform="translate(90, 590) scale(0.8) rotate(-10)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-12-2" transform="translate(280, 680) scale(0.85) rotate(25)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-12-3" transform="translate(100, 150) scale(0.85) rotate(10)">
+            <use href="#shape-star" />
+          </g>
+        
+          <g class="digital-overlay-symbol" data-id="hidden-obj-12-4" transform="translate(490, 160) scale(0.8) rotate(-15)">
+            <use href="#shape-star" />
+          </g>
+        
+      </g>
+
+      <rect x="30" y="650" width="540" height="70" rx="10" fill="#ffffff" stroke="#000000" stroke-width="3" />
+      <text x="50" y="678" class="page-text" font-size="14" font-weight="800" fill="#92400e">🔍 Seek-and-Find Overlay Challenge:</text>
+      <text x="50" y="702" class="page-text" font-size="13" fill="#0f172a">Find 5 stamped <tspan font-weight="bold" fill="#e11d48">'Star of Hope'</tspan> vector shapes in the open areas! Click when found.</text>
+    </svg>
+  
+            </div>
+
+            <div class="editorial-narrative-box">
+              <div class="editorial-title">📖 Scene Exploration & Virtue Lesson:</div>
+              <p class="editorial-paragraph">The final page features a safe, hands-on household craft project where kids build a real 'Super Squirrel Acorn Catapult &amp; Glider Launcher' using popsicle sticks, rubber bands, and a cardboard cup. A prominent golden blueprint badge displays 'Mystery Master Clue #1' for the grand annual project, connecting forest ecology with clean renewable engineering. Five hidden 'Star of Hope' shapes decorate the craft blueprint border and tool tray. The page inspires Ingenuity and Stewardship, encouraging kids to test flight trajectories across the room and save their launcher module in their Master Citadel Collector Box!</p>
+            </div>
+
+            <div class="prompt-spec-box">
+              <div class="prompt-label">🤖 Locked Diffusion Prompt (SDXL / Flux / Midjourney v6):</div>
+              <div>Clean children's coloring book page of hands-on popsicle stick acorn catapult and glider launcher project with blueprint clue #1, demonstrating the Christian virtue of Love, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#f43f5e;">🚫 Negative Prompt:</div>
+              <div>shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+              <div class="prompt-label" style="margin-top:0.5rem; color:#34d399;">🎨 Digital Vector Overlay Directive:</div>
+              <div>Digital Overlay Layer: Stamp 5 distinct 'Star of Hope' vector symbols into open background canvas areas.</div>
+            </div>
+          </div>
+        </div>
+      
+  </div>
+</body>
+</html>

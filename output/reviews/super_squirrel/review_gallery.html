@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Squirrel Coloring Book - Complete Review Dossier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #0f172a; color: #f8fafc; padding: 2rem 1rem; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    
+    .hero-banner { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 2px solid #334155; border-radius: 20px; padding: 2.5rem; text-align: center; margin-bottom: 2.5rem; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5); }
+    .hero-banner h1 { font-family: 'Outfit', sans-serif; font-size: 2.6rem; font-weight: 800; color: #f59e0b; margin-bottom: 0.5rem; }
+    .hero-banner p { font-size: 1.1rem; color: #94a3b8; max-width: 800px; margin: 0 auto; }
+    
+    .covers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; }
+    .cover-card { background: #0f172a; border: 2px solid #334155; border-radius: 16px; padding: 1.25rem; text-align: center; box-shadow: 0 8px 16px rgba(0,0,0,0.4); }
+    .cover-img { width: 100%; max-width: 360px; height: auto; border-radius: 12px; border: 3px solid #f59e0b; box-shadow: 0 6px 15px rgba(245, 158, 11, 0.2); }
+    .cover-meta { margin-top: 1rem; text-align: left; }
+    .cover-meta h3 { font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: #f59e0b; margin-bottom: 0.25rem; }
+    .cover-meta p { font-size: 0.9rem; color: #94a3b8; line-height: 1.5; }
+    
+    .stats-row { display: flex; gap: 0.75rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
+    .stat-pill { background: #1e293b; border: 1px solid #475569; padding: 0.5rem 1.25rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; }
+    
+    .page-review-card { background: #1e293b; border: 1px solid #334155; border-radius: 18px; margin-bottom: 2.5rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
+    .card-header { background: #243248; padding: 1.25rem 2rem; border-bottom: 1px solid #334155; }
+    .card-header h2 { font-family: 'Outfit', sans-serif; font-size: 1.6rem; color: #ffffff; margin-top: 0.4rem; }
+    
+    .badge-group { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .badge { font-size: 0.8rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 12px; display: inline-block; }
+    .badge-page { background: #d97706; color: #ffffff; }
+    .badge-virtue { background: #0d9488; color: #ffffff; }
+    .badge-skill { background: #1e40af; color: #ffffff; }
+    
+    .card-body { display: grid; grid-template-columns: 440px 1fr; gap: 2rem; padding: 2rem; }
+    @media (max-width: 960px) { .card-body { grid-template-columns: 1fr; } }
+    
+    .image-col { text-align: center; }
+    .coloring-preview-img { width: 100%; max-width: 420px; border-radius: 12px; border: 3px solid #000; box-shadow: 0 6px 12px rgba(0,0,0,0.4); background: #ffffff; }
+    .img-caption { font-size: 0.85rem; color: #38bdf8; font-weight: 600; margin-top: 0.6rem; }
+    
+    .placeholder-box { background: #0f172a; border: 2px dashed #475569; border-radius: 12px; padding: 4rem 1.5rem; text-align: center; color: #94a3b8; }
+    
+    .info-col { display: flex; flex-direction: column; gap: 1.25rem; }
+    .section-box { background: #0f172a; border: 1px solid #334155; border-radius: 12px; padding: 1.25rem; }
+    .section-box h3 { font-family: 'Outfit', sans-serif; font-size: 1.05rem; color: #f59e0b; margin-bottom: 0.5rem; }
+    
+    .narrative-text { font-size: 1rem; line-height: 1.7; color: #e2e8f0; }
+    
+    .code-snippet { background: #020617; border: 1px solid #1e293b; padding: 0.85rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; color: #38bdf8; line-height: 1.5; word-break: break-word; }
+    .neg-snippet { color: #f87171; }
+    
+    .meta-footer { font-size: 0.9rem; color: #cbd5e1; border-top: 1px solid #334155; padding-top: 0.75rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-banner">
+      <h1>🐿️ Super Squirrel: Forest Guardian &amp; Acorn Tech</h1>
+      <p style="color: #cbd5e1; margin-top: 0.5rem; font-size: 1.15rem;"><strong>My ADHD Superpower Edition</strong> — Full Color Front &amp; Back Covers with 12 Sequential Story &amp; STEM Activity Pages</p>
+      
+      <div class="covers-grid">
+        <div class="cover-card">
+          <img src="./images/front_cover_color.jpg" alt="Super Squirrel Full Color Front Cover" class="cover-img" />
+          <div class="cover-meta">
+            <h3>🎨 Full-Color Front Cover</h3>
+            <p>Vibrant Pixar/Disney animated style featuring Sammy soaring with his ADHD "IDEA" lightbulb, fidget gyro, and superhero cape.</p>
+          </div>
+        </div>
+
+        <div class="cover-card">
+          <img src="./images/back_cover_color.jpg" alt="Super Squirrel Full Color Back Cover" class="cover-img" />
+          <div class="cover-meta">
+            <h3>📖 Full-Color Back Cover</h3>
+            <p>"Unleash Your Inner Superpower!" featuring Sammy's thumbs-up, blurb, 3 activity preview badges, and ISBN barcode.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-row" style="margin-top: 2rem;">
+        <span class="stat-pill">🌈 Full-Color Front &amp; Back Covers</span>
+        <span class="stat-pill">⚡ ADHD Superpower &amp; Hyper-Focus Theme</span>
+        <span class="stat-pill">📖 12 Sequential Story Pages</span>
+        <span class="stat-pill">✝️ 10 Christian Virtues</span>
+        <span class="stat-pill">🧩 Page 11 Canopy Maze</span>
+        <span class="stat-pill">🔨 Page 12 STEM Catapult</span>
+      </div>
+    </div>
+
+    
+    <div class="page-review-card" id="page-1">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 1</span>
+          <span class="badge badge-virtue">✝️ Patience</span>
+          <span class="badge badge-skill">⚡ Aeronautical Navigation</span>
+        </div>
+        <h2>Page 1: Treetop Flight Planning</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page1_flight_planning.jpg" alt="Page 1: Treetop Flight Planning" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">At the peak of the Great Forest Oak Tree, Sammy the Super Squirrel bounces with joyful excitement on a mossy branch, his fast-thinking ADHD brain buzzing with ten brilliant ideas all at once! He unrolls an ancient woodland tree-map, using his wooden ruler and deep breaths to channel his lightning-fast thoughts into a clear flight plan. His superhero cape ripples in the morning breeze while the golden acorn emblem on his chest shines brightly in the rising sunlight. In the soft clouds drifting past and the oak leaf veins below, three hidden 'Cross-my-heart' shapes are cleverly woven into the scene. Sammy smiles with deep Patience, proving that when an energetic hero takes time to organize big ideas, boundless curiosity becomes a world-changing superpower.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of a heroic Super Squirrel wearing a cape standing on an oak tree branch holding an aerial map, demonstrating the Christian virtue of Patience, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 4x 'Cross-my-heart'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-2">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 2</span>
+          <span class="badge badge-virtue">✝️ Self-Control</span>
+          <span class="badge badge-skill">⚡ Protective Engineering</span>
+        </div>
+        <h2>Page 2: Acorn Flight Suit Safety</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page2_workshop_safety.jpg" alt="Page 2: Acorn Flight Suit Safety" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">Inside his hollow-trunk workshop, Sammy channels his bustling physical energy by organizing his flight gear, clicking the sturdy buckles of his Acorn Glider harness securely into place. Pinned to the cedar wall, a colorful visual checklist with bright pictures helps his ADHD mind remember every single pre-flight step without getting distracted. Tucked into the wooden tool pegs and hanging pinecone lamps in the background, four hidden 'Star of Hope' shapes shimmer in the cozy workshop light. Demonstrating the virtue of Self-Control, Sammy spins his favorite acorn fidget-gyro in his paw to calm his racing excitement before takeoff. Outside the tree window, a gentle morning dew confirms optimal weather conditions for testing his new aerial gear.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel adjusting oversized aviator goggles and buckling an acorn flight harness, demonstrating the Christian virtue of Self-Control, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 5x 'Star of Hope'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-3">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 3</span>
+          <span class="badge badge-virtue">✝️ Joy</span>
+          <span class="badge badge-skill">⚡ Aerodynamics & Lift</span>
+        </div>
+        <h2>Page 3: Canopy Gliding Physics</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page3_canopy_gliding.jpg" alt="Page 3: Canopy Gliding Physics" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">With an exhilarating leap from the highest bough, Super Squirrel’s boundless energy transforms into pure aerial magic as he glides across the wide open sky! His active mind tracks wind currents, singing birds, and tree branches in a split second, reacting faster than any ordinary squirrel. Three hidden 'Cross-my-heart' shapes drift peacefully within the wispy cloud ribbons and swirling leaf trails behind him. This exhilarating flight celebrates the virtue of Joy, demonstrating that what some call hyperactivity is actually Sammy’s secret rocket-fuel when soaring in the direction of his dreams. Down below in the green forest clearings, friendly rabbits and blue jays gaze upward in delight as Sammy executes a graceful loop-de-loop.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel soaring high in the air with outstretched gliding flaps and fluffy bushy tail, demonstrating the Christian virtue of Joy, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 3x 'Anchor of Peace'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-4">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 4</span>
+          <span class="badge badge-virtue">✝️ Goodness</span>
+          <span class="badge badge-skill">⚡ Sensor Systems & Tracking</span>
+        </div>
+        <h2>Page 4: Acorn Radar & Sonar</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page4_acorn_radar.jpg" alt="Page 4: Acorn Radar & Sonar" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">Perched high in an ancient elm, Super Squirrel activates his handheld Acorn Radar Scanner, his hyper-observant eyes noticing faint paw tracks that everyone else walked right past. The gentle scanner waves detect fallen oak acorns that got buried beneath autumn leaves, ensuring no woodland creature goes hungry this season. Four distinct 'Ichthys Fish' symbols are cleverly tucked within the scanner wave ripples and distant branch textures. Super Squirrel exercises Goodness by dedicating his advanced tracking technology to caring for the forest ecosystem and protecting nature's bounty. A friendly chipmunk watches eagerly from a nearby twig, learning how sound pulses bounce back to find buried treasures.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel holding a handheld acorn radar scanner device emitting gentle sound waves, demonstrating the Christian virtue of Goodness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 4x 'Ichthys Fish'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-5">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 5</span>
+          <span class="badge badge-virtue">✝️ Faithfulness</span>
+          <span class="badge badge-skill">⚡ Clean Solar Energy</span>
+        </div>
+        <h2>Page 5: Solar Treehouse Generator</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page5_solar_treehouse.jpg" alt="Page 5: Solar Treehouse Generator" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">Working alongside his robotic woodland helper, Super Squirrel installs a glistening miniature solar leaf panel atop the sunny lookout tower. His energetic paws move with enthusiastic speed, carefully connecting bright red and black insulated wires from the clean solar collector to an acorn battery pack that will power the forest emergency beacons all night. Four hidden 'Star of Hope' shapes twinkle among the sunbeams and solar panel grid facets. The moment highlights the virtue of Faithfulness, reminding builders that clean solar energy stays faithful every time the morning sun shines down. Super Squirrel tightens each brass terminal screw with care, smiling as a warm green indicator LED lights up.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel connecting miniature solar leaf panels to a glowing acorn battery pack, demonstrating the Christian virtue of Faithfulness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 5x 'Cross-my-heart'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-6">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 6</span>
+          <span class="badge badge-virtue">✝️ Kindness</span>
+          <span class="badge badge-skill">⚡ Mechanical Leverage & Care</span>
+        </div>
+        <h2>Page 6: Gentle Rescue Mission</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page6_gentle_rescue.jpg" alt="Page 6: Gentle Rescue Mission" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">Hearing a quiet rustling down on the forest floor, Super Squirrel swoops down gently to discover a timid baby hedgehog trapped beneath a heavy fallen pine branch. Using his biomechanical acorn lever and calm, measured power, Super Squirrel gently lifts the heavy bark without scaring the little critter. Three hidden 'Anchor of Peace' shapes are carved gracefully into the tree bark grooves and forest moss. The scene exemplifies the virtue of Kindness and Gentleness, teaching young heroes that great strength and big energy should always be used to protect and comfort those in need. The little hedgehog wiggles out safely, nose twitching with gratitude as Sammy offers a comforting high-five.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel using a wooden lever to gently lift a fallen branch and rescue a baby hedgehog, demonstrating the Christian virtue of Kindness, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 3x 'Star of Hope'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-7">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 7</span>
+          <span class="badge badge-virtue">✝️ Patience</span>
+          <span class="badge badge-skill">⚡ Algorithm & Block Coding</span>
+        </div>
+        <h2>Page 7: Automated Acorn Logic</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <div class="placeholder-box">
+              <div style="font-size: 3rem;">🐿️</div>
+              <strong>Ready for AI Generation</strong>
+              <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Use the locked prompt formula on the right with Midjourney / Flux / SDXL to render this page.</p>
+            </div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">Back at his tree-hollow lab desk, Super Squirrel enters his legendary 'Hyper-Focus Zone,' completely engrossed in programming an automated acorn-sorting machine. When a project captures his heart, his ADHD brain locks in with superhuman concentration that can build complex inventions in record time! Bright wooden block code commands labeled IF SENSE NUT, THEN ROLL BASKET click smoothly into place, turning smart ideas into working robotic machinery. Tucked among the floating logic arrows and hanging vine coils, three hidden 'Cross-my-heart' shapes wait to be discovered. Sammy shows that hyper-focus is an extraordinary gift when harnessed with Wisdom to bless the entire woodland community.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel assembling wooden logic code puzzle blocks on a tree-slab workbench, demonstrating the Christian virtue of Patience, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 4x 'Anchor of Peace'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-8">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 8</span>
+          <span class="badge badge-virtue">✝️ Love</span>
+          <span class="badge badge-skill">⚡ Resource Distribution</span>
+        </div>
+        <h2>Page 8: Meadow Harvest Sharing</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <div class="placeholder-box">
+              <div style="font-size: 3rem;">🐿️</div>
+              <strong>Ready for AI Generation</strong>
+              <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Use the locked prompt formula on the right with Midjourney / Flux / SDXL to render this page.</p>
+            </div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">In the center of the sunny woodland meadow, Super Squirrel arrives with a rolling cedar cart piled high with fresh, nutritious acorns and sweet berries. Smiling deer, hedgehogs, birds, and badgers gather around as Sammy shares his bountiful harvest with every family in the forest. Four hidden 'Cross-my-heart' shapes bloom among the meadow wildflowers and picnic basket weaves. This heartwarming feast embodies the virtue of Love and Generosity, showing that true heroism is found in giving freely and lifting up our neighbors. Laughter fills the forest air as woodland friends enjoy a delicious autumn feast together.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel sharing baskets of golden acorns and sweet berries with woodland forest animals, demonstrating the Christian virtue of Love, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 5x 'Ichthys Fish'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-9">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 9</span>
+          <span class="badge badge-virtue">✝️ Peace</span>
+          <span class="badge badge-skill">⚡ Mechanical Diagnostics</span>
+        </div>
+        <h2>Page 9: Windmill Troubleshooting</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <div class="placeholder-box">
+              <div style="font-size: 3rem;">🐿️</div>
+              <strong>Ready for AI Generation</strong>
+              <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Use the locked prompt formula on the right with Midjourney / Flux / SDXL to render this page.</p>
+            </div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">When a sudden thunderstorm gust stops the treetop windmill from spinning, Super Squirrel climbs calmly up the mast with his wooden wrench and oil dropper. Instead of feeling overwhelmed by the whistling wind, he takes three mindful breaths, methodically inspects the cedar gear teeth, and applies a drop of pine resin lubricant to restore smooth rotation. Three hidden 'Anchor of Peace' shapes float quietly inside the clearing sky clouds and windmill blades. The scene inspires Peace, showing that remaining calm under pressure allows young inventors to diagnose mechanical problems with clarity and poise. With a satisfying click, the gear slips into proper alignment and the windmill spins merrily once again.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel holding a wooden wrench to carefully adjust a miniature treetop windmill gear, demonstrating the Christian virtue of Peace, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 3x 'Cross-my-heart'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-10">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 10</span>
+          <span class="badge badge-virtue">✝️ Joy</span>
+          <span class="badge badge-skill">⚡ Leadership & Community</span>
+        </div>
+        <h2>Page 10: Woodland Honor Celebration</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <div class="placeholder-box">
+              <div style="font-size: 3rem;">🐿️</div>
+              <strong>Ready for AI Generation</strong>
+              <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem;">Use the locked prompt formula on the right with Midjourney / Flux / SDXL to render this page.</p>
+            </div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">In an open sunlit forest glade, the Woodland Council gathers to present Super Squirrel with a hand-carved Golden Oak Leaf Medal of Honor for his unstoppable enthusiasm and service. Whistling birds drop flower petals from above while squirrels, rabbits, and bears cheer enthusiastically for their neurodivergent hero who showed them that being different is a superpower. Five hidden 'Star of Hope' shapes sparkle in the golden medal reflections and festive banner ribbons. The scene celebrates Joy and Gratitude, reminding children that developing technical talents and virtues brings genuine blessing to our world. Super Squirrel places his paw over his heart in humble thanks, eager for tomorrow's next exciting adventure.</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of Super Squirrel wearing a golden oak leaf medal surrounded by cheering forest friends, demonstrating the Christian virtue of Joy, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 4x 'Star of Hope'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-11">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 11</span>
+          <span class="badge badge-virtue">✝️ Joy</span>
+          <span class="badge badge-skill">⚡ Canopy Navigation & Spatial Reasoning</span>
+        </div>
+        <h2>Page 11: Super Squirrel Canopy Treetop Maze</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page11_canopy_maze.jpg" alt="Page 11: Super Squirrel Canopy Treetop Maze" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">An interactive vector line-art maze challenges young rangers to guide Super Squirrel from the green START branch through winding oak tree corridors, leafy bridges, and acorn obstacles to the Golden Oak Acorn at the FINISH nest. Thick, bold black branch walls create clean paths for ages 4-9 to trace with crayons or markers without getting confused. Four hidden 'Ichthys Fish' symbols are cleverly integrated into the branch knots and acorn caps along the trail. The canopy maze reinforces spatial navigation, motor control, and determination as kids help Super Squirrel find the safest route home. Reaching the finish line unlocks a proud Super Squirrel flight badge!</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of an interactive vector circuit maze puzzle, bold thick black outlines, simple pathfinder, start and finish icons, pure white background, low detail, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 4x 'Anchor of Peace'</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="page-review-card" id="page-12">
+      <div class="card-header">
+        <div class="badge-group">
+          <span class="badge badge-page">Page 12</span>
+          <span class="badge badge-virtue">✝️ Love</span>
+          <span class="badge badge-skill">⚡ Hands-On Build: Acorn Catapult & Glider Launcher</span>
+        </div>
+        <h2>Page 12: Super Squirrel STEM Project — Acorn Catapult & Glider</h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="image-col">
+          
+            <img src="./images/page12_stem_catapult.jpg" alt="Page 12: Super Squirrel STEM Project — Acorn Catapult & Glider" class="coloring-preview-img" />
+            <div class="img-caption">✨ AI-Generated High-Resolution 300 DPI Coloring Page</div>
+          
+        </div>
+
+        <div class="info-col">
+          <div class="section-box">
+            <h3>📖 5-Sentence Story Narrative:</h3>
+            <p class="narrative-text">The final page features a safe, hands-on household craft project where kids build a real 'Super Squirrel Acorn Catapult & Glider Launcher' using popsicle sticks, rubber bands, and a cardboard cup. A prominent golden blueprint badge displays 'Mystery Master Clue #1' for the grand annual project, connecting forest ecology with clean renewable engineering. Five hidden 'Star of Hope' shapes decorate the craft blueprint border and tool tray. The page inspires Ingenuity and Stewardship, encouraging kids to test flight trajectories across the room and save their launcher module in their Master Citadel Collector Box!</p>
+          </div>
+
+          <div class="section-box prompt-container">
+            <h3>🎨 Locked Diffusion Prompt (Copy & Paste):</h3>
+            <div class="code-snippet">Clean children's coloring book page of hands-on popsicle stick acorn catapult and glider launcher project with blueprint clue #1, demonstrating the Christian virtue of Love, bold thick black outlines, simple vector line art, pure white background, kid-friendly cartoon illustration, low detail, closed contours, wide open coloring areas, no shading, no color, no gradients, high contrast --ar 8.5:11</div>
+          </div>
+
+          <div class="section-box neg-prompt-container">
+            <h3>🚫 Locked Negative Prompt:</h3>
+            <div class="code-snippet neg-snippet">shading, grayscale, gradients, photorealistic, cross-hatching, sketchy lines, thin lines, messy background, text, watermarks, clutter, complex background</div>
+          </div>
+
+          <div class="meta-footer">
+            <span>🔍 <strong>Seek-and-Find Overlay:</strong> 5x 'Star of Hope'</span>
+            <div style="margin-top: 0.5rem; color: #0d9488; font-weight: bold;">🔨 Includes Hands-On Household STEM Build: Super Squirrel Acorn Catapult & Glider Launcher</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</body>
+</html>

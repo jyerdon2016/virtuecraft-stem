@@ -45,6 +45,28 @@ body { font-family: 'Inter', sans-serif; background: var(--bg-light); color: var
 .ad-mock-content { display: flex; align-items: center; justify-content: space-between; gap: 1rem; text-align: left; }
 .ad-sponsor-icon { font-size: 1.8rem; }
 
+/* FEATURED PRESETS */
+.featured-presets-bar { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
+.featured-label { font-weight: 700; font-family: 'Outfit', sans-serif; color: #1e293b; font-size: 0.95rem; }
+.preset-badge-btn { background: #f1f5f9; border: 2px solid #cbd5e1; padding: 0.45rem 1rem; border-radius: 20px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: all 0.2s ease; color: #334155; }
+.preset-badge-btn:hover { background: #e2e8f0; border-color: #94a3b8; transform: translateY(-1px); }
+.preset-badge-btn.active-preset { background: #fef3c7; border-color: #d97706; color: #92400e; box-shadow: 0 2px 6px rgb(217 119 6 / 0.2); }
+
+/* PROMPT MATRIX & MASTER ARC LISTS */
+.prompts-list { display: flex; flex-direction: column; gap: 1.25rem; }
+.prompt-card { background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 4px rgb(0 0 0 / 0.05); }
+.prompt-card h4 { font-family: 'Outfit', sans-serif; color: var(--trust-cobalt); margin-bottom: 0.5rem; }
+.prompt-box { background: #0f172a; color: #38bdf8; font-family: monospace; font-size: 0.85rem; padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; word-break: break-word; }
+.master-arc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+.arc-module-card { background: #ffffff; border: 2px solid var(--border-color); border-radius: 14px; padding: 1.25rem; transition: transform 0.2s ease; }
+.arc-module-card:hover { transform: translateY(-3px); border-color: var(--trust-cobalt); }
+.arc-module-card.current-issue { border-color: var(--conversion-gold); background: #fffbeb; }
+
+/* AI ARTWORK CARD PREVIEWS */
+.card-ai-img { width: 100%; height: 290px; object-fit: cover; border-radius: 10px; border: 2px solid #0f172a; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); background: #ffffff; transition: transform 0.2s ease; }
+.card-ai-img:hover { transform: scale(1.02); }
+.badge-ai-indicator { display: inline-block; font-size: 0.75rem; font-weight: 700; color: #0d9488; background: #ccfbf1; border: 1px solid #99f6e4; padding: 0.2rem 0.6rem; border-radius: 12px; margin-top: 0.4rem; }
+
 /* CLICK-TO-COLOR STUDIO STYLES */
 .color-studio-layout { display: grid; grid-template-columns: 320px 1fr; gap: 2rem; }
 @media (max-width: 900px) { .color-studio-layout { grid-template-columns: 1fr; } }

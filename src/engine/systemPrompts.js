@@ -40,6 +40,7 @@ export const COPYRIGHT_DICTIONARY = [
   { original: "Minecraft", generic: "Voxel Block Builder World", category: "Games" },
   { original: "Lego", generic: "Interlocking Toy Bricks", category: "Toys" },
   { original: "Disney Princess", generic: "Fairytale Kingdom Heroine", category: "Animation" },
+  { original: "Squirrel Girl", generic: "Super Squirrel: Forest Guardian", category: "Comics" },
   { original: "Star Wars", generic: "Galactic Starlight Knights", category: "Sci-Fi" }
 ];
 

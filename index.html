@@ -83,10 +83,28 @@
 
       <!-- Book Generator Form -->
       <div class="generator-card glass-panel">
+        <!-- Quick Featured Preset Buttons -->
+        <div class="featured-presets-bar">
+          <span class="featured-label">⭐ Quick Load Popular Books:</span>
+          <button id="load-super-squirrel-btn" class="preset-badge-btn active-preset">🐿️ Super Squirrel (Featured Hero Series)</button>
+          <button id="load-robotics-btn" class="preset-badge-btn">🤖 How to Build a Robot</button>
+          <button id="load-solar-btn" class="preset-badge-btn">☀️ How Solar Panels Work</button>
+        </div>
+
         <div class="form-row">
           <div class="form-group flex-2">
             <label for="book-topic">Technical Skill or Topic:</label>
-            <input type="text" id="book-topic" placeholder="e.g., How to Build a Robot, How Solar Power Works" value="How to Build a Robot">
+            <input type="text" id="book-topic" list="popular-topics" placeholder="e.g., Super Squirrel: Forest Guardian, How to Build a Robot" value="Super Squirrel: Forest Guardian &amp; Acorn Tech">
+            <datalist id="popular-topics">
+              <option value="Super Squirrel: Forest Guardian &amp; Acorn Tech">
+              <option value="Super Squirrel: The Acorn Avenger">
+              <option value="How to Build a Robot">
+              <option value="How Solar Panels Work">
+              <option value="How Computer Coding Works">
+              <option value="How Water Filtration Works">
+              <option value="How Wind Turbines Generate Power">
+              <option value="How 3D Printers Create Objects">
+            </datalist>
           </div>
 
           <div class="form-group flex-1">
@@ -124,7 +142,7 @@
       <!-- Generated Book Overview Banner -->
       <div id="book-meta-banner" class="meta-card glass-panel hidden">
         <div class="meta-header">
-          <h3 id="book-title-display">Issue #1: How to Build a Robot</h3>
+          <h3 id="book-title-display">Super Squirrel: Forest Guardian &amp; Acorn Tech</h3>
           <div class="meta-tags">
             <span id="badge-sanitized" class="tag tag-success">Copyright Safe</span>
             <span id="badge-virtues" class="tag tag-info">10 Virtues Integrated</span>
@@ -152,22 +170,24 @@
         <div class="color-studio-controls glass-panel">
           <h3>🎨 Color Palette</h3>
           <div class="palette-swatches" id="palette-swatches">
-            <div class="color-swatch active" data-color="#1e40af" style="background: #1e40af;" title="Trust Cobalt"></div>
+            <div class="color-swatch active" data-color="#e11d48" style="background: #e11d48;" title="Superhero Cape Red"></div>
+            <div class="color-swatch" data-color="#ea580c" style="background: #ea580c;" title="Squirrel Amber Fur"></div>
+            <div class="color-swatch" data-color="#78350f" style="background: #78350f;" title="Acorn Bark Brown"></div>
+            <div class="color-swatch" data-color="#f59e0b" style="background: #f59e0b;" title="Golden Oak Acorn"></div>
+            <div class="color-swatch" data-color="#15803d" style="background: #15803d;" title="Pine Forest Green"></div>
+            <div class="color-swatch" data-color="#1e40af" style="background: #1e40af;" title="Trust Cobalt"></div>
             <div class="color-swatch" data-color="#0d9488" style="background: #0d9488;" title="Innovation Teal"></div>
-            <div class="color-swatch" data-color="#e11d48" style="background: #e11d48;" title="Grace Crimson"></div>
-            <div class="color-swatch" data-color="#d97706" style="background: #d97706;" title="Solar Gold"></div>
-            <div class="color-swatch" data-color="#16a34a" style="background: #16a34a;" title="Spring Green"></div>
+            <div class="color-swatch" data-color="#38bdf8" style="background: #38bdf8;" title="Sky Blue"></div>
             <div class="color-swatch" data-color="#9333ea" style="background: #9333ea;" title="Royal Purple"></div>
             <div class="color-swatch" data-color="#ec4899" style="background: #ec4899;" title="Pastel Pink"></div>
-            <div class="color-swatch" data-color="#38bdf8" style="background: #38bdf8;" title="Sky Blue"></div>
-            <div class="color-swatch" data-color="#f97316" style="background: #f97316;" title="Bright Orange"></div>
-            <div class="color-swatch" data-color="#84cc16" style="background: #84cc16;" title="Lime Green"></div>
+            <div class="color-swatch" data-color="#fef3c7" style="background: #fef3c7;" title="Soft Cream Belly"></div>
+            <div class="color-swatch" data-color="#0f172a" style="background: #0f172a;" title="Hero Mask Black"></div>
             <div class="color-swatch" data-color="#ffffff" style="background: #ffffff; border: 2px solid #000;" title="Eraser (White)"></div>
           </div>
 
           <div class="active-color-indicator">
             <span>Selected Color:</span>
-            <div id="active-color-preview" class="color-preview-box" style="background: #1e40af;"></div>
+            <div id="active-color-preview" class="color-preview-box" style="background: #e11d48;"></div>
           </div>
 
           <div class="studio-action-buttons">

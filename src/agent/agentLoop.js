@@ -38,7 +38,7 @@ export class VirtueTechCLIAgentLoop extends VirtueTechAgentCore {
     fs.writeFileSync(jsonPath, JSON.stringify(series, null, 2), "utf8");
     fs.writeFileSync(htmlPath, buildSingleIssuePrintableHtml(series[0]), "utf8");
 
-    if (series.length > 0) {
+    if (series.length > 0 && topic.toLowerCase().includes("robot")) {
       const issue1 = series[0];
       const year1Issue1Path = path.join(OUTPUT_DIR, "year1-issue1-robotics-printable.html");
       fs.writeFileSync(year1Issue1Path, buildSingleIssuePrintableHtml(issue1), "utf8");
